@@ -101,7 +101,50 @@ namespace FlightManagementSystem
             Console.WriteLine("Passenger registered successfully. Assigned ID: " + passengerId);
             Console.ResetColor();
         }
+        // ─────────────────────────────────────────────────────────────────────
+        //  02 — Add Aircraft
+        // Add a new aircraft and set it as operational by default
+        // ─────────────────────────────────────────────────────────────────────
+        public static void AddAircraft()
+        {
+            Console.WriteLine("\n=== Add Aircraft ===");
 
+            Console.Write("Enter aircraft model: ");
+            string model = Console.ReadLine();
+
+            if (!IsValidText(model))
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Aircraft model cannot be empty.");
+                Console.ResetColor();
+                return;
+            }
+            Console.Write("Enter total seats: ");
+            int totalSeats = int.Parse(Console.ReadLine());
+
+            if (totalSeats <= 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Total seats must be greater than 0.");
+                Console.ResetColor();
+                return;
+            }
+            // Generate unique aircraft ID
+            int aircraftId = context.Aircrafts.Count + 1;
+
+            // Add aircraft to system storage
+            context.Aircrafts.Add(new Aircraft
+            {
+                aircraftId = aircraftId,
+                model = model,
+                totalSeats = totalSeats,
+                isOperational = true
+            });
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Aircraft added successfully. Assigned ID: " + aircraftId);
+            Console.ResetColor();
+        }
         
         static void Main(string[] args)
         {
@@ -130,7 +173,7 @@ namespace FlightManagementSystem
                 switch (option)
                 {
                     case 1: RegisterPassenger(); break;
-                    case 2: Console.WriteLine("Add Aircraft"); break;
+                    case 2: AddAircraft(); break;
                     case 3: Console.WriteLine("Register Pilot"); break;
                     case 4: Console.WriteLine("View All Flights"); break;
                     case 5: Console.WriteLine("Schedule Flight"); break;
