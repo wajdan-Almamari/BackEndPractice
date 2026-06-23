@@ -1,0 +1,4721 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<<
+/Producer (pypdf)
+>>
+endobj
+2 0 obj
+<<
+/Type /Pages
+/Count 9
+/Kids [ 4 0 R 12 0 R 15 0 R 19 0 R 23 0 R 26 0 R 29 0 R 32 0 R 35 0 R ]
+>>
+endobj
+3 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+4 0 obj
+<<
+/Contents 5 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font <<
+/F1 6 0 R
+/F1-0 7 0 R
+/F2 8 0 R
+/F3 9 0 R
+/F4 10 0 R
+/F5 11 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+5 0 obj
+<<
+/Length 1396
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+.05098 .105882 .164706 rg
+n 0 0 595.2756 841.8898 re f*
+.180392 .52549 .870588 rg
+n 0 336.7559 595.2756 3 re f*
+Q
+q
+1 0 0 1 62.69291 665.811 cm
+Q
+q
+1 0 0 1 62.69291 652.811 cm
+q
+.564706 .658824 .784314 rg
+BT 1 0 0 1 0 4 Tm /F1 9 Tf 13 TL 159.5069 0 Td (C# BACKEND TRACK | OOP PHASE) Tj T* -159.5069 0 Td ET
+Q
+Q
+q
+1 0 0 1 62.69291 644.3071 cm
+Q
+q
+1 0 0 1 62.69291 627.3071 cm
+q
+.741176 .831373 .941176 rg
+BT 1 0 0 1 0 5 Tm /F1 12 Tf 17 TL 216.9389 0 Td (Task 1) Tj T* -216.9389 0 Td ET
+Q
+Q
+q
+1 0 0 1 62.69291 613.1339 cm
+Q
+q
+1 0 0 1 62.69291 581.1339 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 6 Tm /F2 26 Tf 32 TL 98.37988 0 Td (System Analysis Task) Tj T* -98.37988 0 Td ET
+Q
+Q
+q
+1 0 0 1 62.69291 561.2913 cm
+Q
+q
+1 0 0 1 168.4181 558.2913 cm
+q
+2 w
+1 J
+.180392 .52549 .870588 RG
+n 0 0 m 258.4394 0 l S
+Q
+Q
+q
+1 0 0 1 62.69291 534.1181 cm
+Q
+q
+1 0 0 1 62.69291 517.1181 cm
+q
+.741176 .831373 .941176 rg
+BT 1 0 0 1 0 5 Tm /F1 12 Tf 17 TL 59.52888 0 Td (Think about the business. Extract the models. Assign the sources.) Tj T* -59.52888 0 Td ET
+Q
+Q
+q
+1 0 0 1 62.69291 460.4252 cm
+Q
+q
+1 0 0 1 62.69291 447.4252 cm
+q
+.564706 .658824 .784314 rg
+BT 1 0 0 1 0 4 Tm /F1 9 Tf 13 TL 114.6374 0 Td (Codeline Bootcamp \267 Backend Phase \267 OOP Session 3 Task) Tj T* -114.6374 0 Td ET
+Q
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+0 0 0 rg
+Q
+
+
+endstream
+endobj
+6 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+7 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+8 0 obj
+<<
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+9 0 obj
+<<
+/BaseFont /Helvetica-Oblique
+/Encoding /WinAnsiEncoding
+/Name /F3
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+10 0 obj
+<<
+/BaseFont /Courier-Bold
+/Encoding /WinAnsiEncoding
+/Name /F4
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+11 0 obj
+<<
+/BaseFont /Courier
+/Encoding /WinAnsiEncoding
+/Name /F5
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+12 0 obj
+<<
+/Contents 13 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font <<
+/F1 6 0 R
+/F1-0 14 0 R
+/F2 8 0 R
+/F3 9 0 R
+/F4 10 0 R
+/F5 11 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+13 0 obj
+<<
+/Length 8587
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+.05098 .105882 .164706 rg
+n 0 810.7087 595.2756 31.1811 re f*
+BT /F2 8 Tf 9.6 TL ET
+1 1 1 rg
+BT 1 0 0 1 56.69291 820.6299 Tm (Codeline Bootcamp  |  C# Backend Track  |  OOP Phase) Tj T* ET
+BT 1 0 0 1 437.6467 820.6299 Tm (Task 1 \227 System Analysis) Tj T* ET
+.05098 .105882 .164706 rg
+n 0 0 595.2756 24.09449 re f*
+BT /F1 8 Tf 9.6 TL ET
+1 1 1 rg
+BT 1 0 0 1 56.69291 7.937008 Tm (Think Business First  |  Extract Requirements  |  Design Before Code) Tj T* ET
+BT 1 0 0 1 513.2307 7.937008 Tm (Page 2) Tj T* ET
+Q
+q
+1 0 0 1 56.69291 760.3701 cm
+q
+.105882 .309804 .541176 rg
+n 0 33 481.8898 -33 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 12 8 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 4 Tm /F2 13 Tf 17 TL (SOURCE TAG LEGEND) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 750.4488 cm
+Q
+q
+1 0 0 1 62.69291 705.4488 cm
+q
+BT 1 0 0 1 0 35 Tm 1.02436 Tw 15 TL /F1 10 Tf .101961 .101961 .180392 rg (Every property of every class model gets its value from somewhere. Before writing any code, you must) Tj T* 0 Tw .938876 Tw (decide ) Tj /F2 10 Tf (where) Tj /F1 10 Tf ( each value comes from. Use one of these five source tags to label each property in your) Tj T* 0 Tw (analysis:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 694.3622 cm
+Q
+q
+1 0 0 1 59.52756 654.3622 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 8 cm
+q
+.917647 .968627 .933333 rg
+n 0 24 65.19685 -24 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 4 2 cm
+q
+.101961 .478431 .235294 rg
+BT 1 0 0 1 0 12.5 Tm /F2 7.5 Tf 10 TL 15.25968 0 Td (System) Tj T* -5.208755 0 Td (Generated) Tj T* -10.05093 0 Td ET
+Q
+Q
+q
+1 J
+1 j
+.101961 .478431 .235294 RG
+.6 w
+n 0 24 m 65.19685 24 l S
+n 0 0 m 65.19685 0 l S
+n 0 0 m 0 24 l S
+n 65.19685 0 m 65.19685 24 l S
+Q
+Q
+Q
+q
+1 0 0 1 70.86614 7 cm
+q
+.101961 .101961 .180392 rg
+BT 1 0 0 1 0 16.5 Tm /F2 9.5 Tf 13 TL (System) Tj T* (Generated) Tj T* ET
+Q
+Q
+q
+1 0 0 1 150.2362 6 cm
+q
+.101961 .101961 .180392 rg
+BT 1 0 0 1 0 18.5 Tm /F1 9.5 Tf 14 TL 3.665225 Tw (The system assigns this value automatically. The user never types it.) Tj T* 0 Tw (Example: an auto-incremented ID calculated as List.Count + 1.) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.803922 .835294 .87451 RG
+.3 w
+n 0 0 m 476.2205 0 l S
+Q
+Q
+Q
+q
+1 0 0 1 59.52756 614.3622 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 13 cm
+q
+.917647 .94902 .984314 rg
+n 0 14 65.19685 -14 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 4 2 cm
+q
+.105882 .309804 .541176 rg
+BT 1 0 0 1 0 2.5 Tm /F2 7.5 Tf 10 TL 10.05468 0 Td (User Input) Tj T* -10.05468 0 Td ET
+Q
+Q
+q
+1 J
+1 j
+.105882 .309804 .541176 RG
+.6 w
+n 0 14 m 65.19685 14 l S
+n 0 0 m 65.19685 0 l S
+n 0 0 m 0 14 l S
+n 65.19685 0 m 65.19685 14 l S
+Q
+Q
+Q
+q
+1 0 0 1 70.86614 13.5 cm
+q
+.101961 .101961 .180392 rg
+BT 1 0 0 1 0 3.5 Tm /F2 9.5 Tf 13 TL (User Input) Tj T* ET
+Q
+Q
+q
+1 0 0 1 150.2362 6 cm
+q
+.101961 .101961 .180392 rg
+BT 1 0 0 1 0 18.5 Tm /F1 9.5 Tf 14 TL 1.908021 Tw (The user types this value directly at the keyboard when prompted by the) Tj T* 0 Tw (system.) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.803922 .835294 .87451 RG
+.3 w
+n 0 0 m 476.2205 0 l S
+Q
+Q
+Q
+q
+1 0 0 1 59.52756 574.3622 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 13 cm
+q
+1 .956863 .898039 rg
+n 0 14 65.19685 -14 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 4 2 cm
+q
+.831373 .447059 .039216 rg
+BT 1 0 0 1 0 2.5 Tm /F2 7.5 Tf 10 TL 4.842175 0 Td (Default Value) Tj T* -4.842175 0 Td ET
+Q
+Q
+q
+1 J
+1 j
+.831373 .447059 .039216 RG
+.6 w
+n 0 14 m 65.19685 14 l S
+n 0 0 m 65.19685 0 l S
+n 0 0 m 0 14 l S
+n 65.19685 0 m 65.19685 14 l S
+Q
+Q
+Q
+q
+1 0 0 1 70.86614 13.5 cm
+q
+.101961 .101961 .180392 rg
+BT 1 0 0 1 0 3.5 Tm /F2 9.5 Tf 13 TL (Default Value) Tj T* ET
+Q
+Q
+q
+1 0 0 1 150.2362 6 cm
+q
+.101961 .101961 .180392 rg
+BT 1 0 0 1 0 18.5 Tm /F1 9.5 Tf 14 TL 1.596768 Tw (A fixed value set by the code when the object is created. The user never) Tj T* 0 Tw (chooses it. Example: isBooked = false, status = "Active".) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.803922 .835294 .87451 RG
+.3 w
+n 0 0 m 476.2205 0 l S
+Q
+Q
+Q
+q
+1 0 0 1 59.52756 520.3622 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 20 cm
+q
+.992157 .92549 .917647 rg
+n 0 14 65.19685 -14 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 4 2 cm
+q
+.752941 .223529 .168627 rg
+BT 1 0 0 1 0 2.5 Tm /F2 7.5 Tf 10 TL 9.634675 0 Td (Calculated) Tj T* -9.634675 0 Td ET
+Q
+Q
+q
+1 J
+1 j
+.752941 .223529 .168627 RG
+.6 w
+n 0 14 m 65.19685 14 l S
+n 0 0 m 65.19685 0 l S
+n 0 0 m 0 14 l S
+n 65.19685 0 m 65.19685 14 l S
+Q
+Q
+Q
+q
+1 0 0 1 70.86614 20.5 cm
+q
+.101961 .101961 .180392 rg
+BT 1 0 0 1 0 3.5 Tm /F2 9.5 Tf 13 TL (Calculated) Tj T* ET
+Q
+Q
+q
+1 0 0 1 150.2362 6 cm
+q
+.101961 .101961 .180392 rg
+BT 1 0 0 1 0 32.5 Tm /F1 9.5 Tf 14 TL 2.346625 Tw (Derived automatically from another object already in memory \227 no user) Tj T* 0 Tw 1.549575 Tw (prompt. Example: appointment date copied from a chosen slot, fee copied) Tj T* 0 Tw (from a doctor.) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.803922 .835294 .87451 RG
+.3 w
+n 0 0 m 476.2205 0 l S
+Q
+Q
+Q
+q
+1 0 0 1 59.52756 480.3622 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 13 cm
+q
+.952941 .933333 .976471 rg
+n 0 14 65.19685 -14 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 4 2 cm
+q
+.419608 .247059 .627451 rg
+BT 1 0 0 1 0 2.5 Tm /F2 7.5 Tf 10 TL 11.51343 0 Td (From List) Tj T* -11.51343 0 Td ET
+Q
+Q
+q
+1 J
+1 j
+.419608 .247059 .627451 RG
+.6 w
+n 0 14 m 65.19685 14 l S
+n 0 0 m 65.19685 0 l S
+n 0 0 m 0 14 l S
+n 65.19685 0 m 65.19685 14 l S
+Q
+Q
+Q
+q
+1 0 0 1 70.86614 13.5 cm
+q
+.101961 .101961 .180392 rg
+BT 1 0 0 1 0 3.5 Tm /F2 9.5 Tf 13 TL (From List) Tj T* ET
+Q
+Q
+q
+1 0 0 1 150.2362 6 cm
+q
+.101961 .101961 .180392 rg
+BT 1 0 0 1 0 18.5 Tm /F1 9.5 Tf 14 TL .259519 Tw (The user selects a value from a list of options displayed on screen. Example:) Tj T* 0 Tw (choosing a doctor ID from a printed list of doctors.) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.803922 .835294 .87451 RG
+.3 w
+n 0 0 m 476.2205 0 l S
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 466.189 cm
+Q
+q
+1 0 0 1 56.69291 427.189 cm
+q
+.05098 .105882 .164706 rg
+n 0 39 481.8898 -39 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 14 10 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 4 Tm /F2 15 Tf 19 TL (Domain 1 \227 Library Management System) Tj T* ET
+Q
+Q
+q
+1 0 0 1 360.9606 13.5 cm
+q
+.741176 .831373 .941176 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL 2.445567 0 Td (Extract everything yourself) Tj T* -2.445567 0 Td ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 415.8504 cm
+Q
+q
+1 0 0 1 62.69291 370.8504 cm
+q
+.101961 .101961 .180392 rg
+BT 1 0 0 1 0 35 Tm /F1 10 Tf 15 TL .012765 Tw (Read the following description of a real library carefully. Your job is to go through the 6-phase process and) Tj T* 0 Tw .259988 Tw (fill in all the blank tables below. Nothing has been done for you \227 you identify the entities, you decide the) Tj T* 0 Tw (properties, and you assign the source tag for each one.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 358.3465 cm
+Q
+q
+1 0 0 1 56.69291 218.3465 cm
+q
+.941176 .968627 1 rg
+n 0 140 481.8898 -140 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 16 14 cm
+q
+.05098 .105882 .164706 rg
+BT 1 0 0 1 0 101.5 Tm /F1 10.5 Tf 16 TL .426751 Tw (A public library allows community members to register and borrow books. Each book has a title,) Tj T* 0 Tw .580051 Tw (author, genre, and a fixed number of physical copies in stock. A registered member can borrow) Tj T* 0 Tw .287376 Tw (an available book copy and must return it within 14 days. If the book is returned late, the system) Tj T* 0 Tw .223209 Tw (calculates a fine based on how many days overdue it is. A member can also reserve a book that) Tj T* 0 Tw .386151 Tw (is currently fully borrowed so they are notified when it becomes available. The librarian needs to) Tj T* 0 Tw -0.003708 Tw (see all currently active loans, view all overdue loans sorted by how late they are, and get a report) Tj T* 0 Tw (of the most-borrowed books ranked by total borrow count.) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.180392 .52549 .870588 RG
+1.5 w
+n 0 140 m 481.8898 140 l S
+n 0 0 m 481.8898 0 l S
+n 0 0 m 0 140 l S
+n 481.8898 0 m 481.8898 140 l S
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 205.5906 cm
+Q
+q
+1 0 0 1 62.69291 190.5906 cm
+q
+BT 1 0 0 1 0 5 Tm 15 TL /F2 10 Tf .101961 .101961 .180392 rg (Step 1 \227 Identify the Entities \(Phases 1 & 2\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 141.5906 cm
+q
+.101961 .101961 .180392 rg
+BT 1 0 0 1 0 35 Tm /F1 10 Tf 15 TL 1.252126 Tw (From the description above, identify the main real-world objects \(classes\) the system must track. Write) Tj T* 0 Tw 1.744104 Tw (each entity name, its properties, the data type for each, and the source tag that describes how each) Tj T* 0 Tw (property gets its value.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 131.9213 cm
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+0 0 0 rg
+Q
+
+
+endstream
+endobj
+14 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+15 0 obj
+<<
+/Contents 16 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font <<
+/F1 6 0 R
+/F1-0 17 0 R
+/F2 8 0 R
+/F2-0 18 0 R
+/F3 9 0 R
+/F4 10 0 R
+/F5 11 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+16 0 obj
+<<
+/Length 10477
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+.05098 .105882 .164706 rg
+n 0 810.7087 595.2756 31.1811 re f*
+BT /F2 8 Tf 9.6 TL ET
+1 1 1 rg
+BT 1 0 0 1 56.69291 820.6299 Tm (Codeline Bootcamp  |  C# Backend Track  |  OOP Phase) Tj T* ET
+BT 1 0 0 1 437.6467 820.6299 Tm (Task 1 \227 System Analysis) Tj T* ET
+.05098 .105882 .164706 rg
+n 0 0 595.2756 24.09449 re f*
+BT /F1 8 Tf 9.6 TL ET
+1 1 1 rg
+BT 1 0 0 1 56.69291 7.937008 Tm (Think Business First  |  Extract Requirements  |  Design Before Code) Tj T* ET
+BT 1 0 0 1 513.2307 7.937008 Tm (Page 3) Tj T* ET
+Q
+q
+1 0 0 1 56.69291 765.3701 cm
+q
+.956863 .964706 .972549 rg
+n 0 28 481.8898 -28 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 10 7 cm
+q
+.666667 .666667 .666667 rg
+BT 1 0 0 1 0 3.5 Tm /F2 10.5 Tf 14 TL (Entity Name: ______________________________) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.803922 .835294 .87451 RG
+1 w
+n 0 28 m 481.8898 28 l S
+n 0 0 m 481.8898 0 l S
+n 0 0 m 0 28 l S
+n 481.8898 0 m 481.8898 28 l S
+Q
+Q
+Q
+q
+1 0 0 1 56.69291 513.3701 cm
+q
+.105882 .309804 .541176 rg
+n 0 252 481.8898 -28 re f*
+1 1 1 rg
+n 0 224 481.8898 -32 re f*
+.956863 .964706 .972549 rg
+n 0 192 481.8898 -32 re f*
+1 1 1 rg
+n 0 160 481.8898 -32 re f*
+.956863 .964706 .972549 rg
+n 0 128 481.8898 -32 re f*
+1 1 1 rg
+n 0 96 481.8898 -32 re f*
+.956863 .964706 .972549 rg
+n 0 64 481.8898 -32 re f*
+1 1 1 rg
+n 0 32 481.8898 -32 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 8 232 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 3 Tm /F2 9 Tf 12 TL (Property Name) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 232 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 3 Tm /F2 9 Tf 12 TL (Data Type) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 232 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 3 Tm /F2 9 Tf 12 TL (Source Tag) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 200 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 200 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 200 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 168 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 168 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 168 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 136 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 136 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 136 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 104 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 104 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 104 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 72 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 72 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 72 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 40 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 40 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 40 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 8 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 8 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 8 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.803922 .835294 .87451 RG
+.5 w
+n 0 252 m 481.8898 252 l S
+n 0 0 m 481.8898 0 l S
+n 0 0 m 0 252 l S
+n 481.8898 0 m 481.8898 252 l S
+n 0 224 m 481.8898 224 l S
+n 0 192 m 481.8898 192 l S
+n 0 160 m 481.8898 160 l S
+n 0 128 m 481.8898 128 l S
+n 0 96 m 481.8898 96 l S
+n 0 64 m 481.8898 64 l S
+n 0 32 m 481.8898 32 l S
+n 192.7559 0 m 192.7559 252 l S
+n 289.1339 0 m 289.1339 252 l S
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 501.3701 cm
+Q
+q
+1 0 0 1 56.69291 473.3701 cm
+q
+.956863 .964706 .972549 rg
+n 0 28 481.8898 -28 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 10 7 cm
+q
+.666667 .666667 .666667 rg
+BT 1 0 0 1 0 3.5 Tm /F2 10.5 Tf 14 TL (Entity Name: ______________________________) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.803922 .835294 .87451 RG
+1 w
+n 0 28 m 481.8898 28 l S
+n 0 0 m 481.8898 0 l S
+n 0 0 m 0 28 l S
+n 481.8898 0 m 481.8898 28 l S
+Q
+Q
+Q
+q
+1 0 0 1 56.69291 221.3701 cm
+q
+.105882 .309804 .541176 rg
+n 0 252 481.8898 -28 re f*
+1 1 1 rg
+n 0 224 481.8898 -32 re f*
+.956863 .964706 .972549 rg
+n 0 192 481.8898 -32 re f*
+1 1 1 rg
+n 0 160 481.8898 -32 re f*
+.956863 .964706 .972549 rg
+n 0 128 481.8898 -32 re f*
+1 1 1 rg
+n 0 96 481.8898 -32 re f*
+.956863 .964706 .972549 rg
+n 0 64 481.8898 -32 re f*
+1 1 1 rg
+n 0 32 481.8898 -32 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 8 232 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 3 Tm /F2 9 Tf 12 TL (Property Name) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 232 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 3 Tm /F2 9 Tf 12 TL (Data Type) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 232 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 3 Tm /F2 9 Tf 12 TL (Source Tag) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 200 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 200 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 200 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 168 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 168 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 168 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 136 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 136 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 136 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 104 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 104 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 104 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 72 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 72 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 72 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 40 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 40 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 40 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 8 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 8 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 8 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.803922 .835294 .87451 RG
+.5 w
+n 0 252 m 481.8898 252 l S
+n 0 0 m 481.8898 0 l S
+n 0 0 m 0 252 l S
+n 481.8898 0 m 481.8898 252 l S
+n 0 224 m 481.8898 224 l S
+n 0 192 m 481.8898 192 l S
+n 0 160 m 481.8898 160 l S
+n 0 128 m 481.8898 128 l S
+n 0 96 m 481.8898 96 l S
+n 0 64 m 481.8898 64 l S
+n 0 32 m 481.8898 32 l S
+n 192.7559 0 m 192.7559 252 l S
+n 289.1339 0 m 289.1339 252 l S
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 209.3701 cm
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+0 0 0 rg
+BT
+/F2-0 8.5 Tf
+10.2 TL
+ET
+BT
+1 0 0 1 132 780 Tm
+(Member) Tj
+T*
+ET
+BT
+/F1-0 7.6 Tf
+9.12 TL
+ET
+BT
+1 0 0 1 85 730 Tm
+(memberId) Tj
+T*
+ET
+BT
+1 0 0 1 280 730 Tm
+(int) Tj
+T*
+ET
+BT
+1 0 0 1 397 730 Tm
+(System Generated) Tj
+T*
+ET
+BT
+1 0 0 1 85 698 Tm
+(memberName) Tj
+T*
+ET
+BT
+1 0 0 1 280 698 Tm
+(string) Tj
+T*
+ET
+BT
+1 0 0 1 397 698 Tm
+(User Input) Tj
+T*
+ET
+BT
+1 0 0 1 85 666 Tm
+(memberPhone) Tj
+T*
+ET
+BT
+1 0 0 1 280 666 Tm
+(string) Tj
+T*
+ET
+BT
+1 0 0 1 397 666 Tm
+(User Input) Tj
+T*
+ET
+BT
+1 0 0 1 85 634 Tm
+(memberEmail) Tj
+T*
+ET
+BT
+1 0 0 1 280 634 Tm
+(string) Tj
+T*
+ET
+BT
+1 0 0 1 397 634 Tm
+(User Input) Tj
+T*
+ET
+BT
+1 0 0 1 85 602 Tm
+(registrationDate) Tj
+T*
+ET
+BT
+1 0 0 1 280 602 Tm
+(string) Tj
+T*
+ET
+BT
+1 0 0 1 397 602 Tm
+(System Generated) Tj
+T*
+ET
+BT
+/F2-0 8.5 Tf
+10.2 TL
+ET
+BT
+1 0 0 1 132 488 Tm
+(Book) Tj
+T*
+ET
+BT
+/F1-0 7.6 Tf
+9.12 TL
+ET
+BT
+1 0 0 1 85 427 Tm
+(bookId) Tj
+T*
+ET
+BT
+1 0 0 1 280 427 Tm
+(int) Tj
+T*
+ET
+BT
+1 0 0 1 397 427 Tm
+(System Generated) Tj
+T*
+ET
+BT
+1 0 0 1 85 396 Tm
+(title) Tj
+T*
+ET
+BT
+1 0 0 1 280 396 Tm
+(string) Tj
+T*
+ET
+BT
+1 0 0 1 397 396 Tm
+(User Input) Tj
+T*
+ET
+BT
+1 0 0 1 85 365 Tm
+(author) Tj
+T*
+ET
+BT
+1 0 0 1 280 365 Tm
+(string) Tj
+T*
+ET
+BT
+1 0 0 1 397 365 Tm
+(User Input) Tj
+T*
+ET
+BT
+1 0 0 1 85 334 Tm
+(genre) Tj
+T*
+ET
+BT
+1 0 0 1 280 334 Tm
+(string) Tj
+T*
+ET
+BT
+1 0 0 1 397 334 Tm
+(User Input) Tj
+T*
+ET
+BT
+1 0 0 1 85 303 Tm
+(totalCopies) Tj
+T*
+ET
+BT
+1 0 0 1 280 303 Tm
+(int) Tj
+T*
+ET
+BT
+1 0 0 1 397 303 Tm
+(User Input) Tj
+T*
+ET
+BT
+1 0 0 1 85 272 Tm
+(availableCopies) Tj
+T*
+ET
+BT
+1 0 0 1 280 272 Tm
+(int) Tj
+T*
+ET
+BT
+1 0 0 1 397 272 Tm
+(Calculated) Tj
+T*
+ET
+BT
+1 0 0 1 85 241 Tm
+(totalBorrowCount) Tj
+T*
+ET
+BT
+1 0 0 1 280 241 Tm
+(int) Tj
+T*
+ET
+BT
+1 0 0 1 397 241 Tm
+(Default Value) Tj
+T*
+ET
+Q
+
+
+endstream
+endobj
+17 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+18 0 obj
+<<
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+19 0 obj
+<<
+/Contents 20 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font <<
+/F1 6 0 R
+/F1-0 21 0 R
+/F2 8 0 R
+/F2-0 22 0 R
+/F3 9 0 R
+/F4 10 0 R
+/F5 11 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+20 0 obj
+<<
+/Length 11480
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+.05098 .105882 .164706 rg
+n 0 810.7087 595.2756 31.1811 re f*
+BT /F2 8 Tf 9.6 TL ET
+1 1 1 rg
+BT 1 0 0 1 56.69291 820.6299 Tm (Codeline Bootcamp  |  C# Backend Track  |  OOP Phase) Tj T* ET
+BT 1 0 0 1 437.6467 820.6299 Tm (Task 1 \227 System Analysis) Tj T* ET
+.05098 .105882 .164706 rg
+n 0 0 595.2756 24.09449 re f*
+BT /F1 8 Tf 9.6 TL ET
+1 1 1 rg
+BT 1 0 0 1 56.69291 7.937008 Tm (Think Business First  |  Extract Requirements  |  Design Before Code) Tj T* ET
+BT 1 0 0 1 513.2307 7.937008 Tm (Page 4) Tj T* ET
+Q
+q
+1 0 0 1 56.69291 765.3701 cm
+q
+.956863 .964706 .972549 rg
+n 0 28 481.8898 -28 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 10 7 cm
+q
+.666667 .666667 .666667 rg
+BT 1 0 0 1 0 3.5 Tm /F2 10.5 Tf 14 TL (Entity Name: ______________________________) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.803922 .835294 .87451 RG
+1 w
+n 0 28 m 481.8898 28 l S
+n 0 0 m 481.8898 0 l S
+n 0 0 m 0 28 l S
+n 481.8898 0 m 481.8898 28 l S
+Q
+Q
+Q
+q
+1 0 0 1 56.69291 513.3701 cm
+q
+.105882 .309804 .541176 rg
+n 0 252 481.8898 -28 re f*
+1 1 1 rg
+n 0 224 481.8898 -32 re f*
+.956863 .964706 .972549 rg
+n 0 192 481.8898 -32 re f*
+1 1 1 rg
+n 0 160 481.8898 -32 re f*
+.956863 .964706 .972549 rg
+n 0 128 481.8898 -32 re f*
+1 1 1 rg
+n 0 96 481.8898 -32 re f*
+.956863 .964706 .972549 rg
+n 0 64 481.8898 -32 re f*
+1 1 1 rg
+n 0 32 481.8898 -32 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 8 232 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 3 Tm /F2 9 Tf 12 TL (Property Name) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 232 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 3 Tm /F2 9 Tf 12 TL (Data Type) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 232 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 3 Tm /F2 9 Tf 12 TL (Source Tag) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 200 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 200 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 200 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 168 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 168 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 168 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 136 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 136 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 136 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 104 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 104 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 104 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 72 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 72 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 72 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 40 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 40 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 40 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 8 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 8 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 8 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.803922 .835294 .87451 RG
+.5 w
+n 0 252 m 481.8898 252 l S
+n 0 0 m 481.8898 0 l S
+n 0 0 m 0 252 l S
+n 481.8898 0 m 481.8898 252 l S
+n 0 224 m 481.8898 224 l S
+n 0 192 m 481.8898 192 l S
+n 0 160 m 481.8898 160 l S
+n 0 128 m 481.8898 128 l S
+n 0 96 m 481.8898 96 l S
+n 0 64 m 481.8898 64 l S
+n 0 32 m 481.8898 32 l S
+n 192.7559 0 m 192.7559 252 l S
+n 289.1339 0 m 289.1339 252 l S
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 501.3701 cm
+Q
+q
+1 0 0 1 56.69291 473.3701 cm
+q
+.956863 .964706 .972549 rg
+n 0 28 481.8898 -28 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 10 7 cm
+q
+.666667 .666667 .666667 rg
+BT 1 0 0 1 0 3.5 Tm /F2 10.5 Tf 14 TL (Entity Name: ______________________________) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.803922 .835294 .87451 RG
+1 w
+n 0 28 m 481.8898 28 l S
+n 0 0 m 481.8898 0 l S
+n 0 0 m 0 28 l S
+n 481.8898 0 m 481.8898 28 l S
+Q
+Q
+Q
+q
+1 0 0 1 56.69291 221.3701 cm
+q
+.105882 .309804 .541176 rg
+n 0 252 481.8898 -28 re f*
+1 1 1 rg
+n 0 224 481.8898 -32 re f*
+.956863 .964706 .972549 rg
+n 0 192 481.8898 -32 re f*
+1 1 1 rg
+n 0 160 481.8898 -32 re f*
+.956863 .964706 .972549 rg
+n 0 128 481.8898 -32 re f*
+1 1 1 rg
+n 0 96 481.8898 -32 re f*
+.956863 .964706 .972549 rg
+n 0 64 481.8898 -32 re f*
+1 1 1 rg
+n 0 32 481.8898 -32 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 8 232 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 3 Tm /F2 9 Tf 12 TL (Property Name) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 232 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 3 Tm /F2 9 Tf 12 TL (Data Type) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 232 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 3 Tm /F2 9 Tf 12 TL (Source Tag) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 200 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 200 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 200 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 168 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 168 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 168 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 136 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 136 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 136 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 104 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 104 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 104 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 72 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 72 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 72 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 40 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 40 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 40 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 8 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 8 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 8 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.803922 .835294 .87451 RG
+.5 w
+n 0 252 m 481.8898 252 l S
+n 0 0 m 481.8898 0 l S
+n 0 0 m 0 252 l S
+n 481.8898 0 m 481.8898 252 l S
+n 0 224 m 481.8898 224 l S
+n 0 192 m 481.8898 192 l S
+n 0 160 m 481.8898 160 l S
+n 0 128 m 481.8898 128 l S
+n 0 96 m 481.8898 96 l S
+n 0 64 m 481.8898 64 l S
+n 0 32 m 481.8898 32 l S
+n 192.7559 0 m 192.7559 252 l S
+n 289.1339 0 m 289.1339 252 l S
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 209.3701 cm
+Q
+q
+1 0 0 1 56.69291 182.3701 cm
+q
+.956863 .964706 .972549 rg
+n 0 27 481.8898 -27 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 10 7 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 4 Tm /F3 9 Tf 13 TL (If you identify more than 4 entities, continue on the back of this sheet or add extra rows above.) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.803922 .835294 .87451 RG
+.5 w
+n 0 27 m 481.8898 27 l S
+n 0 0 m 481.8898 0 l S
+n 0 0 m 0 27 l S
+n 481.8898 0 m 481.8898 27 l S
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 171.0315 cm
+Q
+q
+1 0 0 1 62.69291 156.0315 cm
+q
+.101961 .101961 .180392 rg
+BT 1 0 0 1 0 5 Tm /F2 10 Tf 15 TL (Step 2 \227 Describe the Entity Relationships \(Phase 1 continued\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 122.0315 cm
+q
+.101961 .101961 .180392 rg
+BT 1 0 0 1 0 20 Tm /F1 10 Tf 15 TL 1.402209 Tw (How do the entities connect to each other? Describe the full cycle in plain English \227 who does what,) Tj T* 0 Tw (which entity gets created, and what changes in other entities as a result.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 112.3622 cm
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+0 0 0 rg
+BT
+/F2-0 8.5 Tf
+10.2 TL
+ET
+BT
+1 0 0 1 132 780 Tm
+(Loan) Tj
+T*
+ET
+BT
+/F1-0 7.6 Tf
+9.12 TL
+ET
+BT
+1 0 0 1 85 730 Tm
+(loanId) Tj
+T*
+ET
+BT
+1 0 0 1 280 730 Tm
+(int) Tj
+T*
+ET
+BT
+1 0 0 1 397 730 Tm
+(System Generated) Tj
+T*
+ET
+BT
+1 0 0 1 85 698 Tm
+(memberId) Tj
+T*
+ET
+BT
+1 0 0 1 280 698 Tm
+(int) Tj
+T*
+ET
+BT
+1 0 0 1 397 698 Tm
+(From List) Tj
+T*
+ET
+BT
+1 0 0 1 85 666 Tm
+(bookId) Tj
+T*
+ET
+BT
+1 0 0 1 280 666 Tm
+(int) Tj
+T*
+ET
+BT
+1 0 0 1 397 666 Tm
+(From List) Tj
+T*
+ET
+BT
+1 0 0 1 85 634 Tm
+(borrowDate) Tj
+T*
+ET
+BT
+1 0 0 1 280 634 Tm
+(string) Tj
+T*
+ET
+BT
+1 0 0 1 397 634 Tm
+(System Generated) Tj
+T*
+ET
+BT
+1 0 0 1 85 602 Tm
+(dueDate) Tj
+T*
+ET
+BT
+1 0 0 1 280 602 Tm
+(string) Tj
+T*
+ET
+BT
+1 0 0 1 397 602 Tm
+(Calculated) Tj
+T*
+ET
+BT
+1 0 0 1 85 570 Tm
+(returnDate) Tj
+T*
+ET
+BT
+1 0 0 1 280 570 Tm
+(string) Tj
+T*
+ET
+BT
+1 0 0 1 397 570 Tm
+(Default Value) Tj
+T*
+ET
+BT
+1 0 0 1 85 538 Tm
+(status) Tj
+T*
+ET
+BT
+1 0 0 1 280 538 Tm
+(string) Tj
+T*
+ET
+BT
+1 0 0 1 397 538 Tm
+(Default Value) Tj
+T*
+ET
+BT
+/F2-0 8.5 Tf
+10.2 TL
+ET
+BT
+1 0 0 1 132 488 Tm
+(Reservation) Tj
+T*
+ET
+BT
+/F1-0 7.6 Tf
+9.12 TL
+ET
+BT
+1 0 0 1 85 427 Tm
+(reservationId) Tj
+T*
+ET
+BT
+1 0 0 1 280 427 Tm
+(int) Tj
+T*
+ET
+BT
+1 0 0 1 397 427 Tm
+(System Generated) Tj
+T*
+ET
+BT
+1 0 0 1 85 396 Tm
+(memberId) Tj
+T*
+ET
+BT
+1 0 0 1 280 396 Tm
+(int) Tj
+T*
+ET
+BT
+1 0 0 1 397 396 Tm
+(From List) Tj
+T*
+ET
+BT
+1 0 0 1 85 365 Tm
+(bookId) Tj
+T*
+ET
+BT
+1 0 0 1 280 365 Tm
+(int) Tj
+T*
+ET
+BT
+1 0 0 1 397 365 Tm
+(From List) Tj
+T*
+ET
+BT
+1 0 0 1 85 334 Tm
+(reservationDate) Tj
+T*
+ET
+BT
+1 0 0 1 280 334 Tm
+(string) Tj
+T*
+ET
+BT
+1 0 0 1 397 334 Tm
+(System Generated) Tj
+T*
+ET
+BT
+1 0 0 1 85 303 Tm
+(isNotified) Tj
+T*
+ET
+BT
+1 0 0 1 280 303 Tm
+(bool) Tj
+T*
+ET
+BT
+1 0 0 1 397 303 Tm
+(Default Value) Tj
+T*
+ET
+Q
+
+
+endstream
+endobj
+21 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+22 0 obj
+<<
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+23 0 obj
+<<
+/Contents 24 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font <<
+/F1 6 0 R
+/F1-0 25 0 R
+/F2 8 0 R
+/F3 9 0 R
+/F4 10 0 R
+/F5 11 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+24 0 obj
+<<
+/Length 8388
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+.05098 .105882 .164706 rg
+n 0 810.7087 595.2756 31.1811 re f*
+BT /F2 8 Tf 9.6 TL ET
+1 1 1 rg
+BT 1 0 0 1 56.69291 820.6299 Tm (Codeline Bootcamp  |  C# Backend Track  |  OOP Phase) Tj T* ET
+BT 1 0 0 1 437.6467 820.6299 Tm (Task 1 \227 System Analysis) Tj T* ET
+.05098 .105882 .164706 rg
+n 0 0 595.2756 24.09449 re f*
+BT /F1 8 Tf 9.6 TL ET
+1 1 1 rg
+BT 1 0 0 1 56.69291 7.937008 Tm (Think Business First  |  Extract Requirements  |  Design Before Code) Tj T* ET
+BT 1 0 0 1 513.2307 7.937008 Tm (Page 5) Tj T* ET
+Q
+q
+1 0 0 1 56.69291 705.3701 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 12 60 cm
+q
+.8 .8 .8 rg
+BT 1 0 0 1 0 8 Tm /F1 10 Tf 18 TL (Write the relationship cycle here:) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.803922 .835294 .87451 RG
+1 w
+n 0 88 m 481.8898 88 l S
+n 0 0 m 481.8898 0 l S
+n 0 0 m 0 88 l S
+n 481.8898 0 m 481.8898 88 l S
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 694.0315 cm
+Q
+q
+1 0 0 1 62.69291 679.0315 cm
+q
+.101961 .101961 .180392 rg
+BT 1 0 0 1 0 5 Tm /F2 10 Tf 15 TL (Step 3 \227 List the Services \(Phase 4\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 645.0315 cm
+q
+.101961 .101961 .180392 rg
+BT 1 0 0 1 0 20 Tm /F1 10 Tf 15 TL .538735 Tw (From the description, identify every service \(function\) the system needs. Write at least 8 services \227 give) Tj T* 0 Tw (each a name and a one-line description of what it does.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 636.7795 cm
+Q
+q
+1 0 0 1 56.69291 288.7795 cm
+q
+.05098 .105882 .164706 rg
+n 0 348 481.8898 -28 re f*
+1 1 1 rg
+n 0 320 481.8898 -32 re f*
+.956863 .964706 .972549 rg
+n 0 288 481.8898 -32 re f*
+1 1 1 rg
+n 0 256 481.8898 -32 re f*
+.956863 .964706 .972549 rg
+n 0 224 481.8898 -32 re f*
+1 1 1 rg
+n 0 192 481.8898 -32 re f*
+.956863 .964706 .972549 rg
+n 0 160 481.8898 -32 re f*
+1 1 1 rg
+n 0 128 481.8898 -32 re f*
+.956863 .964706 .972549 rg
+n 0 96 481.8898 -32 re f*
+1 1 1 rg
+n 0 64 481.8898 -32 re f*
+.956863 .964706 .972549 rg
+n 0 32 481.8898 -32 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 7 328 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 3 Tm /F2 9 Tf 12 TL (#) Tj T* ET
+Q
+Q
+q
+1 0 0 1 35.91339 328 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 3 Tm /F2 9 Tf 12 TL (Service Name) Tj T* ET
+Q
+Q
+q
+1 0 0 1 199.7559 328 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 3 Tm /F2 9 Tf 12 TL (What it does) Tj T* ET
+Q
+Q
+q
+1 0 0 1 7 296 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (1) Tj T* ET
+Q
+Q
+q
+1 0 0 1 35.91339 296 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 199.7559 296 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (________________________________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 7 264 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (2) Tj T* ET
+Q
+Q
+q
+1 0 0 1 35.91339 264 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 199.7559 264 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (________________________________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 7 232 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (3) Tj T* ET
+Q
+Q
+q
+1 0 0 1 35.91339 232 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 199.7559 232 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (________________________________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 7 200 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (4) Tj T* ET
+Q
+Q
+q
+1 0 0 1 35.91339 200 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 199.7559 200 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (________________________________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 7 168 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (5) Tj T* ET
+Q
+Q
+q
+1 0 0 1 35.91339 168 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 199.7559 168 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (________________________________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 7 136 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (6) Tj T* ET
+Q
+Q
+q
+1 0 0 1 35.91339 136 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 199.7559 136 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (________________________________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 7 104 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (7) Tj T* ET
+Q
+Q
+q
+1 0 0 1 35.91339 104 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 199.7559 104 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (________________________________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 7 72 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (8) Tj T* ET
+Q
+Q
+q
+1 0 0 1 35.91339 72 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 199.7559 72 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (________________________________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 7 40 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (9) Tj T* ET
+Q
+Q
+q
+1 0 0 1 35.91339 40 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 199.7559 40 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (________________________________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 7 8 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (10) Tj T* ET
+Q
+Q
+q
+1 0 0 1 35.91339 8 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 199.7559 8 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (________________________________________________) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.803922 .835294 .87451 RG
+.5 w
+n 0 348 m 481.8898 348 l S
+n 0 0 m 481.8898 0 l S
+n 0 0 m 0 348 l S
+n 481.8898 0 m 481.8898 348 l S
+n 0 320 m 481.8898 320 l S
+n 0 288 m 481.8898 288 l S
+n 0 256 m 481.8898 256 l S
+n 0 224 m 481.8898 224 l S
+n 0 192 m 481.8898 192 l S
+n 0 160 m 481.8898 160 l S
+n 0 128 m 481.8898 128 l S
+n 0 96 m 481.8898 96 l S
+n 0 64 m 481.8898 64 l S
+n 0 32 m 481.8898 32 l S
+n 28.91339 0 m 28.91339 348 l S
+n 192.7559 0 m 192.7559 348 l S
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 274.6063 cm
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+0 0 0 rg
+BT
+/F1-0 7.2 Tf
+8.64 TL
+ET
+BT
+1 0 0 1 52 770 Tm
+(A member registers in the library system\056 A member can borrow an available book\054) Tj
+T*
+ET
+BT
+1 0 0 1 52 757 Tm
+(so the system creates a Loan record and updates the available copies\056) Tj
+T*
+ET
+BT
+1 0 0 1 52 744 Tm
+(The system calculates the due date\056 If the book is returned late\054 the fine is calculated\056) Tj
+T*
+ET
+BT
+1 0 0 1 52 731 Tm
+(If no copies are available\054 the member can reserve the book and will be notified later\056) Tj
+T*
+ET
+BT
+/F1-0 7.1 Tf
+8.52 TL
+ET
+BT
+1 0 0 1 88 589 Tm
+(RegisterMember) Tj
+T*
+ET
+BT
+1 0 0 1 250 589 Tm
+(Create a new member in the library system\056) Tj
+T*
+ET
+BT
+1 0 0 1 88 557.5 Tm
+(AddBook) Tj
+T*
+ET
+BT
+1 0 0 1 250 557.5 Tm
+(Add a new book with its details and copies\056) Tj
+T*
+ET
+BT
+1 0 0 1 88 526 Tm
+(ViewBooks) Tj
+T*
+ET
+BT
+1 0 0 1 250 526 Tm
+(Display all books in the library\056) Tj
+T*
+ET
+BT
+1 0 0 1 88 494.5 Tm
+(BorrowBook) Tj
+T*
+ET
+BT
+1 0 0 1 250 494.5 Tm
+(Allow a member to borrow an available book\056) Tj
+T*
+ET
+BT
+1 0 0 1 88 463 Tm
+(ReturnBook) Tj
+T*
+ET
+BT
+1 0 0 1 250 463 Tm
+(Return a borrowed book and update availability\056) Tj
+T*
+ET
+BT
+1 0 0 1 88 431.5 Tm
+(ReserveBook) Tj
+T*
+ET
+BT
+1 0 0 1 250 431.5 Tm
+(Reserve a book when all copies are borrowed\056) Tj
+T*
+ET
+BT
+1 0 0 1 88 400 Tm
+(CalculateFine) Tj
+T*
+ET
+BT
+1 0 0 1 250 400 Tm
+(Calculate fine for overdue books\056) Tj
+T*
+ET
+BT
+1 0 0 1 88 368.5 Tm
+(ViewActiveLoans) Tj
+T*
+ET
+BT
+1 0 0 1 250 368.5 Tm
+(Display all active loans\056) Tj
+T*
+ET
+BT
+1 0 0 1 88 337 Tm
+(ViewOverdueLoans) Tj
+T*
+ET
+BT
+1 0 0 1 250 337 Tm
+(Display overdue loans sorted by late days\056) Tj
+T*
+ET
+BT
+1 0 0 1 88 305.5 Tm
+(ViewBorrowReport) Tj
+T*
+ET
+BT
+1 0 0 1 250 305.5 Tm
+(Display the most borrowed books\056) Tj
+T*
+ET
+Q
+
+
+endstream
+endobj
+25 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+26 0 obj
+<<
+/Contents 27 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font <<
+/F1 6 0 R
+/F1-0 28 0 R
+/F2 8 0 R
+/F3 9 0 R
+/F4 10 0 R
+/F5 11 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+27 0 obj
+<<
+/Length 6987
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+.05098 .105882 .164706 rg
+n 0 810.7087 595.2756 31.1811 re f*
+BT /F2 8 Tf 9.6 TL ET
+1 1 1 rg
+BT 1 0 0 1 56.69291 820.6299 Tm (Codeline Bootcamp  |  C# Backend Track  |  OOP Phase) Tj T* ET
+BT 1 0 0 1 437.6467 820.6299 Tm (Task 1 \227 System Analysis) Tj T* ET
+.05098 .105882 .164706 rg
+n 0 0 595.2756 24.09449 re f*
+BT /F1 8 Tf 9.6 TL ET
+1 1 1 rg
+BT 1 0 0 1 56.69291 7.937008 Tm (Think Business First  |  Extract Requirements  |  Design Before Code) Tj T* ET
+BT 1 0 0 1 513.2307 7.937008 Tm (Page 6) Tj T* ET
+Q
+q
+1 0 0 1 56.69291 754.3701 cm
+q
+.05098 .105882 .164706 rg
+n 0 39 481.8898 -39 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 14 10 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 4 Tm /F2 15 Tf 19 TL (Domain 2 \227 Hotel Management System) Tj T* ET
+Q
+Q
+q
+1 0 0 1 360.9606 13.5 cm
+q
+.741176 .831373 .941176 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL 9.942567 0 Td (Assign the source tags) Tj T* -9.942567 0 Td ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 743.0315 cm
+Q
+q
+1 0 0 1 62.69291 698.0315 cm
+q
+BT 1 0 0 1 0 35 Tm 1.680514 Tw 15 TL /F1 10 Tf .101961 .101961 .180392 rg (The class models and all their properties are already defined for you below. Your job is to ) Tj /F2 10 Tf (fill in the) Tj T* 0 Tw 1.877633 Tw (Source Tag column) Tj /F1 10 Tf ( for every single property. Use the five source tags from the legend on page 1:) Tj T* 0 Tw (System Generated, User Input, Default Value, Calculated, From List.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 688.3622 cm
+Q
+q
+1 0 0 1 56.69291 564.3622 cm
+q
+.941176 .968627 1 rg
+n 0 124 481.8898 -124 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 16 14 cm
+q
+.05098 .105882 .164706 rg
+BT 1 0 0 1 0 85.5 Tm /F1 10.5 Tf 16 TL .716868 Tw (A hotel allows guests to register and book rooms for a stay. The hotel has different room types) Tj T* 0 Tw 1.863851 Tw (\(Single, Double, Suite\) each with its own nightly price. Each room can only have one active) Tj T* 0 Tw .150119 Tw (booking at a time. When a guest checks in, a check-in record is created. The total price of a stay) Tj T* 0 Tw -0.053955 Tw (is calculated from the number of nights and the room's nightly rate. When a guest checks out, the) Tj T* 0 Tw -0.004767 Tw (room becomes available again. A booking can also be cancelled before check-in, which frees the) Tj T* 0 Tw (room immediately.) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.180392 .52549 .870588 RG
+1.5 w
+n 0 124 m 481.8898 124 l S
+n 0 0 m 481.8898 0 l S
+n 0 0 m 0 124 l S
+n 481.8898 0 m 481.8898 124 l S
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 553.0236 cm
+Q
+q
+1 0 0 1 56.69291 488.0236 cm
+q
+1 .956863 .898039 rg
+n 0 65 481.8898 -65 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 13 10 cm
+q
+BT 1 0 0 1 0 35 Tm .409431 Tw 15 TL /F2 10 Tf .05098 .105882 .164706 rg (Your task:) Tj /F1 10 Tf ( For each property in the tables below, write the correct source tag in the empty column on) Tj T* 0 Tw 1.118876 Tw (the right. Think carefully \227 ask yourself: does the user type this? does the system generate it? is it) Tj T* 0 Tw (copied from another object? does it have a fixed starting value? does the user pick it from a list?) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.831373 .447059 .039216 RG
+1.2 w
+n 0 65 m 481.8898 65 l S
+n 0 0 m 481.8898 0 l S
+n 0 0 m 0 65 l S
+n 481.8898 0 m 481.8898 65 l S
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 476.685 cm
+Q
+q
+1 0 0 1 56.69291 450.685 cm
+q
+.180392 .52549 .870588 rg
+n 0 26 481.8898 -26 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 10 6 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 3.5 Tm /F2 10.5 Tf 14 TL (Guest) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 56.69291 262.685 cm
+q
+.05098 .105882 .164706 rg
+n 0 188 481.8898 -26 re f*
+1 1 1 rg
+n 0 162 481.8898 -27 re f*
+.956863 .964706 .972549 rg
+n 0 135 481.8898 -27 re f*
+1 1 1 rg
+n 0 108 481.8898 -27 re f*
+.956863 .964706 .972549 rg
+n 0 81 481.8898 -27 re f*
+1 1 1 rg
+n 0 54 481.8898 -27 re f*
+.956863 .964706 .972549 rg
+n 0 27 481.8898 -27 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 8 169 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 3 Tm /F2 9 Tf 12 TL (Property Name) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 169 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 3 Tm /F2 9 Tf 12 TL (Data Type) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 169 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 3 Tm /F2 9 Tf 12 TL (Source Tag \(fill in\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 142 cm
+q
+.105882 .309804 .541176 rg
+BT 1 0 0 1 0 4 Tm /F4 9 Tf 13 TL (guestId) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 142 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 4 Tm /F5 9 Tf 13 TL (int) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 142 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 4 Tm /F1 9 Tf 13 TL (______________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 115 cm
+q
+.105882 .309804 .541176 rg
+BT 1 0 0 1 0 4 Tm /F4 9 Tf 13 TL (guestName) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 115 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 4 Tm /F5 9 Tf 13 TL (string) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 115 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 4 Tm /F1 9 Tf 13 TL (______________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 88 cm
+q
+.105882 .309804 .541176 rg
+BT 1 0 0 1 0 4 Tm /F4 9 Tf 13 TL (guestPhone) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 88 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 4 Tm /F5 9 Tf 13 TL (string) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 88 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 4 Tm /F1 9 Tf 13 TL (______________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 61 cm
+q
+.105882 .309804 .541176 rg
+BT 1 0 0 1 0 4 Tm /F4 9 Tf 13 TL (guestEmail) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 61 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 4 Tm /F5 9 Tf 13 TL (string) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 61 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 4 Tm /F1 9 Tf 13 TL (______________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 34 cm
+q
+.105882 .309804 .541176 rg
+BT 1 0 0 1 0 4 Tm /F4 9 Tf 13 TL (guestNationality) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 34 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 4 Tm /F5 9 Tf 13 TL (string) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 34 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 4 Tm /F1 9 Tf 13 TL (______________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 7 cm
+q
+.105882 .309804 .541176 rg
+BT 1 0 0 1 0 4 Tm /F4 9 Tf 13 TL (registrationDate) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 7 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 4 Tm /F5 9 Tf 13 TL (string) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 7 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 4 Tm /F1 9 Tf 13 TL (______________________) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.803922 .835294 .87451 RG
+.5 w
+n 0 188 m 481.8898 188 l S
+n 0 0 m 481.8898 0 l S
+n 0 0 m 0 188 l S
+n 481.8898 0 m 481.8898 188 l S
+n 0 162 m 481.8898 162 l S
+n 0 135 m 481.8898 135 l S
+n 0 108 m 481.8898 108 l S
+n 0 81 m 481.8898 81 l S
+n 0 54 m 481.8898 54 l S
+n 0 27 m 481.8898 27 l S
+n 192.7559 0 m 192.7559 188 l S
+n 289.1339 0 m 289.1339 188 l S
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 250.685 cm
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+0 0 0 rg
+BT
+/F1-0 8 Tf
+9.6 TL
+ET
+BT
+1 0 0 1 405 410 Tm
+(System Generated) Tj
+T*
+ET
+BT
+1 0 0 1 405 382.5 Tm
+(User Input) Tj
+T*
+ET
+BT
+1 0 0 1 405 355 Tm
+(User Input) Tj
+T*
+ET
+BT
+1 0 0 1 405 327.5 Tm
+(User Input) Tj
+T*
+ET
+BT
+1 0 0 1 405 300 Tm
+(User Input) Tj
+T*
+ET
+BT
+1 0 0 1 405 272.5 Tm
+(System Generated) Tj
+T*
+ET
+Q
+
+
+endstream
+endobj
+28 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+29 0 obj
+<<
+/Contents 30 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font <<
+/F1 6 0 R
+/F1-0 31 0 R
+/F2 8 0 R
+/F3 9 0 R
+/F4 10 0 R
+/F5 11 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+30 0 obj
+<<
+/Length 8772
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+.05098 .105882 .164706 rg
+n 0 810.7087 595.2756 31.1811 re f*
+BT /F2 8 Tf 9.6 TL ET
+1 1 1 rg
+BT 1 0 0 1 56.69291 820.6299 Tm (Codeline Bootcamp  |  C# Backend Track  |  OOP Phase) Tj T* ET
+BT 1 0 0 1 437.6467 820.6299 Tm (Task 1 \227 System Analysis) Tj T* ET
+.05098 .105882 .164706 rg
+n 0 0 595.2756 24.09449 re f*
+BT /F1 8 Tf 9.6 TL ET
+1 1 1 rg
+BT 1 0 0 1 56.69291 7.937008 Tm (Think Business First  |  Extract Requirements  |  Design Before Code) Tj T* ET
+BT 1 0 0 1 513.2307 7.937008 Tm (Page 7) Tj T* ET
+Q
+q
+1 0 0 1 56.69291 767.3701 cm
+q
+.180392 .52549 .870588 rg
+n 0 26 481.8898 -26 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 10 6 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 3.5 Tm /F2 10.5 Tf 14 TL (Room) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 56.69291 579.3701 cm
+q
+.05098 .105882 .164706 rg
+n 0 188 481.8898 -26 re f*
+1 1 1 rg
+n 0 162 481.8898 -27 re f*
+.956863 .964706 .972549 rg
+n 0 135 481.8898 -27 re f*
+1 1 1 rg
+n 0 108 481.8898 -27 re f*
+.956863 .964706 .972549 rg
+n 0 81 481.8898 -27 re f*
+1 1 1 rg
+n 0 54 481.8898 -27 re f*
+.956863 .964706 .972549 rg
+n 0 27 481.8898 -27 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 8 169 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 3 Tm /F2 9 Tf 12 TL (Property Name) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 169 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 3 Tm /F2 9 Tf 12 TL (Data Type) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 169 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 3 Tm /F2 9 Tf 12 TL (Source Tag \(fill in\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 142 cm
+q
+.105882 .309804 .541176 rg
+BT 1 0 0 1 0 4 Tm /F4 9 Tf 13 TL (roomId) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 142 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 4 Tm /F5 9 Tf 13 TL (int) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 142 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 4 Tm /F1 9 Tf 13 TL (______________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 115 cm
+q
+.105882 .309804 .541176 rg
+BT 1 0 0 1 0 4 Tm /F4 9 Tf 13 TL (roomNumber) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 115 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 4 Tm /F5 9 Tf 13 TL (string) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 115 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 4 Tm /F1 9 Tf 13 TL (______________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 88 cm
+q
+.105882 .309804 .541176 rg
+BT 1 0 0 1 0 4 Tm /F4 9 Tf 13 TL (roomType) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 88 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 4 Tm /F5 9 Tf 13 TL (string) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 88 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 4 Tm /F1 9 Tf 13 TL (______________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 61 cm
+q
+.105882 .309804 .541176 rg
+BT 1 0 0 1 0 4 Tm /F4 9 Tf 13 TL (floorNumber) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 61 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 4 Tm /F5 9 Tf 13 TL (int) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 61 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 4 Tm /F1 9 Tf 13 TL (______________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 34 cm
+q
+.105882 .309804 .541176 rg
+BT 1 0 0 1 0 4 Tm /F4 9 Tf 13 TL (nightlyPrice) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 34 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 4 Tm /F5 9 Tf 13 TL (decimal) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 34 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 4 Tm /F1 9 Tf 13 TL (______________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 7 cm
+q
+.105882 .309804 .541176 rg
+BT 1 0 0 1 0 4 Tm /F4 9 Tf 13 TL (isAvailable) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 7 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 4 Tm /F5 9 Tf 13 TL (bool) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 7 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 4 Tm /F1 9 Tf 13 TL (______________________) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.803922 .835294 .87451 RG
+.5 w
+n 0 188 m 481.8898 188 l S
+n 0 0 m 481.8898 0 l S
+n 0 0 m 0 188 l S
+n 481.8898 0 m 481.8898 188 l S
+n 0 162 m 481.8898 162 l S
+n 0 135 m 481.8898 135 l S
+n 0 108 m 481.8898 108 l S
+n 0 81 m 481.8898 81 l S
+n 0 54 m 481.8898 54 l S
+n 0 27 m 481.8898 27 l S
+n 192.7559 0 m 192.7559 188 l S
+n 289.1339 0 m 289.1339 188 l S
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 567.3701 cm
+Q
+q
+1 0 0 1 56.69291 541.3701 cm
+q
+.180392 .52549 .870588 rg
+n 0 26 481.8898 -26 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 10 6 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 3.5 Tm /F2 10.5 Tf 14 TL (Booking) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 56.69291 299.3701 cm
+q
+.05098 .105882 .164706 rg
+n 0 242 481.8898 -26 re f*
+1 1 1 rg
+n 0 216 481.8898 -27 re f*
+.956863 .964706 .972549 rg
+n 0 189 481.8898 -27 re f*
+1 1 1 rg
+n 0 162 481.8898 -27 re f*
+.956863 .964706 .972549 rg
+n 0 135 481.8898 -27 re f*
+1 1 1 rg
+n 0 108 481.8898 -27 re f*
+.956863 .964706 .972549 rg
+n 0 81 481.8898 -27 re f*
+1 1 1 rg
+n 0 54 481.8898 -27 re f*
+.956863 .964706 .972549 rg
+n 0 27 481.8898 -27 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 8 223 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 3 Tm /F2 9 Tf 12 TL (Property Name) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 223 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 3 Tm /F2 9 Tf 12 TL (Data Type) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 223 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 3 Tm /F2 9 Tf 12 TL (Source Tag \(fill in\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 196 cm
+q
+.105882 .309804 .541176 rg
+BT 1 0 0 1 0 4 Tm /F4 9 Tf 13 TL (bookingId) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 196 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 4 Tm /F5 9 Tf 13 TL (int) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 196 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 4 Tm /F1 9 Tf 13 TL (______________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 169 cm
+q
+.105882 .309804 .541176 rg
+BT 1 0 0 1 0 4 Tm /F4 9 Tf 13 TL (guestId) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 169 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 4 Tm /F5 9 Tf 13 TL (int) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 169 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 4 Tm /F1 9 Tf 13 TL (______________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 142 cm
+q
+.105882 .309804 .541176 rg
+BT 1 0 0 1 0 4 Tm /F4 9 Tf 13 TL (roomId) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 142 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 4 Tm /F5 9 Tf 13 TL (int) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 142 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 4 Tm /F1 9 Tf 13 TL (______________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 115 cm
+q
+.105882 .309804 .541176 rg
+BT 1 0 0 1 0 4 Tm /F4 9 Tf 13 TL (checkInDate) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 115 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 4 Tm /F5 9 Tf 13 TL (string) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 115 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 4 Tm /F1 9 Tf 13 TL (______________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 88 cm
+q
+.105882 .309804 .541176 rg
+BT 1 0 0 1 0 4 Tm /F4 9 Tf 13 TL (checkOutDate) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 88 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 4 Tm /F5 9 Tf 13 TL (string) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 88 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 4 Tm /F1 9 Tf 13 TL (______________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 61 cm
+q
+.105882 .309804 .541176 rg
+BT 1 0 0 1 0 4 Tm /F4 9 Tf 13 TL (numberOfNights) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 61 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 4 Tm /F5 9 Tf 13 TL (int) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 61 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 4 Tm /F1 9 Tf 13 TL (______________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 34 cm
+q
+.105882 .309804 .541176 rg
+BT 1 0 0 1 0 4 Tm /F4 9 Tf 13 TL (totalPrice) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 34 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 4 Tm /F5 9 Tf 13 TL (decimal) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 34 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 4 Tm /F1 9 Tf 13 TL (______________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 7 cm
+q
+.105882 .309804 .541176 rg
+BT 1 0 0 1 0 4 Tm /F4 9 Tf 13 TL (status) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 7 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 4 Tm /F5 9 Tf 13 TL (string) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 7 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 4 Tm /F1 9 Tf 13 TL (______________________) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.803922 .835294 .87451 RG
+.5 w
+n 0 242 m 481.8898 242 l S
+n 0 0 m 481.8898 0 l S
+n 0 0 m 0 242 l S
+n 481.8898 0 m 481.8898 242 l S
+n 0 216 m 481.8898 216 l S
+n 0 189 m 481.8898 189 l S
+n 0 162 m 481.8898 162 l S
+n 0 135 m 481.8898 135 l S
+n 0 108 m 481.8898 108 l S
+n 0 81 m 481.8898 81 l S
+n 0 54 m 481.8898 54 l S
+n 0 27 m 481.8898 27 l S
+n 192.7559 0 m 192.7559 242 l S
+n 289.1339 0 m 289.1339 242 l S
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 287.3701 cm
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+0 0 0 rg
+BT
+/F1-0 8 Tf
+9.6 TL
+ET
+BT
+1 0 0 1 405 728 Tm
+(System Generated) Tj
+T*
+ET
+BT
+1 0 0 1 405 700 Tm
+(User Input) Tj
+T*
+ET
+BT
+1 0 0 1 405 672 Tm
+(From List) Tj
+T*
+ET
+BT
+1 0 0 1 405 644 Tm
+(User Input) Tj
+T*
+ET
+BT
+1 0 0 1 405 616 Tm
+(User Input) Tj
+T*
+ET
+BT
+1 0 0 1 405 588 Tm
+(Default Value) Tj
+T*
+ET
+BT
+1 0 0 1 405 501 Tm
+(System Generated) Tj
+T*
+ET
+BT
+1 0 0 1 405 473.5 Tm
+(From List) Tj
+T*
+ET
+BT
+1 0 0 1 405 446 Tm
+(From List) Tj
+T*
+ET
+BT
+1 0 0 1 405 418.5 Tm
+(User Input) Tj
+T*
+ET
+BT
+1 0 0 1 405 391 Tm
+(User Input) Tj
+T*
+ET
+BT
+1 0 0 1 405 363.5 Tm
+(Calculated) Tj
+T*
+ET
+BT
+1 0 0 1 405 336 Tm
+(Calculated) Tj
+T*
+ET
+BT
+1 0 0 1 405 308.5 Tm
+(Default Value) Tj
+T*
+ET
+Q
+
+
+endstream
+endobj
+31 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+32 0 obj
+<<
+/Contents 33 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font <<
+/F1 6 0 R
+/F1-0 34 0 R
+/F2 8 0 R
+/F3 9 0 R
+/F4 10 0 R
+/F5 11 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+33 0 obj
+<<
+/Length 11232
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+.05098 .105882 .164706 rg
+n 0 810.7087 595.2756 31.1811 re f*
+BT /F2 8 Tf 9.6 TL ET
+1 1 1 rg
+BT 1 0 0 1 56.69291 820.6299 Tm (Codeline Bootcamp  |  C# Backend Track  |  OOP Phase) Tj T* ET
+BT 1 0 0 1 437.6467 820.6299 Tm (Task 1 \227 System Analysis) Tj T* ET
+.05098 .105882 .164706 rg
+n 0 0 595.2756 24.09449 re f*
+BT /F1 8 Tf 9.6 TL ET
+1 1 1 rg
+BT 1 0 0 1 56.69291 7.937008 Tm (Think Business First  |  Extract Requirements  |  Design Before Code) Tj T* ET
+BT 1 0 0 1 513.2307 7.937008 Tm (Page 8) Tj T* ET
+Q
+q
+1 0 0 1 56.69291 767.3701 cm
+q
+.180392 .52549 .870588 rg
+n 0 26 481.8898 -26 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 10 6 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 3.5 Tm /F2 10.5 Tf 14 TL (CheckInRecord) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 56.69291 552.3701 cm
+q
+.05098 .105882 .164706 rg
+n 0 215 481.8898 -26 re f*
+1 1 1 rg
+n 0 189 481.8898 -27 re f*
+.956863 .964706 .972549 rg
+n 0 162 481.8898 -27 re f*
+1 1 1 rg
+n 0 135 481.8898 -27 re f*
+.956863 .964706 .972549 rg
+n 0 108 481.8898 -27 re f*
+1 1 1 rg
+n 0 81 481.8898 -27 re f*
+.956863 .964706 .972549 rg
+n 0 54 481.8898 -27 re f*
+1 1 1 rg
+n 0 27 481.8898 -27 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 8 196 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 3 Tm /F2 9 Tf 12 TL (Property Name) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 196 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 3 Tm /F2 9 Tf 12 TL (Data Type) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 196 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 3 Tm /F2 9 Tf 12 TL (Source Tag \(fill in\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 169 cm
+q
+.105882 .309804 .541176 rg
+BT 1 0 0 1 0 4 Tm /F4 9 Tf 13 TL (recordId) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 169 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 4 Tm /F5 9 Tf 13 TL (int) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 169 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 4 Tm /F1 9 Tf 13 TL (______________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 142 cm
+q
+.105882 .309804 .541176 rg
+BT 1 0 0 1 0 4 Tm /F4 9 Tf 13 TL (bookingId) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 142 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 4 Tm /F5 9 Tf 13 TL (int) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 142 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 4 Tm /F1 9 Tf 13 TL (______________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 115 cm
+q
+.105882 .309804 .541176 rg
+BT 1 0 0 1 0 4 Tm /F4 9 Tf 13 TL (guestId) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 115 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 4 Tm /F5 9 Tf 13 TL (int) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 115 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 4 Tm /F1 9 Tf 13 TL (______________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 88 cm
+q
+.105882 .309804 .541176 rg
+BT 1 0 0 1 0 4 Tm /F4 9 Tf 13 TL (roomId) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 88 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 4 Tm /F5 9 Tf 13 TL (int) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 88 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 4 Tm /F1 9 Tf 13 TL (______________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 61 cm
+q
+.105882 .309804 .541176 rg
+BT 1 0 0 1 0 4 Tm /F4 9 Tf 13 TL (actualCheckIn) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 61 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 4 Tm /F5 9 Tf 13 TL (string) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 61 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 4 Tm /F1 9 Tf 13 TL (______________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 34 cm
+q
+.105882 .309804 .541176 rg
+BT 1 0 0 1 0 4 Tm /F4 9 Tf 13 TL (actualCheckOut) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 34 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 4 Tm /F5 9 Tf 13 TL (string) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 34 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 4 Tm /F1 9 Tf 13 TL (______________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 8 7 cm
+q
+.105882 .309804 .541176 rg
+BT 1 0 0 1 0 4 Tm /F4 9 Tf 13 TL (finalAmount) Tj T* ET
+Q
+Q
+q
+1 0 0 1 200.7559 7 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 4 Tm /F5 9 Tf 13 TL (decimal) Tj T* ET
+Q
+Q
+q
+1 0 0 1 297.1339 7 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 4 Tm /F1 9 Tf 13 TL (______________________) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.803922 .835294 .87451 RG
+.5 w
+n 0 215 m 481.8898 215 l S
+n 0 0 m 481.8898 0 l S
+n 0 0 m 0 215 l S
+n 481.8898 0 m 481.8898 215 l S
+n 0 189 m 481.8898 189 l S
+n 0 162 m 481.8898 162 l S
+n 0 135 m 481.8898 135 l S
+n 0 108 m 481.8898 108 l S
+n 0 81 m 481.8898 81 l S
+n 0 54 m 481.8898 54 l S
+n 0 27 m 481.8898 27 l S
+n 192.7559 0 m 192.7559 215 l S
+n 289.1339 0 m 289.1339 215 l S
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 540.3701 cm
+Q
+q
+1 0 0 1 62.69291 525.3701 cm
+q
+.101961 .101961 .180392 rg
+BT 1 0 0 1 0 5 Tm /F2 10 Tf 15 TL (Step 2 \227 Describe the Entity Relationships) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 476.3701 cm
+q
+.101961 .101961 .180392 rg
+BT 1 0 0 1 0 35 Tm /F1 10 Tf 15 TL .661098 Tw (Now that you have studied the four class models, describe in your own words how they connect to each) Tj T* 0 Tw .603735 Tw (other. Who creates what? What changes when a booking is made? What happens when a guest checks) Tj T* 0 Tw (out?) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 468.1181 cm
+Q
+q
+1 0 0 1 56.69291 385.1181 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 12 55 cm
+q
+.8 .8 .8 rg
+BT 1 0 0 1 0 8 Tm /F1 10 Tf 18 TL (Write the relationship cycle here:) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.803922 .835294 .87451 RG
+1 w
+n 0 83 m 481.8898 83 l S
+n 0 0 m 481.8898 0 l S
+n 0 0 m 0 83 l S
+n 481.8898 0 m 481.8898 83 l S
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 373.7795 cm
+Q
+q
+1 0 0 1 62.69291 358.7795 cm
+q
+.101961 .101961 .180392 rg
+BT 1 0 0 1 0 5 Tm /F2 10 Tf 15 TL (Step 3 \227 List the Services) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 324.7795 cm
+q
+.101961 .101961 .180392 rg
+BT 1 0 0 1 0 20 Tm /F1 10 Tf 15 TL 1.231235 Tw (Based on the description and the class models above, list all the services \(functions\) this hotel system) Tj T* 0 Tw (needs. Give each a name and a one-line description.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 316.5276 cm
+Q
+q
+1 0 0 1 56.69291 64.52756 cm
+q
+.05098 .105882 .164706 rg
+n 0 252 481.8898 -28 re f*
+1 1 1 rg
+n 0 224 481.8898 -32 re f*
+.956863 .964706 .972549 rg
+n 0 192 481.8898 -32 re f*
+1 1 1 rg
+n 0 160 481.8898 -32 re f*
+.956863 .964706 .972549 rg
+n 0 128 481.8898 -32 re f*
+1 1 1 rg
+n 0 96 481.8898 -32 re f*
+.956863 .964706 .972549 rg
+n 0 64 481.8898 -32 re f*
+1 1 1 rg
+n 0 32 481.8898 -32 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 7 232 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 3 Tm /F2 9 Tf 12 TL (#) Tj T* ET
+Q
+Q
+q
+1 0 0 1 35.91339 232 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 3 Tm /F2 9 Tf 12 TL (Service Name) Tj T* ET
+Q
+Q
+q
+1 0 0 1 199.7559 232 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 3 Tm /F2 9 Tf 12 TL (What it does) Tj T* ET
+Q
+Q
+q
+1 0 0 1 7 200 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (1) Tj T* ET
+Q
+Q
+q
+1 0 0 1 35.91339 200 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 199.7559 200 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (________________________________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 7 168 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (2) Tj T* ET
+Q
+Q
+q
+1 0 0 1 35.91339 168 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 199.7559 168 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (________________________________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 7 136 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (3) Tj T* ET
+Q
+Q
+q
+1 0 0 1 35.91339 136 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 199.7559 136 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (________________________________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 7 104 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (4) Tj T* ET
+Q
+Q
+q
+1 0 0 1 35.91339 104 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 199.7559 104 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (________________________________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 7 72 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (5) Tj T* ET
+Q
+Q
+q
+1 0 0 1 35.91339 72 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 199.7559 72 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (________________________________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 7 40 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (6) Tj T* ET
+Q
+Q
+q
+1 0 0 1 35.91339 40 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 199.7559 40 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (________________________________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 7 8 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (7) Tj T* ET
+Q
+Q
+q
+1 0 0 1 35.91339 8 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 199.7559 8 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (________________________________________________) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.803922 .835294 .87451 RG
+.5 w
+n 0 252 m 481.8898 252 l S
+n 0 0 m 0 252 l S
+n 481.8898 0 m 481.8898 252 l S
+n 0 0 m 481.8898 0 l S
+n 0 224 m 481.8898 224 l S
+n 0 192 m 481.8898 192 l S
+n 0 160 m 481.8898 160 l S
+n 0 128 m 481.8898 128 l S
+n 0 96 m 481.8898 96 l S
+n 0 64 m 481.8898 64 l S
+n 0 32 m 481.8898 32 l S
+n 28.91339 0 m 28.91339 252 l S
+n 192.7559 0 m 192.7559 252 l S
+Q
+Q
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+0 0 0 rg
+BT
+/F1-0 8 Tf
+9.6 TL
+ET
+BT
+1 0 0 1 405 728 Tm
+(System Generated) Tj
+T*
+ET
+BT
+1 0 0 1 405 700.5 Tm
+(From List) Tj
+T*
+ET
+BT
+1 0 0 1 405 673 Tm
+(Calculated) Tj
+T*
+ET
+BT
+1 0 0 1 405 645.5 Tm
+(Calculated) Tj
+T*
+ET
+BT
+1 0 0 1 405 618 Tm
+(System Generated) Tj
+T*
+ET
+BT
+1 0 0 1 405 590.5 Tm
+(Default Value) Tj
+T*
+ET
+BT
+1 0 0 1 405 563 Tm
+(Calculated) Tj
+T*
+ET
+BT
+/F1-0 7.2 Tf
+8.64 TL
+ET
+BT
+1 0 0 1 52 440 Tm
+(A guest registers in the hotel system and books an available room\056 A Booking record) Tj
+T*
+ET
+BT
+1 0 0 1 52 427.5 Tm
+(is created and the total price is calculated\056 The room becomes unavailable during) Tj
+T*
+ET
+BT
+1 0 0 1 52 415 Tm
+(the booking period\056 When the guest checks in\054 a CheckInRecord is created\056) Tj
+T*
+ET
+BT
+1 0 0 1 52 402.5 Tm
+(When the guest checks out\054 the final amount is saved and the room becomes available again\056) Tj
+T*
+ET
+BT
+/F1-0 7.1 Tf
+8.52 TL
+ET
+BT
+1 0 0 1 88 271 Tm
+(AddNewRoom) Tj
+T*
+ET
+BT
+1 0 0 1 250 271 Tm
+(Create a new room and add it to the hotel system\056) Tj
+T*
+ET
+BT
+1 0 0 1 88 239 Tm
+(UpdateRoom) Tj
+T*
+ET
+BT
+1 0 0 1 250 239 Tm
+(Update room information such as type or price\056) Tj
+T*
+ET
+BT
+1 0 0 1 88 207 Tm
+(ViewAllRooms) Tj
+T*
+ET
+BT
+1 0 0 1 250 207 Tm
+(Display all rooms and their availability\056) Tj
+T*
+ET
+BT
+1 0 0 1 88 175 Tm
+(RegisterGuest) Tj
+T*
+ET
+BT
+1 0 0 1 250 175 Tm
+(Create a new guest record\056) Tj
+T*
+ET
+BT
+1 0 0 1 88 143 Tm
+(BookRoom) Tj
+T*
+ET
+BT
+1 0 0 1 250 143 Tm
+(Create a booking for selected guest and room\056) Tj
+T*
+ET
+BT
+1 0 0 1 88 111 Tm
+(CancelBooking) Tj
+T*
+ET
+BT
+1 0 0 1 250 111 Tm
+(Cancel booking and make the room available\056) Tj
+T*
+ET
+BT
+1 0 0 1 88 79 Tm
+(CheckIn) Tj
+T*
+ET
+BT
+1 0 0 1 250 79 Tm
+(Create a check\055in record when guest arrives\056) Tj
+T*
+ET
+Q
+
+
+endstream
+endobj
+34 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+35 0 obj
+<<
+/Contents 36 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font <<
+/F1 6 0 R
+/F1-0 37 0 R
+/F2 8 0 R
+/F3 9 0 R
+/F4 10 0 R
+/F5 11 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+36 0 obj
+<<
+/Length 2539
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+.05098 .105882 .164706 rg
+n 0 810.7087 595.2756 31.1811 re f*
+BT /F2 8 Tf 9.6 TL ET
+1 1 1 rg
+BT 1 0 0 1 56.69291 820.6299 Tm (Codeline Bootcamp  |  C# Backend Track  |  OOP Phase) Tj T* ET
+BT 1 0 0 1 437.6467 820.6299 Tm (Task 1 \227 System Analysis) Tj T* ET
+.05098 .105882 .164706 rg
+n 0 0 595.2756 24.09449 re f*
+BT /F1 8 Tf 9.6 TL ET
+1 1 1 rg
+BT 1 0 0 1 56.69291 7.937008 Tm (Think Business First  |  Extract Requirements  |  Design Before Code) Tj T* ET
+BT 1 0 0 1 513.2307 7.937008 Tm (Page 9) Tj T* ET
+Q
+q
+1 0 0 1 56.69291 701.3701 cm
+q
+.05098 .105882 .164706 rg
+n 0 92 481.8898 -28 re f*
+1 1 1 rg
+n 0 64 481.8898 -32 re f*
+.956863 .964706 .972549 rg
+n 0 32 481.8898 -32 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 7 72 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 3 Tm /F2 9 Tf 12 TL (#) Tj T* ET
+Q
+Q
+q
+1 0 0 1 35.91339 72 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 3 Tm /F2 9 Tf 12 TL (Service Name) Tj T* ET
+Q
+Q
+q
+1 0 0 1 199.7559 72 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 3 Tm /F2 9 Tf 12 TL (What it does) Tj T* ET
+Q
+Q
+q
+1 0 0 1 7 40 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (8) Tj T* ET
+Q
+Q
+q
+1 0 0 1 35.91339 40 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 199.7559 40 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (________________________________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 7 8 cm
+q
+.352941 .392157 .458824 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (9) Tj T* ET
+Q
+Q
+q
+1 0 0 1 35.91339 8 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (____________________________) Tj T* ET
+Q
+Q
+q
+1 0 0 1 199.7559 8 cm
+q
+.803922 .835294 .87451 rg
+BT 1 0 0 1 0 7 Tm /F1 9 Tf 16 TL (________________________________________________) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.803922 .835294 .87451 RG
+.5 w
+n 0 92 m 481.8898 92 l S
+n 0 64 m 0 92 l S
+n 0 0 m 0 64 l S
+n 481.8898 64 m 481.8898 92 l S
+n 481.8898 0 m 481.8898 64 l S
+n 0 0 m 481.8898 0 l S
+n 0 64 m 481.8898 64 l S
+n 28.91339 64 m 28.91339 92 l S
+n 192.7559 64 m 192.7559 92 l S
+n 0 32 m 481.8898 32 l S
+n 28.91339 0 m 28.91339 64 l S
+n 192.7559 0 m 192.7559 64 l S
+Q
+Q
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+0 0 0 rg
+BT
+/F1-0 7.1 Tf
+8.52 TL
+ET
+BT
+1 0 0 1 88 752 Tm
+(CheckOut) Tj
+T*
+ET
+BT
+1 0 0 1 250 752 Tm
+(Complete guest checkout and update room availability\056) Tj
+T*
+ET
+BT
+1 0 0 1 88 719 Tm
+(ViewBookings) Tj
+T*
+ET
+BT
+1 0 0 1 250 719 Tm
+(Display all booking records and their current status\056) Tj
+T*
+ET
+Q
+
+
+endstream
+endobj
+37 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+xref
+0 38
+0000000000 65535 f 
+0000000015 00000 n 
+0000000054 00000 n 
+0000000169 00000 n 
+0000000218 00000 n 
+0000000493 00000 n 
+0000001941 00000 n 
+0000002048 00000 n 
+0000002155 00000 n 
+0000002267 00000 n 
+0000002382 00000 n 
+0000002493 00000 n 
+0000002599 00000 n 
+0000002877 00000 n 
+0000011517 00000 n 
+0000011625 00000 n 
+0000011916 00000 n 
+0000022447 00000 n 
+0000022555 00000 n 
+0000022668 00000 n 
+0000022959 00000 n 
+0000034493 00000 n 
+0000034601 00000 n 
+0000034714 00000 n 
+0000034992 00000 n 
+0000043433 00000 n 
+0000043541 00000 n 
+0000043819 00000 n 
+0000050859 00000 n 
+0000050967 00000 n 
+0000051245 00000 n 
+0000060070 00000 n 
+0000060178 00000 n 
+0000060456 00000 n 
+0000071742 00000 n 
+0000071850 00000 n 
+0000072128 00000 n 
+0000074720 00000 n 
+trailer
+<<
+/Size 38
+/Root 3 0 R
+/Info 1 0 R
+>>
+startxref
+74828
+%%EOF
