@@ -215,7 +215,37 @@ namespace FlightManagementSystem
             Console.WriteLine("Pilot registered successfully. Assigned ID: " + pilotId);
             Console.ResetColor();
         }
-            static void Main(string[] args)
+        // ─────────────────────────────────────────────────────────────────────
+        // 04 — View All Flights
+        // Display all scheduled flights in the system
+        // ─────────────────────────────────────────────────────────────────────
+        public static void ViewAllFlights()
+        {
+            Console.WriteLine("\n=== View All Flights ===");
+
+            // Check if there are flights in the system
+            if (context.Flights.Count == 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("No flights found.");
+                Console.ResetColor();
+                return;
+            }
+
+            foreach (Flight flight in context.Flights)
+            {
+                Console.WriteLine("----------------------------------");
+                Console.WriteLine("Flight Code: " + flight.flightCode);
+                Console.WriteLine("Origin: " + flight.origin);
+                Console.WriteLine("Destination: " + flight.destination);
+                Console.WriteLine("Departure Date: " + flight.departureDate);
+                Console.WriteLine("Departure Time: " + flight.departureTime);
+                Console.WriteLine("Available Seats: " + flight.availableSeats);
+                Console.WriteLine("Ticket Price: " + flight.ticketPrice);
+                Console.WriteLine("Status: " + flight.status);
+            }
+        }
+        static void Main(string[] args)
         {
             bool exit = false;
             while (exit == false)
@@ -243,8 +273,8 @@ namespace FlightManagementSystem
                 {
                     case 1: RegisterPassenger(); break;
                     case 2: AddAircraft(); break;
-                    case 3:  RegisterPilot();break;
-                    case 4: Console.WriteLine("View All Flights"); break;
+                    case 3: RegisterPilot();break;
+                    case 4: ViewAllFlights(); break;
                     case 5: Console.WriteLine("Schedule Flight"); break;
                     case 6: Console.WriteLine("Book Flight"); break;
                     case 7: Console.WriteLine("Cancel Booking"); break;
