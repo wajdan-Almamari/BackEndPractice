@@ -6,9 +6,9 @@ namespace FlightManagementSystem.Models
 {
     public class Aircraft
     {
-        public int AircraftId { get; set; } //System Generated
-        public string Model { get; set; } //User Input
-        public int TotalSeats { get; set; } //User Input
-        public bool IsOperational { get; set; } //Default Value
+        public int aircraftId { get; set; } //System Generated
+        public string model { get; set; } //User Input
+        public int totalSeats { get; set; } //User Input
+        public bool isOperational { get; set; } //Default Value
     }
 }
