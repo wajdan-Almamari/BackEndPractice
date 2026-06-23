@@ -518,7 +518,6 @@ namespace FlightManagementSystem
                     Console.ReadKey();
                     Console.Clear();
                 }
-
             }//end of while
             Console.WriteLine("Goodbye!");
         }
