@@ -61,6 +61,7 @@ namespace FlightManagementSystem
                 }
 
             }//end of while
+            Console.WriteLine("Goodbye!");
         }
     }
 }
