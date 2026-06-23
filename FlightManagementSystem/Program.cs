@@ -22,16 +22,6 @@ namespace FlightManagementSystem
             "Doha",
             "Riyadh"
         };
-
-        // Available dates
-        public static List<string> departureDates = new List<string>
-        {
-          "25/06/2026",
-          "26/06/2026",
-          "27/06/2026",
-          "28/06/2026"
-         };
-
         // Available times
         public static List<string> departureTimes = new List<string>
          {
@@ -293,6 +283,7 @@ namespace FlightManagementSystem
         public static void ScheduleFlight()
         {
             Console.WriteLine("\n=== Schedule Flight ===");
+
             // Check if aircrafts exist before scheduling a flight
             if (context.Aircrafts.Count == 0)
             {
@@ -301,6 +292,7 @@ namespace FlightManagementSystem
                 Console.ResetColor();
                 return;
             }
+
             // Check if pilots exist before scheduling a flight
             if (context.Pilots.Count == 0)
             {
@@ -311,10 +303,10 @@ namespace FlightManagementSystem
             }
 
             Console.WriteLine("\nAvailable Operational Aircrafts:");
+
             // Display operational aircrafts available for assignment
             foreach (Aircraft aircraft in context.Aircrafts.Where(a => a.isOperational == true))
             {
-                // Select aircraft by ID
                 Console.WriteLine("ID: " + aircraft.aircraftId +
                                   " | Model: " + aircraft.model +
                                   " | Seats: " + aircraft.totalSeats);
@@ -323,8 +315,10 @@ namespace FlightManagementSystem
             Console.Write("Enter aircraft ID: ");
             int aircraftId = int.Parse(Console.ReadLine());
 
+            // Select aircraft by ID
             Aircraft selectedAircraft = context.Aircrafts
                 .FirstOrDefault(a => a.aircraftId == aircraftId && a.isOperational == true);
+
             // Validate selected aircraft
             if (selectedAircraft == null)
             {
@@ -333,8 +327,10 @@ namespace FlightManagementSystem
                 Console.ResetColor();
                 return;
             }
-            // Display available pilots
+
             Console.WriteLine("\nAvailable Pilots:");
+
+            // Display available pilots
             foreach (Pilot pilot in context.Pilots.Where(p => p.isAvailable == true))
             {
                 Console.WriteLine("ID: " + pilot.pilotId +
@@ -345,9 +341,11 @@ namespace FlightManagementSystem
             Console.Write("Enter pilot ID: ");
             int pilotId = int.Parse(Console.ReadLine());
 
+            // Select pilot by ID
             Pilot selectedPilot = context.Pilots
                 .FirstOrDefault(p => p.pilotId == pilotId && p.isAvailable == true);
 
+            // Validate selected pilot
             if (selectedPilot == null)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
@@ -356,29 +354,56 @@ namespace FlightManagementSystem
                 return;
             }
 
-            Console.Write("Enter origin: ");
-            string origin = Console.ReadLine();
+            // Display airport list for origin
+            Console.WriteLine("\nAvailable Airports:");
+            for (int i = 0; i < airports.Count; i++)
+            {
+                Console.WriteLine((i + 1) + ". " + airports[i]);
+            }
 
-            if (!IsValidText(origin))
+            Console.Write("Select origin: ");
+            int originChoice = int.Parse(Console.ReadLine());
+
+            if (originChoice < 1 || originChoice > airports.Count)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Origin cannot be empty.");
+                Console.WriteLine("Invalid origin choice.");
                 Console.ResetColor();
                 return;
             }
 
-            Console.Write("Enter destination: ");
-            string destination = Console.ReadLine();
+            string origin = airports[originChoice - 1];
 
-            if (!IsValidText(destination))
+            // Display airport list for destination
+            Console.WriteLine("\nAvailable Airports:");
+            for (int i = 0; i < airports.Count; i++)
+            {
+                Console.WriteLine((i + 1) + ". " + airports[i]);
+            }
+
+            Console.Write("Select destination: ");
+            int destinationChoice = int.Parse(Console.ReadLine());
+
+            if (destinationChoice < 1 || destinationChoice > airports.Count)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Destination cannot be empty.");
+                Console.WriteLine("Invalid destination choice.");
                 Console.ResetColor();
                 return;
             }
 
-            Console.Write("Enter departure date: ");
+            string destination = airports[destinationChoice - 1];
+
+            // Origin and destination cannot be the same
+            if (origin == destination)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Origin and destination cannot be the same.");
+                Console.ResetColor();
+                return;
+            }
+
+            Console.Write("Enter departure date (dd/MM/yyyy): ");
             string departureDate = Console.ReadLine();
 
             if (!IsValidText(departureDate))
@@ -389,16 +414,25 @@ namespace FlightManagementSystem
                 return;
             }
 
-            Console.Write("Enter departure time: ");
-            string departureTime = Console.ReadLine();
+            // Display departure time list
+            Console.WriteLine("\nAvailable Departure Times:");
+            for (int i = 0; i < departureTimes.Count; i++)
+            {
+                Console.WriteLine((i + 1) + ". " + departureTimes[i]);
+            }
 
-            if (!IsValidText(departureTime))
+            Console.Write("Select departure time: ");
+            int timeChoice = int.Parse(Console.ReadLine());
+
+            if (timeChoice < 1 || timeChoice > departureTimes.Count)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Departure time cannot be empty.");
+                Console.WriteLine("Invalid departure time choice.");
                 Console.ResetColor();
                 return;
             }
+
+            string departureTime = departureTimes[timeChoice - 1];
 
             Console.Write("Enter ticket price: ");
             decimal ticketPrice = decimal.Parse(Console.ReadLine());
@@ -411,8 +445,10 @@ namespace FlightManagementSystem
                 return;
             }
 
+            // Generate unique flight ID and flight code
             int flightId = context.Flights.Count + 1;
             string flightCode = "FL-" + flightId.ToString("000");
+
             // Create and store new flight record
             context.Flights.Add(new Flight
             {
@@ -429,13 +465,13 @@ namespace FlightManagementSystem
                 status = "Scheduled"
             });
 
+            // Mark pilot as unavailable after assigning him to this flight
             selectedPilot.isAvailable = false;
 
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Flight scheduled successfully. Flight Code: " + flightCode);
             Console.ResetColor();
         }
-
         static void Main(string[] args)
         {
             bool exit = false;
