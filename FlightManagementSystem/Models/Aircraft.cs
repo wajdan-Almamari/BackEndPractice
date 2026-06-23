@@ -4,7 +4,7 @@ using System.Text;
 
 namespace FlightManagementSystem.Models
 {
-    public class Aircraft
+    public class Aircraft//
     {
         public int AircraftId { get; set; }
         public string Model { get; set; }
