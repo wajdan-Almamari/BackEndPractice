@@ -4,11 +4,11 @@ using System.Text;
 
 namespace FlightManagementSystem.Models
 {
-    public class Aircraft//
+    public class Aircraft
     {
-        public int AircraftId { get; set; }
-        public string Model { get; set; }
-        public int TotalSeats { get; set; }
-        public bool IsOperational { get; set; }
+        public int AircraftId { get; set; } //System Generated
+        public string Model { get; set; } //User Input
+        public int TotalSeats { get; set; } //User Input
+        public bool IsOperational { get; set; } //Default Value
     }
 }
