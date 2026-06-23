@@ -14,6 +14,32 @@ namespace FlightManagementSystem
             Flights = new List<Flight>(),
             Bookings = new List<Booking>()
         };
+        // Available airports
+        public static List<string> airports = new List<string>
+        {
+            "Muscat",
+            "Dubai",
+            "Doha",
+            "Riyadh"
+        };
+
+        // Available dates
+        public static List<string> departureDates = new List<string>
+        {
+          "25/06/2026",
+          "26/06/2026",
+          "27/06/2026",
+          "28/06/2026"
+         };
+
+        // Available times
+        public static List<string> departureTimes = new List<string>
+         {
+          "08:00 AM",
+          "12:00 PM",
+          "06:00 PM",
+          "10:00 PM"
+          };
         public static bool IsValidText(string value)
         {
             return !string.IsNullOrWhiteSpace(value);
@@ -120,31 +146,46 @@ namespace FlightManagementSystem
                 return;
             }
             Console.Write("Enter total seats: ");
-            int totalSeats = int.Parse(Console.ReadLine());
+            int totalSeats;
 
-            if (totalSeats <= 0)
+            try
+            {
+                totalSeats = int.Parse(Console.ReadLine());
+
+                if (totalSeats <= 0)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Total seats must be greater than 0.");
+                    Console.ResetColor();
+                    return;
+                }
+            }
+            catch
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Total seats must be greater than 0.");
+                Console.WriteLine("Please enter a valid number.");
                 Console.ResetColor();
                 return;
             }
+
+
             // Generate unique aircraft ID
             int aircraftId = context.Aircrafts.Count + 1;
 
-            // Add aircraft to system storage
-            context.Aircrafts.Add(new Aircraft
-            {
-                aircraftId = aircraftId,
-                model = model,
-                totalSeats = totalSeats,
-                isOperational = true
-            });
-
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("Aircraft added successfully. Assigned ID: " + aircraftId);
-            Console.ResetColor();
-        }
+                // Add aircraft to system storage
+                context.Aircrafts.Add(new Aircraft
+                {
+                    aircraftId = aircraftId,
+                    model = model,
+                    totalSeats = totalSeats,
+                    isOperational = true
+                });
+            
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Aircraft added successfully. Assigned ID: " + aircraftId);
+                Console.ResetColor();
+            }
+        
         // ─────────────────────────────────────────────────────────────────────
         //  03 — Register Pilot
         // Register a new pilot and set availability to true by default
@@ -245,6 +286,156 @@ namespace FlightManagementSystem
                 Console.WriteLine("Status: " + flight.status);
             }
         }
+        // ─────────────────────────────────────────────────────────────────────
+        // 05 — Schedule Flight
+        // Create a new flight using an operational aircraft and available pilot
+        // ─────────────────────────────────────────────────────────────────────
+        public static void ScheduleFlight()
+        {
+            Console.WriteLine("\n=== Schedule Flight ===");
+            // Check if aircrafts exist before scheduling a flight
+            if (context.Aircrafts.Count == 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("No aircrafts found. Please add aircraft first.");
+                Console.ResetColor();
+                return;
+            }
+            // Check if pilots exist before scheduling a flight
+            if (context.Pilots.Count == 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("No pilots found. Please register pilot first.");
+                Console.ResetColor();
+                return;
+            }
+
+            Console.WriteLine("\nAvailable Operational Aircrafts:");
+            // Display operational aircrafts available for assignment
+            foreach (Aircraft aircraft in context.Aircrafts.Where(a => a.isOperational == true))
+            {
+                // Select aircraft by ID
+                Console.WriteLine("ID: " + aircraft.aircraftId +
+                                  " | Model: " + aircraft.model +
+                                  " | Seats: " + aircraft.totalSeats);
+            }
+
+            Console.Write("Enter aircraft ID: ");
+            int aircraftId = int.Parse(Console.ReadLine());
+
+            Aircraft selectedAircraft = context.Aircrafts
+                .FirstOrDefault(a => a.aircraftId == aircraftId && a.isOperational == true);
+            // Validate selected aircraft
+            if (selectedAircraft == null)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Aircraft not found or not operational.");
+                Console.ResetColor();
+                return;
+            }
+            // Display available pilots
+            Console.WriteLine("\nAvailable Pilots:");
+            foreach (Pilot pilot in context.Pilots.Where(p => p.isAvailable == true))
+            {
+                Console.WriteLine("ID: " + pilot.pilotId +
+                                  " | Name: " + pilot.pilotName +
+                                  " | Hours: " + pilot.flightHours);
+            }
+
+            Console.Write("Enter pilot ID: ");
+            int pilotId = int.Parse(Console.ReadLine());
+
+            Pilot selectedPilot = context.Pilots
+                .FirstOrDefault(p => p.pilotId == pilotId && p.isAvailable == true);
+
+            if (selectedPilot == null)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Pilot not found or not available.");
+                Console.ResetColor();
+                return;
+            }
+
+            Console.Write("Enter origin: ");
+            string origin = Console.ReadLine();
+
+            if (!IsValidText(origin))
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Origin cannot be empty.");
+                Console.ResetColor();
+                return;
+            }
+
+            Console.Write("Enter destination: ");
+            string destination = Console.ReadLine();
+
+            if (!IsValidText(destination))
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Destination cannot be empty.");
+                Console.ResetColor();
+                return;
+            }
+
+            Console.Write("Enter departure date: ");
+            string departureDate = Console.ReadLine();
+
+            if (!IsValidText(departureDate))
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Departure date cannot be empty.");
+                Console.ResetColor();
+                return;
+            }
+
+            Console.Write("Enter departure time: ");
+            string departureTime = Console.ReadLine();
+
+            if (!IsValidText(departureTime))
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Departure time cannot be empty.");
+                Console.ResetColor();
+                return;
+            }
+
+            Console.Write("Enter ticket price: ");
+            decimal ticketPrice = decimal.Parse(Console.ReadLine());
+
+            if (ticketPrice <= 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Ticket price must be greater than 0.");
+                Console.ResetColor();
+                return;
+            }
+
+            int flightId = context.Flights.Count + 1;
+            string flightCode = "FL-" + flightId.ToString("000");
+            // Create and store new flight record
+            context.Flights.Add(new Flight
+            {
+                flightId = flightId,
+                flightCode = flightCode,
+                aircraftId = aircraftId,
+                pilotId = pilotId,
+                origin = origin,
+                destination = destination,
+                departureDate = departureDate,
+                departureTime = departureTime,
+                ticketPrice = ticketPrice,
+                availableSeats = selectedAircraft.totalSeats,
+                status = "Scheduled"
+            });
+
+            selectedPilot.isAvailable = false;
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Flight scheduled successfully. Flight Code: " + flightCode);
+            Console.ResetColor();
+        }
+
         static void Main(string[] args)
         {
             bool exit = false;
@@ -275,7 +466,7 @@ namespace FlightManagementSystem
                     case 2: AddAircraft(); break;
                     case 3: RegisterPilot();break;
                     case 4: ViewAllFlights(); break;
-                    case 5: Console.WriteLine("Schedule Flight"); break;
+                    case 5: ScheduleFlight(); break;
                     case 6: Console.WriteLine("Book Flight"); break;
                     case 7: Console.WriteLine("Cancel Booking"); break;
                     case 8: Console.WriteLine("Depart Flight"); break;
