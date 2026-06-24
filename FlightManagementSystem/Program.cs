@@ -635,8 +635,35 @@ namespace FlightManagementSystem
                 Console.ResetColor();
                 return;
             }
+            // Prevent cancelling an already cancelled booking
+            if (selectedBooking.status == "Cancelled")
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("This booking is already cancelled.");
+                Console.ResetColor();
+                return;
+            }
+            // Find the flight linked to this booking
+            Flight selectedFlight = context.Flights.FirstOrDefault(f => f.flightId == selectedBooking.flightId);
+
+            if (selectedFlight == null)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Related flight not found.");
+                Console.ResetColor();
+                return;
+            }
+            // Update booking status
+            selectedBooking.status = "Cancelled";
+
+            // Return seat to the flight
+            selectedFlight.availableSeats++;
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Booking cancelled successfully. Seat returned to flight.");
+            Console.ResetColor();
         }
-            static void Main(string[] args)
+        static void Main(string[] args)
         {
             bool exit = false;
             while (exit == false)
