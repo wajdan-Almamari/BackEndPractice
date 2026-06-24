@@ -749,6 +749,63 @@ namespace FlightManagementSystem
             Console.WriteLine("Flight departed successfully. Pilot hours updated to: "+ selectedPilot.flightHours);
             Console.ResetColor();
         }
+        // ─────────────────────────────────────────────────────────────────────
+        // 09 — Cancel Flight
+        // Cancel a flight and all related bookings
+        // ─────────────────────────────────────────────────────────────────────
+        public static void CancelFlight()
+        {
+            Console.WriteLine("\n=== Cancel Flight ===");
+            if (context.Flights.Count == 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("No flights found.");
+                Console.ResetColor();
+                return;
+            }
+            Console.Write("Enter flight ID to cancel: ");
+            int flightId = int.Parse(Console.ReadLine());
+            // Find flight by ID
+
+            Flight selectedFlight = context.Flights.FirstOrDefault(f => f.flightId == flightId);
+
+            if (selectedFlight == null)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Flight not found.");
+                Console.ResetColor();
+                return;
+            }
+            // Mark flight as cancelled
+            selectedFlight.status = "Cancelled";
+            int affectedBookings = 0;
+
+            // Cancel all confirmed bookings linked to this flight
+            // Cancel all confirmed bookings linked to this flight
+            foreach (Booking booking in context.Bookings)
+            {
+                if (booking.flightId == flightId &&
+                    booking.status == "Confirmed")
+                {
+                    booking.status = "Cancelled";
+                    affectedBookings++;
+                }
+            }
+            // Find assigned pilot
+            Pilot selectedPilot = context.Pilots.FirstOrDefault(p => p.pilotId == selectedFlight.pilotId);
+
+            if (selectedPilot != null)
+            {
+                // Pilot becomes available again
+                selectedPilot.isAvailable = true;
+            }
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Flight cancelled successfully.");
+            Console.WriteLine("Affected bookings: " + affectedBookings);
+            Console.ResetColor();
+        }
+        
         static void Main(string[] args)
         {
             bool exit = false;
