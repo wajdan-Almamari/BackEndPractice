@@ -316,8 +316,7 @@ namespace FlightManagementSystem
             int aircraftId = int.Parse(Console.ReadLine());
 
             // Select aircraft by ID
-            Aircraft selectedAircraft = context.Aircrafts
-                .FirstOrDefault(a => a.aircraftId == aircraftId && a.isOperational == true);
+            Aircraft selectedAircraft = context.Aircrafts.FirstOrDefault(a => a.aircraftId == aircraftId && a.isOperational == true);
 
             // Validate selected aircraft
             if (selectedAircraft == null)
@@ -342,8 +341,7 @@ namespace FlightManagementSystem
             int pilotId = int.Parse(Console.ReadLine());
 
             // Select pilot by ID
-            Pilot selectedPilot = context.Pilots
-                .FirstOrDefault(p => p.pilotId == pilotId && p.isAvailable == true);
+            Pilot selectedPilot = context.Pilots.FirstOrDefault(p => p.pilotId == pilotId && p.isAvailable == true);
 
             // Validate selected pilot
             if (selectedPilot == null)
@@ -571,8 +569,7 @@ namespace FlightManagementSystem
             int flightId = int.Parse(Console.ReadLine());
 
             // Select flight from the available flights list
-            Flight selectedFlight = availableFlights
-                .FirstOrDefault(f => f.flightId == flightId);
+            Flight selectedFlight = availableFlights.FirstOrDefault(f => f.flightId == flightId);
 
             if (selectedFlight == null)
             {
@@ -609,8 +606,37 @@ namespace FlightManagementSystem
                               " | Total Price: " + selectedFlight.ticketPrice);
             Console.ResetColor();
         }
+        // ─────────────────────────────────────────────────────────────────────
+        // 07 — Cancel Booking
+        // Cancel a confirmed booking and return the seat to the flight
+        // ─────────────────────────────────────────────────────────────────────
+        public static void CancelBooking()
+        {
+            Console.WriteLine("\n=== Cancel Booking ===");
 
-        static void Main(string[] args)
+            // Check if bookings exist
+            if (context.Bookings.Count == 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("No bookings found.");
+                Console.ResetColor();
+                return;
+            }
+
+            Console.Write("Enter booking ID to cancel: ");
+            int bookingId = int.Parse(Console.ReadLine());
+            // Locate booking by ID
+            Booking selectedBooking = context.Bookings.FirstOrDefault(b => b.bookingId == bookingId);
+
+            if (selectedBooking == null)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Booking not found.");
+                Console.ResetColor();
+                return;
+            }
+        }
+            static void Main(string[] args)
         {
             bool exit = false;
             while (exit == false)
