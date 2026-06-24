@@ -499,8 +499,14 @@ namespace FlightManagementSystem
             }
 
             Console.Write("Enter passenger ID: ");
-            int passengerId = int.Parse(Console.ReadLine());
-
+            bool result = int.TryParse(Console.ReadLine(), out int passengerId);
+            if (!result)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Please enter a valid Passenger ID ..");
+                Console.ResetColor();
+                return;
+            }
             // Get passenger object by ID
             Passenger selectedPassenger = context.Passengers.FirstOrDefault(p => p.passengerId == passengerId);
 
