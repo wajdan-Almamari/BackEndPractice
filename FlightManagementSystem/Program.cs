@@ -805,9 +805,13 @@ namespace FlightManagementSystem
             Console.WriteLine("Affected bookings: " + affectedBookings);
             Console.ResetColor();
         }
-
+        // ─────────────────────────────────────────────────────────────────────
+        // 10 — Passenger Booking History
+        // Display all bookings for one passenger and total confirmed spending
+        // ─────────────────────────────────────────────────────────────────────
         public static void PassengerBookingHistory()
         {
+            Console.WriteLine("\n=== Passenger Booking History ===");
             Console.Write("Enter Passenger id : ");
             bool result = int.TryParse(Console.ReadLine(), out int passengerId);
             if (!result)
@@ -862,7 +866,22 @@ namespace FlightManagementSystem
             Console.WriteLine("----------------------------------");
             Console.WriteLine("Total amount spent on confirmed bookings: " + totalSpent);
         }
-            
+        // ─────────────────────────────────────────────────────────────────────
+        // 11 — Flight Revenue & Load Factor Report
+        // Display revenue and load factor for all flights
+        // ─────────────────────────────────────────────────────────────────────
+        public static void FlightRevenueReport()
+        {
+            Console.WriteLine("\n=== Flight Revenue & Load Factor Report ===");
+
+            if (context.Flights.Count == 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("No flights found.");
+                Console.ResetColor();
+                return;
+            }
+        }
             static void Main(string[] args)
         {
             bool exit = false;
