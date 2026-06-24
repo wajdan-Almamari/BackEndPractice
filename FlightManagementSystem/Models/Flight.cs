@@ -17,5 +17,6 @@ namespace FlightManagementSystem.Models
         public decimal ticketPrice { get; set; } // User Input
         public int availableSeats { get; set; } // Calculated
         public string status { get; set; } // Default Value
+        public int flightDuration { get; set; }
     }
 }

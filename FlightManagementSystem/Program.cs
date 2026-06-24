@@ -430,6 +430,18 @@ namespace FlightManagementSystem
             }
 
             string departureTime = departureTimes[timeChoice - 1];
+            // Enter flight duration in hours
+            Console.Write("Enter flight duration (hours): ");
+            int flightDuration = int.Parse(Console.ReadLine());
+
+            // Validate flight duration
+            if (flightDuration <= 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Flight duration must be greater than 0.");
+                Console.ResetColor();
+                return;
+            }
 
             Console.Write("Enter ticket price: ");
             decimal ticketPrice = decimal.Parse(Console.ReadLine());
@@ -457,6 +469,7 @@ namespace FlightManagementSystem
                 destination = destination,
                 departureDate = departureDate,
                 departureTime = departureTime,
+                flightDuration=flightDuration,
                 ticketPrice = ticketPrice,
                 availableSeats = selectedAircraft.totalSeats,
                 status = "Scheduled"
@@ -725,14 +738,15 @@ namespace FlightManagementSystem
                 return;
             }
 
+          
             // Update flight status
             selectedFlight.status = "Departed";
 
             // Add flight duration to pilot total flight hours
-            selectedPilot.flightHours += durationHours;
+            selectedPilot.flightHours += selectedFlight.flightDuration;
 
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("Flight departed successfully. Pilot hours updated.");
+            Console.WriteLine("Flight departed successfully. Pilot hours updated to: "+ selectedPilot.flightHours);
             Console.ResetColor();
         }
         static void Main(string[] args)
