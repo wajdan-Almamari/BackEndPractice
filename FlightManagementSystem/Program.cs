@@ -175,7 +175,6 @@ namespace FlightManagementSystem
                 Console.WriteLine("Aircraft added successfully. Assigned ID: " + aircraftId);
                 Console.ResetColor();
             }
-        
         // ─────────────────────────────────────────────────────────────────────
         //  03 — Register Pilot
         // Register a new pilot and set availability to true by default
@@ -663,6 +662,79 @@ namespace FlightManagementSystem
             Console.WriteLine("Booking cancelled successfully. Seat returned to flight.");
             Console.ResetColor();
         }
+        // ─────────────────────────────────────────────────────────────────────
+        // 08 — Depart Flight
+        // Mark a scheduled flight as departed and update pilot flight hours
+        // ─────────────────────────────────────────────────────────────────────
+        public static void DepartFlight()
+        {
+            Console.WriteLine("\n=== Depart Flight ===");
+
+            if (context.Flights.Count == 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("No flights found.");
+                Console.ResetColor();
+                return;
+            }
+
+            Console.WriteLine("\nScheduled Flights:");
+            foreach (Flight flight in context.Flights.Where(f => f.status == "Scheduled"))
+            {
+                Console.WriteLine("ID: " + flight.flightId +
+                                  " | Code: " + flight.flightCode +
+                                  " | From: " + flight.origin +
+                                  " | To: " + flight.destination +
+                                  " | Date: " + flight.departureDate +
+                                  " | Time: " + flight.departureTime);
+            }
+
+            Console.Write("Enter flight ID to depart: ");
+            int flightId = int.Parse(Console.ReadLine());
+
+            // Locate scheduled flight by ID
+            Flight selectedFlight = context.Flights.FirstOrDefault(f => f.flightId == flightId && f.status == "Scheduled");
+
+            if (selectedFlight == null)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Flight not found or not scheduled.");
+                Console.ResetColor();
+                return;
+            }
+
+            // Find the pilot assigned to this flight
+            Pilot selectedPilot = context.Pilots.FirstOrDefault(p => p.pilotId == selectedFlight.pilotId);
+
+            if (selectedPilot == null)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Assigned pilot not found.");
+                Console.ResetColor();
+                return;
+            }
+
+            Console.Write("Enter flight duration hours: ");
+            int durationHours = int.Parse(Console.ReadLine());
+
+            if (durationHours <= 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Flight duration must be greater than 0.");
+                Console.ResetColor();
+                return;
+            }
+
+            // Update flight status
+            selectedFlight.status = "Departed";
+
+            // Add flight duration to pilot total flight hours
+            selectedPilot.flightHours += durationHours;
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Flight departed successfully. Pilot hours updated.");
+            Console.ResetColor();
+        }
         static void Main(string[] args)
         {
             bool exit = false;
@@ -696,7 +768,7 @@ namespace FlightManagementSystem
                     case 5: ScheduleFlight(); break;
                     case 6: BookFlight(); break;
                     case 7: CancelBooking(); break;
-                    case 8: Console.WriteLine("Depart Flight"); break;
+                    case 8: DepartFlight();    break;
                     case 9: Console.WriteLine("Cancel Flight"); break;
                     case 10: Console.WriteLine("Passenger Booking History"); break;
                     case 11: Console.WriteLine("Flight Revenue Report"); break;
