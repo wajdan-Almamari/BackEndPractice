@@ -695,7 +695,7 @@ namespace FlightManagementSystem
                     case 4: ViewAllFlights(); break;
                     case 5: ScheduleFlight(); break;
                     case 6: BookFlight(); break;
-                    case 7: Console.WriteLine("Cancel Booking"); break;
+                    case 7: CancelBooking(); break;
                     case 8: Console.WriteLine("Depart Flight"); break;
                     case 9: Console.WriteLine("Cancel Flight"); break;
                     case 10: Console.WriteLine("Passenger Booking History"); break;
