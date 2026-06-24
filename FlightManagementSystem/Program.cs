@@ -805,8 +805,65 @@ namespace FlightManagementSystem
             Console.WriteLine("Affected bookings: " + affectedBookings);
             Console.ResetColor();
         }
-        
-        static void Main(string[] args)
+
+        public static void PassengerBookingHistory()
+        {
+            Console.Write("Enter Passenger id : ");
+            bool result = int.TryParse(Console.ReadLine(), out int passengerId);
+            if (!result)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Please enter a valid passenger ID.");
+                Console.ResetColor();
+                return;
+            }
+            // Find passenger by ID
+            Passenger selectedPassenger = context.Passengers.FirstOrDefault(p => p.passengerId == p.passengerId);
+            if (selectedPassenger == null)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Passenger not found.");
+                Console.ResetColor();
+                return;
+            }
+            // Get all bookings for this passenger
+            List<Booking> passengerBookings = context.Bookings.Where(b => b.passengerId == passengerId).ToList();
+            if (passengerBookings.Count == 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("No bookings found for this passenger.");
+                Console.ResetColor();
+                return;
+            }
+            decimal totalSpent = 0;
+            foreach (Booking booking in passengerBookings)
+            {
+                // Find flight related to this booking
+                Flight flight = context.Flights.FirstOrDefault(f => f.flightId == booking.flightId);
+                if (flight != null)
+                {
+                    Console.WriteLine("----------------------------------");
+                    Console.WriteLine("Flight Code: " + flight.flightCode);
+                    Console.WriteLine("Origin: " + flight.origin);
+                    Console.WriteLine("Destination: " + flight.destination);
+                    Console.WriteLine("Departure Date: " + flight.departureDate);
+                    Console.WriteLine("Seat Number: " + booking.seatNumber);
+                    Console.WriteLine("Price Paid: " + booking.totalPrice);
+                    Console.WriteLine("Booking Status: " + booking.status);
+
+                    // Add only confirmed booking prices to total
+                    if (booking.status == "Confirmed")
+                    {
+                        totalSpent += booking.totalPrice;
+                    }
+                }
+            }
+
+            Console.WriteLine("----------------------------------");
+            Console.WriteLine("Total amount spent on confirmed bookings: " + totalSpent);
+        }
+            
+            static void Main(string[] args)
         {
             bool exit = false;
             while (exit == false)
@@ -840,8 +897,8 @@ namespace FlightManagementSystem
                     case 6: BookFlight(); break;
                     case 7: CancelBooking(); break;
                     case 8: DepartFlight();    break;
-                    case 9: Console.WriteLine("Cancel Flight"); break;
-                    case 10: Console.WriteLine("Passenger Booking History"); break;
+                    case 9: PassengerBookingHistory(); break;
+                    case 10:PassengerBookingHistory(); break;
                     case 11: Console.WriteLine("Flight Revenue Report"); break;
                     case 0: exit = true; break;
                     default: Console.WriteLine("Invalid option. Please try again."); break;
