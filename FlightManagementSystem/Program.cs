@@ -288,7 +288,7 @@ namespace FlightManagementSystem
             if (context.Aircrafts.Count == 0)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("No aircrafts found. Please add aircraft first.");
+                Console.WriteLine("No aircrafts found.\n Please add aircraft first.");
                 Console.ResetColor();
                 return;
             }
@@ -297,7 +297,7 @@ namespace FlightManagementSystem
             if (context.Pilots.Count == 0)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("No pilots found. Please register pilot first.");
+                Console.WriteLine("No pilots found. \nPlease register pilot first.");
                 Console.ResetColor();
                 return;
             }
@@ -469,9 +469,141 @@ namespace FlightManagementSystem
             selectedPilot.isAvailable = false;
 
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("Flight scheduled successfully. Flight Code: " + flightCode);
+            Console.WriteLine("Flight scheduled successfully.\n Flight Code: " + flightCode);
             Console.ResetColor();
         }
+        // ─────────────────────────────────────────────────────────────────────
+        // 06 — Book Flight
+        // Create a booking for a passenger on a scheduled flight
+        // ─────────────────────────────────────────────────────────────────────
+        public static void BookFlight()
+        {
+            Console.WriteLine("\n=== Book Flight ===");
+
+            // Check if passengers exist
+            if (context.Passengers.Count == 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("No passengers found. \nPlease register passenger first.");
+                Console.ResetColor();
+                return;
+            }
+
+            // Check if flights exist
+            if (context.Flights.Count == 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("No flights found .. \nPlease schedule a flight first.");
+                Console.ResetColor();
+                return;
+            }
+
+            Console.Write("Enter passenger ID: ");
+            int passengerId = int.Parse(Console.ReadLine());
+
+            // Get passenger object by ID
+            Passenger selectedPassenger = context.Passengers.FirstOrDefault(p => p.passengerId == passengerId);
+
+            if (selectedPassenger == null)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Passenger not found.");
+                Console.ResetColor();
+                return;
+            }
+
+            // Display airport list for destination
+            Console.WriteLine("\nAvailable Destinations:");
+            for (int i = 0; i < airports.Count; i++)
+            {
+                Console.WriteLine((i + 1) + ". " + airports[i]);
+            }
+
+            Console.Write("Select destination: ");
+            int destinationChoice = int.Parse(Console.ReadLine());
+
+            if (destinationChoice < 1 || destinationChoice > airports.Count)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Invalid destination choice.");
+                Console.ResetColor();
+                return;
+            }
+
+            string destination = airports[destinationChoice - 1];
+
+            // Find scheduled flights to selected destination with available seats
+            List<Flight> availableFlights = context.Flights
+                .Where(f => f.destination == destination &&
+                            f.status == "Scheduled" &&
+                            f.availableSeats > 0)
+                .ToList();
+
+            if (availableFlights.Count == 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("No scheduled flights available to this destination.");
+                Console.ResetColor();
+                return;
+            }
+
+            Console.WriteLine("\nAvailable Flights:");
+
+            foreach (Flight flight in availableFlights)
+            {
+                Console.WriteLine("ID: " + flight.flightId +
+                                  " | Code: " + flight.flightCode +
+                                  " | From: " + flight.origin +
+                                  " | To: " + flight.destination +
+                                  " | Date: " + flight.departureDate +
+                                  " | Time: " + flight.departureTime +
+                                  " | Seats: " + flight.availableSeats +
+                                  " | Price: " + flight.ticketPrice);
+            }
+
+            Console.Write("Enter flight ID to book: ");
+            int flightId = int.Parse(Console.ReadLine());
+
+            // Select flight from the available flights list
+            Flight selectedFlight = availableFlights
+                .FirstOrDefault(f => f.flightId == flightId);
+
+            if (selectedFlight == null)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Invalid flight selection.");
+                Console.ResetColor();
+                return;
+            }
+
+            // Generate unique booking ID
+            int bookingId = context.Bookings.Count + 1;
+
+            // Generate simple seat number
+            string seatNumber = "S" + bookingId.ToString("000");
+
+            // Create booking record
+            context.Bookings.Add(new Booking
+            {
+                bookingId = bookingId,
+                passengerId = passengerId,
+                flightId = flightId,
+                seatNumber = seatNumber,
+                bookingDate = DateTime.Now.ToString("dd/MM/yyyy"),
+                totalPrice = selectedFlight.ticketPrice,
+                status = "Confirmed"
+            });
+
+            // Decrease available seats after confirmed booking
+            selectedFlight.availableSeats--;
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Booking created successfully. Booking ID: " + bookingId +
+                              " | Seat: " + seatNumber +
+                              " | Total Price: " + selectedFlight.ticketPrice);
+            Console.ResetColor();
+        }
+
         static void Main(string[] args)
         {
             bool exit = false;
@@ -503,7 +635,7 @@ namespace FlightManagementSystem
                     case 3: RegisterPilot();break;
                     case 4: ViewAllFlights(); break;
                     case 5: ScheduleFlight(); break;
-                    case 6: Console.WriteLine("Book Flight"); break;
+                    case 6: BookFlight(); break;
                     case 7: Console.WriteLine("Cancel Booking"); break;
                     case 8: Console.WriteLine("Depart Flight"); break;
                     case 9: Console.WriteLine("Cancel Flight"); break;
