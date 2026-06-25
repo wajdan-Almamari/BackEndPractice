@@ -881,30 +881,31 @@ namespace FlightManagementSystem
                 Console.ResetColor();
                 return;
             }
-
+            // Generate flight report with confirmed bookings and total revenue
             var report = context.Flights
                 .Select(f => new
                 {
                     flight = f,
-
+                    // Count confirmed bookings for this flight
                     confirmedBookings = context.Bookings
                         .Count(b => b.flightId == f.flightId && b.status == "Confirmed"),
-
+                    // Calculate total revenue from confirmed bookings
                     totalRevenue = context.Bookings
                         .Where(b => b.flightId == f.flightId && b.status == "Confirmed")
                         .Sum(b => b.totalPrice)
                 })
+                // Sort flights by highest revenue first
                 .OrderByDescending(x => x.totalRevenue)
                 .ToList();
-
+            // Store total revenue from all flights
             decimal grandTotalRevenue = 0;
-
+            // Display report for each flight
             foreach (var item in report)
             {
                 Flight flight = item.flight;
 
                 Aircraft aircraft = context.Aircrafts.FirstOrDefault(a => a.aircraftId == flight.aircraftId);
-
+                // Get total aircraft seats
                 int totalSeats = 0;
 
                 if (aircraft != null)
@@ -913,12 +914,12 @@ namespace FlightManagementSystem
                 }
 
                 double loadFactor = 0;
-
+                // Calculate flight load factor percentage
                 if (totalSeats > 0)
                 {
                     loadFactor = (double)item.confirmedBookings / totalSeats * 100;
                 }
-
+                // Add flight revenue to overall revenue
                 grandTotalRevenue += item.totalRevenue;
 
                 Console.WriteLine("----------------------------------");
