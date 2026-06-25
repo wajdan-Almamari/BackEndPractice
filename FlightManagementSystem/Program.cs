@@ -182,70 +182,72 @@ namespace FlightManagementSystem
         // ─────────────────────────────────────────────────────────────────────
         public static void RegisterPilot()
         {
-            Console.WriteLine("\n=== Register Pilot ===");
+           
 
-            Console.Write("Enter pilot name: ");
-            string name = Console.ReadLine();
+                Console.WriteLine("\n=== Register Pilot ===");
 
-            if (!IsValidText(name))
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Pilot name cannot be empty.");
-                Console.ResetColor();
-                return;
+                Console.Write("Enter pilot name: ");
+                string name = Console.ReadLine();
+
+                if (!IsValidText(name))
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Pilot name cannot be empty.");
+                    Console.ResetColor();
+                    return;
+                }
+
+                Console.Write("Enter pilot phone: ");
+                string phone = Console.ReadLine();
+
+                if (!IsValidText(phone))
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Pilot phone cannot be empty.");
+                    Console.ResetColor();
+                    return;
+                }
+
+                Console.Write("Enter license number: ");
+                string license = Console.ReadLine();
+
+                if (!IsValidText(license))
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("License number cannot be empty.");
+                    Console.ResetColor();
+                    return;
+                }
+
+                // Check if license number already exists
+                bool licenseExists = context.Pilots.Any(p => p.licenseNumber == license);
+
+                if (licenseExists)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("License number already exists.");
+                    Console.ResetColor();
+                    return;
+                }
+
+                // Generate unique pilot ID
+                int pilotId = context.Pilots.Count + 1;
+
+                // Add pilot to system storage
+                context.Pilots.Add(new Pilot
+                {
+                    pilotId = pilotId,
+                    pilotName = name,
+                    pilotPhone = phone,
+                    licenseNumber = license,
+                    flightHours = 0,
+                    isAvailable = true
+                });
+
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Pilot registered successfully. Assigned ID: " + pilotId);
+            
             }
-
-            Console.Write("Enter pilot phone: ");
-            string phone = Console.ReadLine();
-
-            if (!IsValidText(phone))
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Pilot phone cannot be empty.");
-                Console.ResetColor();
-                return;
-            }
-
-            Console.Write("Enter license number: ");
-            string license = Console.ReadLine();
-
-            if (!IsValidText(license))
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("License number cannot be empty.");
-                Console.ResetColor();
-                return;
-            }
-
-            // Check if license number already exists
-            bool licenseExists = context.Pilots.Any(p => p.licenseNumber == license);
-
-            if (licenseExists)
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("License number already exists.");
-                Console.ResetColor();
-                return;
-            }
-
-            // Generate unique pilot ID
-            int pilotId = context.Pilots.Count + 1;
-
-            // Add pilot to system storage
-            context.Pilots.Add(new Pilot
-            {
-                pilotId = pilotId,
-                pilotName = name,
-                pilotPhone = phone,
-                licenseNumber = license,
-                flightHours = 0,
-                isAvailable = true
-            });
-
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("Pilot registered successfully. Assigned ID: " + pilotId);
-            Console.ResetColor();
-        }
         // ─────────────────────────────────────────────────────────────────────
         // 04 — View All Flights
         // Display all scheduled flights in the system
