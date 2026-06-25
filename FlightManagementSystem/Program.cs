@@ -40,23 +40,24 @@ namespace FlightManagementSystem
         public static void RegisterPassenger()
         {
             Console.WriteLine("\n=== Register Passenger ===");
+            
             Console.Write("Enter passenger name: ");
             string name = Console.ReadLine();
             // Validate passenger name
-            if (!IsValidText(name))
+            if (!IsValidText(name) || name.Length <= 3)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Passenger name cannot be empty.");
+                Console.WriteLine("Passenger name must contain at least 3 characters");
                 Console.ResetColor();
                 return;
             }
             Console.Write("Enter passenger email: ");
             string email = Console.ReadLine();
 
-            if (!IsValidText(email))
+            if (!IsValidText(email)|| !email.Contains("@"))
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Passenger email cannot be empty.");
+                Console.WriteLine("Invalid email address");
                 Console.ResetColor();
                 return;
             }
@@ -727,18 +728,6 @@ namespace FlightManagementSystem
                 return;
             }
 
-            Console.Write("Enter flight duration hours: ");
-            int durationHours = int.Parse(Console.ReadLine());
-
-            if (durationHours <= 0)
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Flight duration must be greater than 0.");
-                Console.ResetColor();
-                return;
-            }
-
-          
             // Update flight status
             selectedFlight.status = "Departed";
 
