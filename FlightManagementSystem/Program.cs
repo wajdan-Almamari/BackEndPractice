@@ -811,7 +811,7 @@ namespace FlightManagementSystem
                 return;
             }
             // Find passenger by ID
-            Passenger selectedPassenger = context.Passengers.FirstOrDefault(p => p.passengerId == p.passengerId);
+            Passenger selectedPassenger = context.Passengers.FirstOrDefault(p => p.passengerId == passengerId);
             if (selectedPassenger == null)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
@@ -956,7 +956,7 @@ namespace FlightManagementSystem
                     case 6: BookFlight(); break;
                     case 7: CancelBooking(); break;
                     case 8: DepartFlight();    break;
-                    case 9: PassengerBookingHistory(); break;
+                    case 9: CancelFlight(); break;
                     case 10:PassengerBookingHistory(); break;
                     case 11: FlightRevenueReport(); break;
                     case 0: exit = true; break;
