@@ -882,9 +882,57 @@ namespace FlightManagementSystem
                 return;
             }
 
+            var report = context.Flights
+                .Select(f => new
+                {
+                    flight = f,
+
+                    confirmedBookings = context.Bookings
+                        .Count(b => b.flightId == f.flightId && b.status == "Confirmed"),
+
+                    totalRevenue = context.Bookings
+                        .Where(b => b.flightId == f.flightId && b.status == "Confirmed")
+                        .Sum(b => b.totalPrice)
+                })
+                .OrderByDescending(x => x.totalRevenue)
+                .ToList();
+
+            decimal grandTotalRevenue = 0;
+
+            foreach (var item in report)
+            {
+                Flight flight = item.flight;
+
+                Aircraft aircraft = context.Aircrafts.FirstOrDefault(a => a.aircraftId == flight.aircraftId);
+
+                int totalSeats = 0;
+
+                if (aircraft != null)
+                {
+                    totalSeats = aircraft.totalSeats;
+                }
+
+                double loadFactor = 0;
+
+                if (totalSeats > 0)
+                {
+                    loadFactor = (double)item.confirmedBookings / totalSeats * 100;
+                }
+
+                grandTotalRevenue += item.totalRevenue;
+
+                Console.WriteLine("----------------------------------");
+                Console.WriteLine("Flight Code: " + flight.flightCode);
+                Console.WriteLine("Route: " + flight.origin + " -> " + flight.destination);
+                Console.WriteLine("Confirmed Bookings: " + item.confirmedBookings);
+                Console.WriteLine("Total Revenue: " + item.totalRevenue);
+                Console.WriteLine("Load Factor: " + loadFactor.ToString("0.00") + "%");
+            }
+
+            Console.WriteLine("----------------------------------");
+            Console.WriteLine("Grand Total Revenue: " + grandTotalRevenue);
         }
-            
-            static void Main(string[] args)
+        static void Main(string[] args)
         {
             bool exit = false;
             while (exit == false)
@@ -920,7 +968,7 @@ namespace FlightManagementSystem
                     case 8: DepartFlight();    break;
                     case 9: PassengerBookingHistory(); break;
                     case 10:PassengerBookingHistory(); break;
-                    case 11: Console.WriteLine("Flight Revenue Report"); break;
+                    case 11: FlightRevenueReport(); break;
                     case 0: exit = true; break;
                     default: Console.WriteLine("Invalid option. Please try again."); break;
                 }
