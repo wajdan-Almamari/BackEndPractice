@@ -42,9 +42,9 @@ namespace FlightManagementSystem
             Console.WriteLine("\n=== Register Passenger ===");
             
             Console.Write("Enter passenger name: ");
-            string name = Console.ReadLine();
+            string name = Console.ReadLine().Trim();
             // Validate passenger name
-            if (!IsValidText(name) || name.Length <= 3)
+            if (!IsValidText(name) || name.Length < 3)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Passenger name must contain at least 3 characters");
@@ -52,7 +52,7 @@ namespace FlightManagementSystem
                 return;
             }
             Console.Write("Enter passenger email: ");
-            string email = Console.ReadLine();
+            string email = Console.ReadLine().Trim();
 
             if (!IsValidText(email)|| !email.Contains("@"))
             {
@@ -62,7 +62,7 @@ namespace FlightManagementSystem
                 return;
             }
             Console.Write("Enter passenger phone: ");
-            string phone = Console.ReadLine();
+            string phone = Console.ReadLine().Trim();
 
             if (!IsValidText(phone))
             {
@@ -72,7 +72,7 @@ namespace FlightManagementSystem
                 return;
             }
             Console.Write("Enter passport number: ");
-            string passport = Console.ReadLine();
+            string passport = Console.ReadLine().Trim();
 
             if (!IsValidText(passport))
             {
@@ -93,7 +93,7 @@ namespace FlightManagementSystem
             }
 
             Console.Write("Enter nationality: ");
-            string nationality = Console.ReadLine();
+            string nationality = Console.ReadLine().Trim();
 
             if (!IsValidText(nationality))
             {
@@ -127,7 +127,7 @@ namespace FlightManagementSystem
             Console.WriteLine("\n=== Add Aircraft ===");
 
             Console.Write("Enter aircraft model: ");
-            string model = Console.ReadLine();
+            string model = Console.ReadLine().Trim();
 
             if (!IsValidText(model))
             {
@@ -137,24 +137,18 @@ namespace FlightManagementSystem
                 return;
             }
             Console.Write("Enter total seats: ");
-            int totalSeats;
-
-            try
-            {
-                totalSeats = int.Parse(Console.ReadLine());
-
-                if (totalSeats <= 0)
-                {
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("Total seats must be greater than 0.");
-                    Console.ResetColor();
-                    return;
-                }
-            }
-            catch
+            if (!int.TryParse(Console.ReadLine(), out int totalSeats))
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Please enter a valid number.");
+                Console.ResetColor();
+                return;
+            }
+
+            if (totalSeats <= 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Total seats must be greater than 0.");
                 Console.ResetColor();
                 return;
             }
@@ -187,7 +181,7 @@ namespace FlightManagementSystem
                 Console.WriteLine("\n=== Register Pilot ===");
 
                 Console.Write("Enter pilot name: ");
-                string name = Console.ReadLine();
+                string name = Console.ReadLine().Trim();
 
                 if (!IsValidText(name))
                 {
@@ -198,7 +192,7 @@ namespace FlightManagementSystem
                 }
 
                 Console.Write("Enter pilot phone: ");
-                string phone = Console.ReadLine();
+                string phone = Console.ReadLine().Trim();
 
                 if (!IsValidText(phone))
                 {
@@ -209,7 +203,7 @@ namespace FlightManagementSystem
                 }
 
                 Console.Write("Enter license number: ");
-                string license = Console.ReadLine();
+                string license = Console.ReadLine().Trim();
 
                 if (!IsValidText(license))
                 {
@@ -315,7 +309,13 @@ namespace FlightManagementSystem
             }
 
             Console.Write("Enter aircraft ID: ");
-            int aircraftId = int.Parse(Console.ReadLine());
+            if(!int.TryParse(Console.ReadLine(),out int aircraftId))
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Invalid aircraft ID.");
+                Console.ResetColor();
+                return;
+            }
 
             // Select aircraft by ID
             Aircraft selectedAircraft = context.Aircrafts.FirstOrDefault(a => a.aircraftId == aircraftId && a.isOperational == true);
@@ -340,8 +340,13 @@ namespace FlightManagementSystem
             }
 
             Console.Write("Enter pilot ID: ");
-            int pilotId = int.Parse(Console.ReadLine());
-
+            if (!int.TryParse(Console.ReadLine(), out int pilotId))
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Invalid pilot ID.");
+                Console.ResetColor();
+                return;
+            }
             // Select pilot by ID
             Pilot selectedPilot = context.Pilots.FirstOrDefault(p => p.pilotId == pilotId && p.isAvailable == true);
 
@@ -362,8 +367,13 @@ namespace FlightManagementSystem
             }
 
             Console.Write("Select origin: ");
-            int originChoice = int.Parse(Console.ReadLine());
-
+            if (!int.TryParse(Console.ReadLine(), out int originChoice))
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Invalid origin choice.");
+                Console.ResetColor();
+                return;
+            }
             if (originChoice < 1 || originChoice > airports.Count)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
@@ -382,8 +392,13 @@ namespace FlightManagementSystem
             }
 
             Console.Write("Select destination: ");
-            int destinationChoice = int.Parse(Console.ReadLine());
-
+            if (!int.TryParse(Console.ReadLine(), out int destinationChoice))
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Invalid destination choice.");
+                Console.ResetColor();
+                return;
+            }
             if (destinationChoice < 1 || destinationChoice > airports.Count)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
@@ -404,12 +419,19 @@ namespace FlightManagementSystem
             }
 
             Console.Write("Enter departure date (dd/MM/yyyy): ");
-            string departureDate = Console.ReadLine();
-
-            if (!IsValidText(departureDate))
+            string departureDate = Console.ReadLine().Trim();
+            if (!DateTime.TryParse(departureDate, out DateTime departureDateTime))
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Departure date cannot be empty.");
+                Console.WriteLine("Invalid departure date.");
+                Console.ResetColor();
+                return;
+            }
+
+            if (departureDateTime.Date < DateTime.Today)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Departure date cannot be in the past.");
                 Console.ResetColor();
                 return;
             }
@@ -422,8 +444,13 @@ namespace FlightManagementSystem
             }
 
             Console.Write("Select departure time: ");
-            int timeChoice = int.Parse(Console.ReadLine());
-
+            if (!int.TryParse(Console.ReadLine(), out int timeChoice))
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Invalid departure time choice.");
+                Console.ResetColor();
+                return;
+            }
             if (timeChoice < 1 || timeChoice > departureTimes.Count)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
@@ -435,8 +462,13 @@ namespace FlightManagementSystem
             string departureTime = departureTimes[timeChoice - 1];
             // Enter flight duration in hours
             Console.Write("Enter flight duration (hours): ");
-            int flightDuration = int.Parse(Console.ReadLine());
-
+            if (!int.TryParse(Console.ReadLine(), out int flightDuration))
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Invalid flight duration.");
+                Console.ResetColor();
+                return;
+            }
             // Validate flight duration
             if (flightDuration <= 0)
             {
@@ -447,8 +479,13 @@ namespace FlightManagementSystem
             }
 
             Console.Write("Enter ticket price: ");
-            decimal ticketPrice = decimal.Parse(Console.ReadLine());
-
+            if (!decimal.TryParse(Console.ReadLine(), out decimal ticketPrice))
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Invalid ticket price.");
+                Console.ResetColor();
+                return;
+            }
             if (ticketPrice <= 0)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
@@ -539,7 +576,13 @@ namespace FlightManagementSystem
             }
 
             Console.Write("Select destination: ");
-            int destinationChoice = int.Parse(Console.ReadLine());
+            if (!int.TryParse(Console.ReadLine(), out int destinationChoice))
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Invalid destination choice.");
+                Console.ResetColor();
+                return;
+            }
 
             if (destinationChoice < 1 || destinationChoice > airports.Count)
             {
@@ -581,8 +624,13 @@ namespace FlightManagementSystem
             }
 
             Console.Write("Enter flight ID to book: ");
-            int flightId = int.Parse(Console.ReadLine());
-
+            if (!int.TryParse(Console.ReadLine(), out int flightId))
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Invalid flight ID.");
+                Console.ResetColor();
+                return;
+            }
             // Select flight from the available flights list
             Flight selectedFlight = availableFlights.FirstOrDefault(f => f.flightId == flightId);
 
@@ -639,7 +687,13 @@ namespace FlightManagementSystem
             }
 
             Console.Write("Enter booking ID to cancel: ");
-            int bookingId = int.Parse(Console.ReadLine());
+            if(!int.TryParse(Console.ReadLine(), out int bookingId))
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Invalid booking ID.");
+                Console.ResetColor();
+                return;
+            }
             // Locate booking by ID
             Booking selectedBooking = context.Bookings.FirstOrDefault(b => b.bookingId == bookingId);
 
@@ -706,8 +760,14 @@ namespace FlightManagementSystem
             }
 
             Console.Write("Enter flight ID to depart: ");
-            int flightId = int.Parse(Console.ReadLine());
-
+            // Validate flight ID input
+            if (!int.TryParse(Console.ReadLine(), out int flightId))
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Invalid flight ID.");
+                Console.ResetColor();
+                return;
+            }
             // Locate scheduled flight by ID
             Flight selectedFlight = context.Flights.FirstOrDefault(f => f.flightId == flightId && f.status == "Scheduled");
 
@@ -755,7 +815,13 @@ namespace FlightManagementSystem
                 return;
             }
             Console.Write("Enter flight ID to cancel: ");
-            int flightId = int.Parse(Console.ReadLine());
+            if (!int.TryParse(Console.ReadLine(), out int flightId))
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Invalid flight ID.");
+                Console.ResetColor();
+                return;
+            }           
             // Find flight by ID
 
             Flight selectedFlight = context.Flights.FirstOrDefault(f => f.flightId == flightId);
@@ -947,7 +1013,13 @@ namespace FlightManagementSystem
                 Console.WriteLine("========================================");
                 Console.Write("Select option: ");
 
-                int option = int.Parse(Console.ReadLine());
+                if (!int.TryParse(Console.ReadLine(), out int option))
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Invalid option.");
+                    Console.ResetColor();
+                    continue;
+                }
                 switch (option)
                 {
                     case 1: RegisterPassenger(); break;
