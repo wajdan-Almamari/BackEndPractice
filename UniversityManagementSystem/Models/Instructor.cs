@@ -30,10 +30,10 @@ namespace UniversityManagementSystem.Models
         [Required]
         [Range(typeof(decimal), "0.01", "79228162514264337593543950335")]
         public decimal salary { get; set; } //user input
-
+        
         [Required]
         [MaxLength(50)]
-        public string academicTitle { get; set; } //user input
+        public string academicTitle { get; set; } //user input -must be greater than 0
         public virtual ICollection<Course> Courses { get; set; } //navigation property
         public virtual Department? HeadDepartment { get; set; } //navigation property
     }
