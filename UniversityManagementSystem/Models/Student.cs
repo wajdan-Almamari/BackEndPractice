@@ -1,12 +1,13 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Text;
 
 namespace UniversityManagementSystem.Models
 {
+    [Index(nameof(email), IsUnique = true)]
     internal class Student
     {
         [Key]
@@ -15,25 +16,25 @@ namespace UniversityManagementSystem.Models
 
         [Required]
         [MaxLength(100)]
-        public string studentName { get; set; } //user input
+        public string fullName { get; set; } //user input
 
         [Required]
         [MaxLength(150)]
-        public string studentEmail { get; set; } //user input
+        public string email { get; set; } //user input
 
         [MaxLength(20)]
-        public string? studentPhoneNum { get; set; }//user input
+        public string? phoneNumber { get; set; } //user input
 
         [Required]
-        public DateTime studentBirthDate { get; set; }//user input
+        public DateTime dateOfBirth { get; set; } //user input
 
         [Required]
         [Range(2000, 2030)]
-        public int studentEnrollmentYear { get; set; }//user input
+        public int enrollmentYear { get; set; } //user input
 
-        [Range(0.0, 4.0)]
         [DefaultValue(0.0)]
-        public decimal studentGpa { get; set; }//default value
-
+        [Range(0.0, 4.0)]
+        public decimal gpa { get; set; } //default value
+        public virtual ICollection<Enrollment> Enrollments { get; set; } //navigation property
     }
 }

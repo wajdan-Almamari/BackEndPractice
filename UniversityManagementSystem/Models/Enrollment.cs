@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Text;
 
 namespace UniversityManagementSystem.Models
 {
@@ -11,27 +9,25 @@ namespace UniversityManagementSystem.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int enrollmentId { get; set; }
+        public int enrollmentId { get; set; } //system auto-generated
 
         [ForeignKey(nameof(Student))]
-        public int studentId { get; set; }
+        public int studentId { get; set; } //foreign key
         public Student student { get; set; }
 
         [ForeignKey(nameof(Course))]
-        public int courseId { get; set; }
+        public int courseId { get; set; } //foreign key
         public Course course { get; set; }
 
         [Required]
-        public DateTime enrollmentDate { get; set; }
+        public DateTime enrollmentDate { get; set; } //user input
 
         [MaxLength(2)]
-        [RegularExpression(@"^(A|A\+|A\-|B|B\+|B\-|C|C\-|C\+|D|D\-|D\+|F)$")]
-        public string? finalGrade { get; set; }
+        public string? finalGrade { get; set; } //user input
 
         [Required]
         [MaxLength(20)]
         [DefaultValue("In Progress")]
-        public string status { get; set; }
-
+        public string status { get; set; } //default value
     }
 }

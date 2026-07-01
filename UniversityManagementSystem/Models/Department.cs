@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Text;
 
 namespace UniversityManagementSystem.Models
 {
@@ -10,22 +8,24 @@ namespace UniversityManagementSystem.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int DepartmentId { get; set; } //auto-generated
+        public int departmentId { get; set; } //system auto-generated
 
         [Required]
         [MaxLength(100)]
-        public string DepartmentName { get; set; } //user input
+        public string departmentName { get; set; } //user input
 
         [MaxLength(50)]
-        public string? DepartmentBuildig { get; set; }//user input
+        public string? building { get; set; } //user input
 
         [Required]
-        [Range(typeof(decimal), "0.01", "79228162514264337593543950335", ErrorMessage = "Budget must be greater than 0.")]
-        public decimal DepartmentBudget { get; set; }//user input
+        [Range(typeof(decimal), "0", "79228162514264337593543950335")]
+        public decimal budget { get; set; } //user input
 
-        [ForeignKey(nameof(Instructor))]
-        public string? HeadInstructorId { get; set; } //foreign key (from list)
+        [ForeignKey("Instructor")]
+        public int? headInstructorId { get; set; } //foreign key
 
-        public Instructor Instructor { get; set; }
+        public Instructor? Instructor { get; set; } //navigation property
+
+        public ICollection<Course> Courses { get; set; } //navigation property
     }
 }

@@ -1,9 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Text;
 
 namespace UniversityManagementSystem.Models
 {
@@ -17,8 +15,7 @@ namespace UniversityManagementSystem.Models
         [Required]
         [MaxLength(10)]
         [RegularExpression(@"^[A-Z]+[0-9]+$")]
-
-        public string courseCode { get; set; } //system auto-generated
+        public string courseCode { get; set; } //user input
 
         [Required]
         [MaxLength(150)]
@@ -26,20 +23,20 @@ namespace UniversityManagementSystem.Models
 
         [Required]
         [Range(1, 6)]
-        public int courseCreditHours { get; set; }//user input
+        public int creditHours { get; set; } //user input
 
-        [ForeignKey(nameof(Department))] //to avoid renaming issue
-        //without ? means not null
-        public int DepartmentId { get; set; } //foreign key of the department (from list)
-        public Department department { get; set; }
+        [ForeignKey("Student")]
+        public int departmentId { get; set; } //foreign key
+        public Department department { get; set; } //navigation property
 
-        [ForeignKey(nameof(Instructor))]
-        //int? → Foreign key is optional(NULL allowed).
-        public int? instructorId { get; set; }//foreign key of the Instructor (from list)
-        public Instructor instructor { get; set; }
+        [ForeignKey(nameof(instructor))]
+        public int? instructorId { get; set; } //foreign key
+        public Instructor instructor { get; set; } //navigation property
 
         [Required]
         [MaxLength(20)]
-        public string courseSemesterOffered { get; set; }//user input
+        public string semesterOffered { get; set; } //user input
+
+        public ICollection<Enrollment> Enrollments { get; set; } //navigation property
     }
 }
