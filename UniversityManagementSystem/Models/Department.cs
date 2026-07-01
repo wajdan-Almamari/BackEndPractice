@@ -18,12 +18,13 @@ namespace UniversityManagementSystem.Models
         public string? building { get; set; } //user input
 
         [Required]
+        //[Range(0, double.MaxValue)]
         [Range(typeof(decimal), "0", "79228162514264337593543950335")]
         public decimal budget { get; set; } //user input
 
         [ForeignKey("Instructor")]
         public int? headInstructorId { get; set; } //foreign key
-        public Instructor? Instructor { get; set; } //navigation property
+        public Instructor? HeadInstructor { get; set; } //navigation property
         public ICollection<Course> Courses { get; set; } //navigation property
     }
 }
