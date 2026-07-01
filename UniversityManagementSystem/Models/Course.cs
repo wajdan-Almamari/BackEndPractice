@@ -25,11 +25,11 @@ namespace UniversityManagementSystem.Models
         [Range(1, 6)]
         public int creditHours { get; set; } //user input
 
-        [ForeignKey("Student")]
+        [ForeignKey("Department")]
         public int departmentId { get; set; } //foreign key
         public Department department { get; set; } //navigation property
 
-        [ForeignKey(nameof(instructor))]
+        [ForeignKey("Instructor")]
         public int? instructorId { get; set; } //foreign key
         public Instructor instructor { get; set; } //navigation property
 
