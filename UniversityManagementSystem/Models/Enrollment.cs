@@ -15,7 +15,7 @@ namespace UniversityManagementSystem.Models
         public int studentId { get; set; } //foreign key
         public Student student { get; set; }
 
-        [ForeignKey(nameof(Course))]
+        [ForeignKey("Course")]
         public int courseId { get; set; } //foreign key
         public Course course { get; set; }
 
