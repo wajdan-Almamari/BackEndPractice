@@ -1,9 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace UniversityManagementSystem.Models
 {
+    [Index(nameof(departmentName), IsUnique = true)]
     internal class Department
     {
         [Key]
