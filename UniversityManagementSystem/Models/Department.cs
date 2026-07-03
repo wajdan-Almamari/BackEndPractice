@@ -22,7 +22,7 @@ namespace UniversityManagementSystem.Models
         [Range(typeof(decimal), "0", "79228162514264337593543950335")]
         public decimal budget { get; set; } //user input
 
-        [ForeignKey("Instructor")]
+        [ForeignKey("HeadInstructor")]
         public int? headInstructorId { get; set; } //foreign key
         public Instructor? HeadInstructor { get; set; } //navigation property
         public ICollection<Course> Courses { get; set; } //navigation property
