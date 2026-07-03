@@ -32,9 +32,8 @@ namespace UniversityManagementSystem.Models
         [Range(2000, 2030)]
         public int enrollmentYear { get; set; } //user input
 
-        [DefaultValue(0.0)]
         [Range(0.0, 4.0)]
-        public decimal gpa { get; set; } //default value
+        public decimal gpa { get; set; } = 0.0m; //default value
         public virtual ICollection<Enrollment> Enrollments { get; set; } //navigation property
     }
 }
