@@ -8,44 +8,44 @@ using System.Text;
 
 namespace E_Commerce_SystemERD_Models.Models
 {
-   
-        [Index(nameof(username), IsUnique = true)]
-        [Index(nameof(email), IsUnique = true)]
-        public class User
-        {
-            [Key]
-            [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-            public int userId { get; set; } // system generated
+    [Table("Users")]
+    [Index(nameof(username), IsUnique = true)]
+    [Index(nameof(email), IsUnique = true)]
+    public class User
+    {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int userId { get; set; }   // System Generated
 
-            [Required]
-            [MaxLength(50)]
-            public string username { get; set; } // user input
+        [Required]
+        [MaxLength(50)]
+        public string username { get; set; }   // User Input
 
-            [Required]
-            [MaxLength(150)]
-            public string email { get; set; } // user input
+        [Required]
+        [MaxLength(150)]
+        public string email { get; set; }   // User Input
 
-            [Required]
-            [MaxLength(256)]
-            public string passwordHash { get; set; } // user input
+        [Required]
+        [MaxLength(256)]
+        public string passwordHash { get; set; }   // User Input
 
-            [Required]
-            [MaxLength(100)]
-            public string fullName { get; set; } // user input
+        [Required]
+        [MaxLength(100)]
+        public string fullName { get; set; }   // User Input
 
-            [MaxLength(20)]
-            public string? phoneNumber { get; set; } // user input
+        [MaxLength(20)]
+        public string? phoneNumber { get; set; }   // User Input
 
-            [MaxLength(300)]
-            public string? address { get; set; } // user input
+        [MaxLength(300)]
+        public string? address { get; set; }   // User Input
 
-            [Required]
-            public DateTime registrationDate { get; set; } // system generated
+        [Required]
+        public DateTime registrationDate { get; set; } = DateTime.Now;   // System Generated
 
-            [DefaultValue(true)]
-            public bool isActive { get; set; } // default value
+        public bool isActive { get; set; } = true;   // Default Value
 
-        }
+
+        public virtual ICollection<Order> Orders { get; set; }   // Naviagtion Property
+        public virtual ICollection<Review> Reviews { get; set; }   // Navigation Property
     }
-
-
+}
