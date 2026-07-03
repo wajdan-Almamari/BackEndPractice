@@ -1,0 +1,10 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace E_Commerce_SystemERD_Models.Models
+{
+    internal class Product
+    {
+    }
+}
