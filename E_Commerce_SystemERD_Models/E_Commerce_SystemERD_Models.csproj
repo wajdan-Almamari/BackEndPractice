@@ -23,6 +23,7 @@
 
   <ItemGroup>
     <Folder Include="ERD\" />
+    <Folder Include="ECommerceDB\" />
   </ItemGroup>
 
 </Project>
