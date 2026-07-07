@@ -22,5 +22,9 @@ namespace E_Commerce_SystemERD_Models.Models
         [Required]
         [Range(1, 999)]
         public int quantity { get; set; } // User Input
+
+        [Required]
+        [Column(TypeName = "decimal(10,2)")]
+        public decimal unitPrice { get; set; }
     }
 }
