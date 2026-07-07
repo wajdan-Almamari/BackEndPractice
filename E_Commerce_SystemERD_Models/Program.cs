@@ -482,6 +482,64 @@ namespace E_Commerce_SystemERD_Models
 
             Console.WriteLine("Review added successfully!");
         }
+        // ─────────────────────────────────────────────────────────────────────
+        // 05 — Update Product Price and Availability [UPDATE]
+        // Update product price and availability status.
+        // ─────────────────────────────────────────────────────────────────────
+        public static void UpdateProduct()
+        {
+            Console.WriteLine("\n=== Update Product ===");
+
+            if (!context.Products.Any())
+            {
+                Console.WriteLine("No products found.");
+                return;
+            }
+
+            // Display available products
+            foreach (var product in context.Products.ToList())
+            {
+                Console.WriteLine(
+                    $"ID: {product.productId} | Name: {product.productName} | Price: {product.price} | Available: {product.isAvailable}");
+            }
+
+            Console.Write("\nEnter Product ID: ");
+            int productId;
+
+            while (!int.TryParse(Console.ReadLine(), out productId))
+            {
+                Console.Write("Enter a valid Product ID: ");
+            }
+
+            // Find product
+            var selectedProduct = context.Products
+                .FirstOrDefault(p => p.productId == productId);
+
+            if (selectedProduct == null)
+            {
+                Console.WriteLine("Product not found.");
+                return;
+            }
+
+            Console.Write("Enter New Price: ");
+            decimal newPrice;
+
+            while (!decimal.TryParse(Console.ReadLine(), out newPrice) || newPrice < 0)
+            {
+                Console.Write("Enter a valid price: ");
+            }
+
+            Console.Write("Is Product Available? (y/n): ");
+            string answer = Console.ReadLine().ToLower();
+
+            // Update product price and availability            selectedProduct.price = newPrice;
+            selectedProduct.isAvailable = answer == "y";
+
+            // Save changes
+            context.SaveChanges();
+
+            Console.WriteLine("Product updated successfully.");
+        }
         static void Main(string[] args)
         {
             bool exit = false;
@@ -493,6 +551,7 @@ namespace E_Commerce_SystemERD_Models
                 Console.WriteLine("3 - Add Product");
                 Console.WriteLine("4 - Place an Order");
                 Console.WriteLine("5 - Write a Product Review");
+                Console.WriteLine("6 - Update Product Price and Availability");
                 Console.WriteLine("0 - Exit");
                 Console.Write("Select option: ");
 
@@ -510,6 +569,7 @@ namespace E_Commerce_SystemERD_Models
                     case 3: AddProduct();break;
                     case 4: PlaceOrder(); break;
                     case 5: WriteProductReview(); break;
+                    case 6: WriteProductReview(); break;
                     case 0:
                         exit = true;
                         break;
