@@ -11,10 +11,13 @@ namespace E_Commerce_SystemERD_Models
         // ─────────────────────────────────────────────────────────────────────
         public static void RegisterUser()
         {
+            // Get username from user
             Console.WriteLine("\n=== Register User ===");
 
             Console.Write("Enter username: ");
             string username = Console.ReadLine().Trim();
+
+            // Check if username already exists
             bool usernameFound = context.Users.Any(u => u.username == username);
 
             if (usernameFound)
@@ -104,6 +107,7 @@ namespace E_Commerce_SystemERD_Models
             Console.WriteLine("\n=== Add New Product ===");
 
             // Display all categories from database
+            ////tolist because it is dbset
             List<Category> categories = context.Categories.ToList();
 
             if (categories.Count == 0)
@@ -128,6 +132,7 @@ namespace E_Commerce_SystemERD_Models
                 Console.ResetColor();
                 return;
             }
+            // Validate selected category
             Category selectedCategory = categories.FirstOrDefault(c => c.categoryId == categoryId);
             if (selectedCategory == null)
             {
@@ -255,6 +260,8 @@ namespace E_Commerce_SystemERD_Models
                 return;
             }
             Console.WriteLine("\nAvailable Users :");
+
+            // Display available users
             foreach (var user in context.Users.ToList())
             {
                 Console.WriteLine($"User ID : {user.userId} | Username : {user.username}");
@@ -312,6 +319,7 @@ namespace E_Commerce_SystemERD_Models
             bool addMoreProducts = true;
             while (addMoreProducts)
             {
+                // Display available products
                 Console.WriteLine("\nAvailble Products: ");
                 foreach (var product in context.Products.ToList())
                 {
@@ -326,7 +334,7 @@ namespace E_Commerce_SystemERD_Models
                 }
 
                 var selectedProduct = context.Products.FirstOrDefault(p => p.productId == productId);
-
+                // Check if product exists
                 if (selectedProduct == null)
                 {
                     Console.WriteLine("Product not found.");
@@ -406,7 +414,7 @@ namespace E_Commerce_SystemERD_Models
                 Console.WriteLine("No products found.");
                 return;
             }
-
+            // Display available users
             Console.WriteLine("\nAvailable Users:");
             foreach (var user in context.Users.ToList())
             {
@@ -448,7 +456,7 @@ namespace E_Commerce_SystemERD_Models
                 Console.WriteLine("Product not found.");
                 return;
             }
-
+            // Validate rating between 1 and 5
             Console.Write("Enter Rating (1-5): ");
             int rating;
             while (!int.TryParse(Console.ReadLine(), out rating) || rating < 1 || rating > 5)
@@ -459,6 +467,7 @@ namespace E_Commerce_SystemERD_Models
             Console.Write("Enter Comment (optional): ");
             string comment = Console.ReadLine();
 
+            // Create review object
             Review review = new Review
             {
                 userId = userId,
@@ -467,7 +476,7 @@ namespace E_Commerce_SystemERD_Models
                 comment = comment,
                 reviewDate = DateTime.Now
             };
-
+            // Save review to database
             context.Reviews.Add(review);
             context.SaveChanges();
 
