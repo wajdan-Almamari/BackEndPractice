@@ -236,7 +236,128 @@ namespace E_Commerce_SystemERD_Models
             Console.WriteLine("Category added successfully.");
             Console.ResetColor();
         }
+        public static void PlaceOrder()
+        {
+            Console.WriteLine("\n=== Place an Order ===");
 
+            // Check if users exist
+            if (!context.Users.Any())
+            {
+                Console.WriteLine("No users found. Please register a user first.");
+                return;
+            }
+
+            // Check if products exist
+            if (!context.Products.Any())
+            {
+                Console.WriteLine("No products found. Please add products first.");
+                return;
+            }
+            Console.WriteLine("\nAvailable Users :");
+            foreach (var user in context.Users.ToList())
+            {
+                Console.WriteLine($"User ID : {user.userId} | Username : {user.username}");
+            }
+            Console.Write("\nEnter User ID: ");
+            int userId;
+            while (!int.TryParse(Console.ReadLine(), out userId))
+            {
+                Console.Write("Enter a valid User ID : ");
+            }
+            var selectedUser = context.Users.FirstOrDefault(u => u.userId == userId);
+            if (selectedUser == null)
+            {
+                Console.WriteLine("User not found ");
+                return;
+            }
+            // Create and save the order first to get orderId
+            Order newOrder = new Order
+            {
+                userId = userId,
+                orderDate = DateTime.Now,
+                totalAmount = 0,
+            };
+
+            context.Orders.Add(newOrder);
+            context.SaveChanges();
+
+            bool addMoreProducts = true;
+            while (addMoreProducts)
+            {
+                Console.WriteLine("\nAvailble Products: ");
+                foreach (var product in context.Products.ToList())
+                {
+                    Console.WriteLine(
+               $"Product ID: {product.productId} | Name: {product.productName} | Price: {product.price} | Stock: {product.stockQuantity}");
+                }
+                Console.Write("\nEnter Product ID: ");
+                int productId;
+                while (!int.TryParse(Console.ReadLine(), out productId))
+                {
+                    Console.Write("Enter a valid Product ID: ");
+                }
+
+                var selectedProduct = context.Products.FirstOrDefault(p => p.productId == productId);
+
+                if (selectedProduct == null)
+                {
+                    Console.WriteLine("Product not found.");
+                    continue;
+                }
+
+                if (selectedProduct.stockQuantity <= 0)
+                {
+                    Console.WriteLine("This product is out of stock.");
+                    continue;
+                }
+
+                Console.Write("Enter Quantity: ");
+                int quantity;
+                while (!int.TryParse(Console.ReadLine(), out quantity) || quantity <= 0)
+                {
+                    Console.Write("Enter a valid quantity: ");
+                }
+
+                if (quantity > selectedProduct.stockQuantity)
+                {
+                    Console.WriteLine("Not enough stock available.");
+                    continue;
+                }
+
+                // Create OrderItem record
+                OrderItem orderItem = new OrderItem
+                {
+                    orderId = newOrder.orderId,
+                    productId = selectedProduct.productId,
+                    quantity = quantity,
+                    unitPrice = selectedProduct.price
+                };
+
+                context.OrderItems.Add(orderItem);
+
+                // Update total amount
+                newOrder.totalAmount += selectedProduct.price * quantity;
+
+                // Reduce stock quantity
+                selectedProduct.stockQuantity -= quantity;
+
+                Console.WriteLine("Product added to order.");
+
+                Console.Write("\nDo you want to add another product? (y/n): ");
+                string answer = Console.ReadLine().ToLower();
+
+                if (answer != "y")
+                {
+                    addMoreProducts = false;
+                }
+            }
+
+            context.SaveChanges();
+
+            Console.WriteLine("\nOrder placed successfully!");
+            Console.WriteLine($"Order ID: {newOrder.orderId}");
+            Console.WriteLine($"Total Amount: {newOrder.totalAmount}");
+        }
         static void Main(string[] args)
         {
             bool exit = false;
@@ -246,6 +367,7 @@ namespace E_Commerce_SystemERD_Models
                 Console.WriteLine("1 - Register User");
                 Console.WriteLine("2 - Add Category(");
                 Console.WriteLine("3 - Add Product");
+                Console.WriteLine("4 - Place an Order");
                 Console.WriteLine("0 - Exit");
                 Console.Write("Select option: ");
 
@@ -265,6 +387,9 @@ namespace E_Commerce_SystemERD_Models
                         break;
                     case 3:
                         AddProduct();
+                        break;
+                    case 4:
+                        PlaceOrder();
                         break;
                     case 0:
                         exit = true;
