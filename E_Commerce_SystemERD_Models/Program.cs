@@ -532,7 +532,8 @@ namespace E_Commerce_SystemERD_Models
             Console.Write("Is Product Available? (y/n): ");
             string answer = Console.ReadLine().ToLower();
 
-            // Update product price and availability            selectedProduct.price = newPrice;
+            // Update product price and availability
+            selectedProduct.price = newPrice;
             selectedProduct.isAvailable = answer == "y";
 
             // Save changes
@@ -548,7 +549,7 @@ namespace E_Commerce_SystemERD_Models
                 Console.WriteLine("\n=== E-Commerce System ===");
                 Console.WriteLine("1 - Register User");
                 Console.WriteLine("2 - Add Category ");
-                Console.WriteLine("3 - Add Product");
+                Console.WriteLine("3 - Add a New Product to a Category");
                 Console.WriteLine("4 - Place an Order");
                 Console.WriteLine("5 - Write a Product Review");
                 Console.WriteLine("6 - Update Product Price and Availability");
@@ -569,7 +570,7 @@ namespace E_Commerce_SystemERD_Models
                     case 3: AddProduct();break;
                     case 4: PlaceOrder(); break;
                     case 5: WriteProductReview(); break;
-                    case 6: WriteProductReview(); break;
+                    case 6: UpdateProduct(); break;
                     case 0:
                         exit = true;
                         break;
