@@ -209,13 +209,43 @@ namespace E_Commerce_SystemERD_Models
             Console.ResetColor();
         }
 
-            static void Main(string[] args)
+        public static void AddCategory()
+        {
+            Console.WriteLine("\n=== Add Category ===");
+
+            Console.Write("Enter category name: ");
+            string categoryName = Console.ReadLine().Trim();
+
+            if (string.IsNullOrWhiteSpace(categoryName))
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Category name cannot be empty.");
+                Console.ResetColor();
+                return;
+            }
+
+            Category newCategory = new Category
+            {
+                categoryName = categoryName
+            };
+
+            context.Categories.Add(newCategory);
+            context.SaveChanges();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Category added successfully.");
+            Console.ResetColor();
+        }
+
+        static void Main(string[] args)
         {
             bool exit = false;
             while (exit == false)
             {
                 Console.WriteLine("\n=== E-Commerce System ===");
                 Console.WriteLine("1 - Register User");
+                Console.WriteLine("2 - Add Category(");
+                Console.WriteLine("3 - Add Product");
                 Console.WriteLine("0 - Exit");
                 Console.Write("Select option: ");
 
@@ -231,6 +261,10 @@ namespace E_Commerce_SystemERD_Models
                     case 1:
                         RegisterUser();break;
                     case 2:
+                        AddCategory();
+                        break;
+                    case 3:
+                        AddProduct();
                         break;
                     case 0:
                         exit = true;
