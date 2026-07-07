@@ -93,8 +93,122 @@ namespace E_Commerce_SystemERD_Models
                 Console.ResetColor();
             }
 
+        public static void AddProduct()
+        {
+            Console.WriteLine("\n=== Add New Product ===");
 
-        
+            // Display all categories from database
+            List<Category> categories = context.Categories.ToList();
+
+            if (categories.Count == 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("No categories found. Please add categories first.");
+                Console.ResetColor();
+                return;
+            }
+            Console.WriteLine("\nAvailable Categories:");
+            foreach (Category category in categories)
+            {
+                Console.WriteLine("ID: " + category.categoryId +
+                                  " | Name: " + category.categoryName);
+            }
+
+            Console.Write("Enter category ID: ");
+            if (!int.TryParse(Console.ReadLine(), out int categoryId))
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Invalid category ID.");
+                Console.ResetColor();
+                return;
+            }
+
+            Console.Write("Enter category ID: ");
+            if (!int.TryParse(Console.ReadLine(), out int catgoryId))
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Invalid category ID.");
+                Console.ResetColor();
+                return;
+            }
+            Category selectedCategory = categories.FirstOrDefault(c => c.categoryId == categoryId);
+            if (selectedCategory == null)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Category not found.");
+                Console.ResetColor();
+                return;
+            }
+            Console.Write("Enter product name: ");
+            string productName = Console.ReadLine().Trim();
+
+            if (string.IsNullOrWhiteSpace(productName))
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Product name cannot be empty.");
+                Console.ResetColor();
+                return;
+            }
+            Console.Write("Enter description: ");
+            string description = Console.ReadLine().Trim();
+
+            Console.Write("Enter price: ");
+            if (!decimal.TryParse(Console.ReadLine(), out decimal price))
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Invalid price.");
+                Console.ResetColor();
+                return;
+            }
+            if (price <= 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Price must be greater than 0.");
+                Console.ResetColor();
+                return;
+            }
+            Console.Write("Enter stock quantity: ");
+            if (!int.TryParse(Console.ReadLine(), out int stockQuantity))
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Invalid stock quantity.");
+                Console.ResetColor();
+                return;
+            }
+            if (stockQuantity < 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Stock quantity cannot be negative.");
+                Console.ResetColor();
+                return;
+            }
+            Console.Write("Enter image URL: ");
+            string imageUrl = Console.ReadLine().Trim();
+
+            // Create a new Product object from user inputs
+            Product newProduct = new Product
+            {
+                productName = productName,
+                description = description,
+                price = price,
+                stockQuantity = stockQuantity,
+                imageUrl = imageUrl,
+                categoryId = selectedCategory.categoryId,
+                createdAt = DateTime.Now,
+                isAvailable = true
+            };
+
+            // Add product to database
+            context.Products.Add(newProduct);
+
+            // Save changes to execute INSERT
+            context.SaveChanges();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Product added successfully. Assigned Product ID: " + newProduct.productId);
+            Console.ResetColor();
+        }
+
             static void Main(string[] args)
         {
             bool exit = false;
@@ -116,6 +230,8 @@ namespace E_Commerce_SystemERD_Models
                 {
                     case 1:
                         RegisterUser();break;
+                    case 2:
+                        break;
                     case 0:
                         exit = true;
                         break;
