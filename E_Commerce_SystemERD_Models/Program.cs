@@ -376,6 +376,88 @@ namespace E_Commerce_SystemERD_Models
             Console.WriteLine($"Order ID: {newOrder.orderId}");
             Console.WriteLine($"Total Amount: {newOrder.totalAmount}");
         }
+        public static void WriteProductReview()
+        {
+            Console.WriteLine("\n=== Write a Product Review ===");
+
+            if (!context.Users.Any())
+            {
+                Console.WriteLine("No users found.");
+                return;
+            }
+
+            if (!context.Products.Any())
+            {
+                Console.WriteLine("No products found.");
+                return;
+            }
+
+            Console.WriteLine("\nAvailable Users:");
+            foreach (var user in context.Users.ToList())
+            {
+                Console.WriteLine($"User ID: {user.userId} | Username: {user.username}");
+            }
+
+            Console.Write("\nEnter User ID: ");
+            int userId;
+            while (!int.TryParse(Console.ReadLine(), out userId))
+            {
+                Console.Write("Enter a valid User ID: ");
+            }
+
+            var selectedUser = context.Users.FirstOrDefault(u => u.userId == userId);
+
+            if (selectedUser == null)
+            {
+                Console.WriteLine("User not found.");
+                return;
+            }
+
+            Console.WriteLine("\nAvailable Products:");
+            foreach (var product in context.Products.ToList())
+            {
+                Console.WriteLine($"Product ID: {product.productId} | Name: {product.productName}");
+            }
+
+            Console.Write("\nEnter Product ID: ");
+            int productId;
+            while (!int.TryParse(Console.ReadLine(), out productId))
+            {
+                Console.Write("Enter a valid Product ID: ");
+            }
+
+            var selectedProduct = context.Products.FirstOrDefault(p => p.productId == productId);
+
+            if (selectedProduct == null)
+            {
+                Console.WriteLine("Product not found.");
+                return;
+            }
+
+            Console.Write("Enter Rating (1-5): ");
+            int rating;
+            while (!int.TryParse(Console.ReadLine(), out rating) || rating < 1 || rating > 5)
+            {
+                Console.Write("Enter a valid rating from 1 to 5: ");
+            }
+
+            Console.Write("Enter Comment (optional): ");
+            string comment = Console.ReadLine();
+
+            Review review = new Review
+            {
+                userId = userId,
+                productId = productId,
+                rating = rating,
+                comment = comment,
+                reviewDate = DateTime.Now
+            };
+
+            context.Reviews.Add(review);
+            context.SaveChanges();
+
+            Console.WriteLine("Review added successfully!");
+        }
         static void Main(string[] args)
         {
             bool exit = false;
@@ -386,6 +468,7 @@ namespace E_Commerce_SystemERD_Models
                 Console.WriteLine("2 - Add Category ");
                 Console.WriteLine("3 - Add Product");
                 Console.WriteLine("4 - Place an Order");
+                Console.WriteLine("5 - Write a Product Review");
                 Console.WriteLine("0 - Exit");
                 Console.Write("Select option: ");
 
@@ -398,17 +481,11 @@ namespace E_Commerce_SystemERD_Models
                 }
                 switch (option)
                 {
-                    case 1:
-                        RegisterUser();break;
-                    case 2:
-                        AddCategory();
-                        break;
-                    case 3:
-                        AddProduct();
-                        break;
-                    case 4:
-                        PlaceOrder();
-                        break;
+                    case 1: RegisterUser();break;
+                    case 2: AddCategory();break;
+                    case 3: AddProduct();break;
+                    case 4: PlaceOrder(); break;
+                    case 5: WriteProductReview(); break;
                     case 0:
                         exit = true;
                         break;
