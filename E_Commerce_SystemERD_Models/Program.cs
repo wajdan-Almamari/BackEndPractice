@@ -12,21 +12,32 @@ namespace E_Commerce_SystemERD_Models
 
             Console.Write("Enter username: ");
             string username = Console.ReadLine().Trim();
+            bool usernameFound = context.Users.Any(u => u.username == username);
 
-            if (string.IsNullOrWhiteSpace(username))
+            if (usernameFound)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Username cannot be empty.");
+                Console.WriteLine("Username already exists.");
                 Console.ResetColor();
                 return;
             }
 
             Console.Write("Enter email: ");
             string email = Console.ReadLine().Trim();
+
             if (string.IsNullOrWhiteSpace(email) || !email.Contains("@"))
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Invalid email address.");
+                Console.ResetColor();
+                return;
+            }
+            bool isEmailTaken = context.Users.Any(u => u.email == email);
+
+            if (isEmailTaken)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Email already exists.");
                 Console.ResetColor();
                 return;
             }
@@ -81,6 +92,7 @@ namespace E_Commerce_SystemERD_Models
                 Console.WriteLine("User registered successfully. Assigned User ID: " + newUser.userId);
                 Console.ResetColor();
             }
+
         
             static void Main(string[] args)
         {
