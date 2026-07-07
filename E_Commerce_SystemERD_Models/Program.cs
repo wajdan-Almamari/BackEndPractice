@@ -270,12 +270,39 @@ namespace E_Commerce_SystemERD_Models
                 Console.WriteLine("User not found ");
                 return;
             }
+            Console.Write("Enter Shipping Address: ");
+            string shippingAddress = Console.ReadLine();
+
+            Console.WriteLine("\nPayment Methods:");
+            Console.WriteLine("1 - Cash");
+            Console.WriteLine("2 - Card");
+
+            Console.Write("Choose Payment Method: ");
+            string choice = Console.ReadLine();
+
+            string paymentMethod = "";
+
+            if (choice == "1")
+            {
+                paymentMethod = "Cash";
+            }
+            else if (choice == "2")
+            {
+                paymentMethod = "Card";
+            }
+            else
+            {
+                Console.WriteLine("Invalid payment method.");
+                return;
+            }
             // Create and save the order first to get orderId
             Order newOrder = new Order
             {
                 userId = userId,
                 orderDate = DateTime.Now,
                 totalAmount = 0,
+                shippingAddress =shippingAddress,
+                paymentMethod =paymentMethod
             };
 
             context.Orders.Add(newOrder);
