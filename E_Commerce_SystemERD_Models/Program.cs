@@ -1,9 +1,88 @@
-﻿namespace E_Commerce_SystemERD_Models
+﻿using E_Commerce_SystemERD_Models.Models;
+
+namespace E_Commerce_SystemERD_Models
 {
     public class Program
     {
         public static ECommerceContext context = new ECommerceContext();
-        static void Main(string[] args)
+
+        public static void RegisterUser()
+        {
+            Console.WriteLine("\n=== Register User ===");
+
+            Console.Write("Enter username: ");
+            string username = Console.ReadLine().Trim();
+
+            if (string.IsNullOrWhiteSpace(username))
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Username cannot be empty.");
+                Console.ResetColor();
+                return;
+            }
+
+            Console.Write("Enter email: ");
+            string email = Console.ReadLine().Trim();
+            if (string.IsNullOrWhiteSpace(email) || !email.Contains("@"))
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Invalid email address.");
+                Console.ResetColor();
+                return;
+            }
+
+            Console.Write("Enter password: ");
+            string password = Console.ReadLine().Trim();
+            if (string.IsNullOrWhiteSpace(password))
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Password cannot be empty.");
+                Console.ResetColor();
+                return;
+            }
+                Console.Write("Enter full name: ");
+                string fullName = Console.ReadLine().Trim();
+                if (string.IsNullOrWhiteSpace(fullName))
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Full name cannot be empty.");
+                    Console.ResetColor();
+                    return;
+                }
+
+
+                Console.Write("Enter phone number: ");
+                string phoneNumber = Console.ReadLine().Trim();
+
+                Console.Write("Enter address: ");
+                string address = Console.ReadLine().Trim();
+
+
+                // Create a new User object from user inputs
+
+                User newUser = new User
+                {
+                    username = username,
+                    email = email,
+                    passwordHash = password,
+                    fullName = fullName,
+                    phoneNumber = phoneNumber,
+                    address = address,
+                    registrationDate = DateTime.Now,
+                    isActive = true
+                };
+                // Add user to database
+                context.Users.Add(newUser);
+
+                // Save changes to execute INSERT
+                context.SaveChanges();
+
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("User registered successfully. Assigned User ID: " + newUser.userId);
+                Console.ResetColor();
+            }
+        
+            static void Main(string[] args)
         {
             bool exit = false;
             while (exit == false)
@@ -23,8 +102,7 @@
                 switch (option)
                 {
                     case 1:
-                        break;
-
+                        RegisterUser();break;
                     case 0:
                         exit = true;
                         break;
