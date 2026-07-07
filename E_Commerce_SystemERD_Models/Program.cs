@@ -383,7 +383,7 @@ namespace E_Commerce_SystemERD_Models
             {
                 Console.WriteLine("\n=== E-Commerce System ===");
                 Console.WriteLine("1 - Register User");
-                Console.WriteLine("2 - Add Category(");
+                Console.WriteLine("2 - Add Category ");
                 Console.WriteLine("3 - Add Product");
                 Console.WriteLine("4 - Place an Order");
                 Console.WriteLine("0 - Exit");
