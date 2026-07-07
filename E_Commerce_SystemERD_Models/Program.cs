@@ -122,15 +122,6 @@ namespace E_Commerce_SystemERD_Models
                 Console.ResetColor();
                 return;
             }
-
-            Console.Write("Enter category ID: ");
-            if (!int.TryParse(Console.ReadLine(), out int catgoryId))
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Invalid category ID.");
-                Console.ResetColor();
-                return;
-            }
             Category selectedCategory = categories.FirstOrDefault(c => c.categoryId == categoryId);
             if (selectedCategory == null)
             {
