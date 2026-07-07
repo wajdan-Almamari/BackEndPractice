@@ -5,7 +5,10 @@ namespace E_Commerce_SystemERD_Models
     public class Program
     {
         public static ECommerceContext context = new ECommerceContext();
-
+        // ─────────────────────────────────────────────────────────────────────
+        // 01 — Register User [ADD]
+        // Register a new user and save user information.
+        // ─────────────────────────────────────────────────────────────────────
         public static void RegisterUser()
         {
             Console.WriteLine("\n=== Register User ===");
@@ -92,7 +95,10 @@ namespace E_Commerce_SystemERD_Models
                 Console.WriteLine("User registered successfully. Assigned User ID: " + newUser.userId);
                 Console.ResetColor();
             }
-
+        // ─────────────────────────────────────────────────────────────────────
+        // 02 — Add Product to Category [ADD]
+        // Create a new product and assign it to a selected category.
+        // ─────────────────────────────────────────────────────────────────────
         public static void AddProduct()
         {
             Console.WriteLine("\n=== Add New Product ===");
@@ -199,7 +205,6 @@ namespace E_Commerce_SystemERD_Models
             Console.WriteLine("Product added successfully. Assigned Product ID: " + newProduct.productId);
             Console.ResetColor();
         }
-
         public static void AddCategory()
         {
             Console.WriteLine("\n=== Add Category ===");
@@ -227,6 +232,11 @@ namespace E_Commerce_SystemERD_Models
             Console.WriteLine("Category added successfully.");
             Console.ResetColor();
         }
+        // ─────────────────────────────────────────────────────────────────────
+        // 03 — Place an Order [ADD]
+        // Create an order, add products, calculate total amount,
+        // and update product stock.
+        // ─────────────────────────────────────────────────────────────────────
         public static void PlaceOrder()
         {
             Console.WriteLine("\n=== Place an Order ===");
@@ -376,6 +386,11 @@ namespace E_Commerce_SystemERD_Models
             Console.WriteLine($"Order ID: {newOrder.orderId}");
             Console.WriteLine($"Total Amount: {newOrder.totalAmount}");
         }
+        // ─────────────────────────────────────────────────────────────────────
+        // 04 — Write a Product Review [ADD]
+        // Allow a user to submit a rating and optional comment for a product,
+        // then save the review date automatically.
+        // ─────────────────────────────────────────────────────────────────────
         public static void WriteProductReview()
         {
             Console.WriteLine("\n=== Write a Product Review ===");
