@@ -657,7 +657,11 @@ namespace E_Commerce_SystemERD_Models
                     $"Stock: {product.stockQuantity}");
             }
         }
-
+        // ─────────────────────────────────────────────────────────────────────
+        // 06 — Cancel an Order [UPDATE]
+        // Cancel a pending order and restore stock quantity for all products
+        // included in that order.
+        // ─────────────────────────────────────────────────────────────────────
         public static void CancelOrder()
         {
             Console.WriteLine("\n=== Cancel an Order ===");
@@ -698,6 +702,7 @@ namespace E_Commerce_SystemERD_Models
             context.SaveChanges();
             Console.WriteLine("Order cancelled successfully and stock restored.");
         }
+
         static void Main(string[] args)
         {
             bool exit = false;
