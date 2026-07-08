@@ -57,47 +57,47 @@ namespace E_Commerce_SystemERD_Models
                 Console.ResetColor();
                 return;
             }
-                Console.Write("Enter full name: ");
-                string fullName = Console.ReadLine().Trim();
-                if (string.IsNullOrWhiteSpace(fullName))
-                {
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("Full name cannot be empty.");
-                    Console.ResetColor();
-                    return;
-                }
-
-
-                Console.Write("Enter phone number: ");
-                string phoneNumber = Console.ReadLine().Trim();
-
-                Console.Write("Enter address: ");
-                string address = Console.ReadLine().Trim();
-
-
-                // Create a new User object from user inputs
-
-                User newUser = new User
-                {
-                    username = username,
-                    email = email,
-                    passwordHash = password,
-                    fullName = fullName,
-                    phoneNumber = phoneNumber,
-                    address = address,
-                    registrationDate = DateTime.Now,
-                    isActive = true
-                };
-                // Add user to database
-                context.Users.Add(newUser);
-
-                // Save changes to execute INSERT
-                context.SaveChanges();
-
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("User registered successfully. Assigned User ID: " + newUser.userId);
+            Console.Write("Enter full name: ");
+            string fullName = Console.ReadLine().Trim();
+            if (string.IsNullOrWhiteSpace(fullName))
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Full name cannot be empty.");
                 Console.ResetColor();
+                return;
             }
+
+
+            Console.Write("Enter phone number: ");
+            string phoneNumber = Console.ReadLine().Trim();
+
+            Console.Write("Enter address: ");
+            string address = Console.ReadLine().Trim();
+
+
+            // Create a new User object from user inputs
+
+            User newUser = new User
+            {
+                username = username,
+                email = email,
+                passwordHash = password,
+                fullName = fullName,
+                phoneNumber = phoneNumber,
+                address = address,
+                registrationDate = DateTime.Now,
+                isActive = true
+            };
+            // Add user to database
+            context.Users.Add(newUser);
+
+            // Save changes to execute INSERT
+            context.SaveChanges();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("User registered successfully. Assigned User ID: " + newUser.userId);
+            Console.ResetColor();
+        }
         // ─────────────────────────────────────────────────────────────────────
         // 02 — Add Product to Category [ADD]
         // Create a new product and assign it to a selected category.
@@ -309,8 +309,8 @@ namespace E_Commerce_SystemERD_Models
                 userId = userId,
                 orderDate = DateTime.Now,
                 totalAmount = 0,
-                shippingAddress =shippingAddress,
-                paymentMethod =paymentMethod
+                shippingAddress = shippingAddress,
+                paymentMethod = paymentMethod
             };
 
             context.Orders.Add(newOrder);
@@ -554,7 +554,7 @@ namespace E_Commerce_SystemERD_Models
                 return;
             }
             // Display available reviews
-            foreach(var review in context.Reviews.ToList())
+            foreach (var review in context.Reviews.ToList())
             {
                 Console.WriteLine(
             $"Review ID: {review.reviewId} | Rating: {review.rating} | Comment: {review.comment}");
@@ -631,9 +631,9 @@ namespace E_Commerce_SystemERD_Models
 
             Console.Write("Enter Maximum Price: ");
             decimal maxPrice = decimal.Parse(Console.ReadLine());
-            
+
             // Filter and sort products
-            var products = context.Products 
+            var products = context.Products
                 .Where(p =>
                            p.categoryId == categoryId &&
                            p.price >= minPrice &&
@@ -663,7 +663,11 @@ namespace E_Commerce_SystemERD_Models
             Console.WriteLine("\n=== Cancel an Order ===");
 
             Console.Write("Enter Order ID: ");
-            int orderId = int.Parse(Console.ReadLine());
+            int orderId;
+            while (!int.TryParse(Console.ReadLine(), out orderId)|| orderId <= 0)
+            {
+                Console.WriteLine("Enter a valid order Ide : ");
+            }
             // Find order by ID
             var order = context.Orders.FirstOrDefault(r=>r.orderId == orderId);
             if (order == null)
