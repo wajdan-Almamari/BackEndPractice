@@ -617,6 +617,12 @@ namespace E_Commerce_SystemERD_Models
         {
             Console.WriteLine("\n=== Filter Products by Category and Price Range ===");
 
+            // Display available categories
+            Console.WriteLine("\nAvailable Categories:");
+            foreach (var categroy in context.Categories.ToList())
+            {
+                Console.WriteLine($"{categroy.categoryId} - {categroy.categoryName}");
+            }
             Console.Write("Enter Category ID: ");
             int categoryId = int.Parse(Console.ReadLine());
 
@@ -625,7 +631,7 @@ namespace E_Commerce_SystemERD_Models
 
             Console.Write("Enter Maximum Price: ");
             decimal maxPrice = decimal.Parse(Console.ReadLine());
-
+            
             // Filter and sort products
             var products = context.Products 
                 .Where(p =>
