@@ -766,11 +766,13 @@ namespace E_Commerce_SystemERD_Models
                 .ThenInclude(o => o.OrderItems)
                 .ThenInclude(i => i.Product)
                 .FirstOrDefault(u => u.userId == userId);
+            // Check if user exists
             if (user == null)
             {
                 Console.WriteLine("User not found.");
                 return;
             }
+            // Check if user has any orders
             if (!user.Orders.Any())
             {
                 Console.WriteLine("No orders found for this user.");
@@ -780,11 +782,13 @@ namespace E_Commerce_SystemERD_Models
             Console.WriteLine($"\nOrder History for: {user.username}");
             foreach (var order in user.Orders)
             {
+                // Display order details
                 Console.WriteLine($"\nOrder ID: {order.orderId}");
                 Console.WriteLine($"Date: {order.orderDate}");
                 Console.WriteLine($"Status: {order.status}");
                 Console.WriteLine($"Total: {order.totalAmount} OMR");
 
+                // Display order items
                 Console.WriteLine("Items:");
 
                 foreach (var item in order.OrderItems)
