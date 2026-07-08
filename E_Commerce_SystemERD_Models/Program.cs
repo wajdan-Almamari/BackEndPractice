@@ -745,6 +745,58 @@ namespace E_Commerce_SystemERD_Models
                $"Stock: {product.stockQuantity}");
             }
         }
+        // ─────────────────────────────────────────────────────────────────────
+        // 11 — View Order History with Full Details [INCLUDE]
+        // Display a user's orders with order items and product details
+        // using Include and ThenInclude.
+        // ─────────────────────────────────────────────────────────────────────
+        public static void ViewOrderHistory()
+        {
+            Console.WriteLine("\n=== View Order History with Full Details ===");
+            Console.Write("Enter User ID: ");
+            int userId;
+            while (!int.TryParse(Console.ReadLine(), out userId) || userId <= 0)
+            {
+                Console.Write("Enter a valid User ID: ");
+            }
+
+            // Get user with orders, order items, and products in a single chained query
+            var user = context.Users
+                .Include(u => u.Orders)
+                .ThenInclude(o => o.OrderItems)
+                .ThenInclude(i => i.Product)
+                .FirstOrDefault(u => u.userId == userId);
+            if (user == null)
+            {
+                Console.WriteLine("User not found.");
+                return;
+            }
+            if (!user.Orders.Any())
+            {
+                Console.WriteLine("No orders found for this user.");
+                return;
+            }
+            // Display user order history
+            Console.WriteLine($"\nOrder History for: {user.username}");
+            foreach (var order in user.Orders)
+            {
+                Console.WriteLine($"\nOrder ID: {order.orderId}");
+                Console.WriteLine($"Date: {order.orderDate}");
+                Console.WriteLine($"Status: {order.status}");
+                Console.WriteLine($"Total: {order.totalAmount} OMR");
+
+                Console.WriteLine("Items:");
+
+                foreach (var item in order.OrderItems)
+                {
+                    Console.WriteLine(
+                        $"- Product: {item.Product.productName} | " +
+                        $"Unit Price: {item.unitPrice} OMR | " +
+                        $"Quantity: {item.quantity}");
+                }
+
+            }
+        }
         static void Main(string[] args)
         {
             bool exit = false;
@@ -761,7 +813,8 @@ namespace E_Commerce_SystemERD_Models
                 Console.WriteLine("7 - Delete a Review");
                 Console.WriteLine("8 - View All Products ");
                 Console.WriteLine("9 - Filter Products by Category and Price Range ");
-                Console.WriteLine("10 - Get Category with All Its Products");
+                Console.WriteLine("10- Get Category with All Its Products");
+                Console.WriteLine("11- View Order History with Full Details");
                 Console.WriteLine("0 - Exit");
                 Console.Write("Select option: ");
 
@@ -785,6 +838,7 @@ namespace E_Commerce_SystemERD_Models
                     case 8: ViewAllProducts(); break;
                     case 9: FilterProducts(); break;
                     case 10: GetCategoryWithProducts(); break;
+                    case 11: ViewOrderHistory(); break;
                     case 0:
                         exit = true;
                         break;
