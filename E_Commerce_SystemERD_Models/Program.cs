@@ -608,8 +608,49 @@ namespace E_Commerce_SystemERD_Models
                     $"Available: {product.isAvailable}");
             }
         }
+        // ─────────────────────────────────────────────────────────────────────
+        // 09 — Filter Products by Category and Price Range [FILTER]
+        // Display products from a selected category within a specified
+        // price range and sort them by price ascending.
+        // ─────────────────────────────────────────────────────────────────────
+        public static void FilterProducts()
+        {
+            Console.WriteLine("\n=== Filter Products by Category and Price Range ===");
 
-    
+            Console.Write("Enter Category ID: ");
+            int categoryId = int.Parse(Console.ReadLine());
+
+            Console.Write("Enter Minimum Price: ");
+            decimal minPrice = decimal.Parse(Console.ReadLine());
+
+            Console.Write("Enter Maximum Price: ");
+            decimal maxPrice = decimal.Parse(Console.ReadLine());
+
+            // Filter and sort products
+            var products = context.Products 
+                .Where(p =>
+                           p.categoryId == categoryId &&
+                           p.price >= minPrice &&
+                           p.price <= maxPrice)
+                .OrderBy(p => p.price)
+                .ToList();
+
+            if (!products.Any())
+            {
+                Console.WriteLine("No matching products found.");
+                return;
+            }
+            Console.WriteLine("\nFiltered Products:");
+
+            foreach (var product in products)
+            {
+                Console.WriteLine(
+                    $"ID: {product.productId} | " +
+                    $"Name: {product.productName} | " +
+                    $"Price: {product.price} OMR | " +
+                    $"Stock: {product.stockQuantity}");
+            }
+        }
         static void Main(string[] args)
         {
             bool exit = false;
@@ -624,6 +665,7 @@ namespace E_Commerce_SystemERD_Models
                 Console.WriteLine("6 - Update Product Price and Availability");
                 Console.WriteLine("7 - Delete a Review");
                 Console.WriteLine("8 - View All Products");
+                Console.WriteLine("9 - Filter Products by Category and Price Range");
                 Console.WriteLine("0 - Exit");
                 Console.Write("Select option: ");
 
@@ -644,6 +686,7 @@ namespace E_Commerce_SystemERD_Models
                     case 6: UpdateProduct(); break;
                     case 7: DeleteReview(); break;
                     case 8: ViewAllProducts(); break;
+                    case 9: FilterProducts(); break;
                     case 0:
                         exit = true;
                         break;
