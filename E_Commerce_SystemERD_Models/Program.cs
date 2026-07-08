@@ -12,7 +12,7 @@ namespace E_Commerce_SystemERD_Models
         public static void RegisterUser()
         {
             // Get username from user
-            Console.WriteLine("\n=== Register User ===");
+            Console.WriteLine("\n=== Register a New User ===");
 
             Console.Write("Enter username: ");
             string username = Console.ReadLine().Trim();
@@ -104,7 +104,7 @@ namespace E_Commerce_SystemERD_Models
         // ─────────────────────────────────────────────────────────────────────
         public static void AddProduct()
         {
-            Console.WriteLine("\n=== Add New Product ===");
+            Console.WriteLine("\n=== Add a New Product to a Category ===");
 
             // Display all categories from database
             ////tolist because it is dbset
@@ -488,7 +488,7 @@ namespace E_Commerce_SystemERD_Models
         // ─────────────────────────────────────────────────────────────────────
         public static void UpdateProduct()
         {
-            Console.WriteLine("\n=== Update Product ===");
+            Console.WriteLine("\n=== Update Product Price and Availability ===");
 
             if (!context.Products.Any())
             {
