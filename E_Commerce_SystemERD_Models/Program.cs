@@ -541,6 +541,45 @@ namespace E_Commerce_SystemERD_Models
 
             Console.WriteLine("Product updated successfully.");
         }
+        // ─────────────────────────────────────────────────────────────────────
+        // 07 — Delete a Review [DELETE]
+        // Delete a review by its ID and remove it from the database.
+        // ─────────────────────────────────────────────────────────────────────
+        public static void DeleteReview()
+        {
+            Console.WriteLine("\n=== Delete a Review ===");
+            if (!context.Reviews.Any())
+            {
+                Console.WriteLine("No reviews found.");
+                return;
+            }
+            // Display available reviews
+            foreach(var review in context.Reviews.ToList())
+            {
+                Console.WriteLine(
+            $"Review ID: {review.reviewId} | Rating: {review.rating} | Comment: {review.comment}");
+            }
+            Console.Write("\nEnter Review ID: ");
+            int reviewId;
+            while (!int.TryParse(Console.ReadLine(), out reviewId))
+            {
+                Console.Write("Enter a valid Review ID: ");
+            }
+            // Find review by ID
+            var reviewToDelete = context.Reviews.FirstOrDefault(r => r.reviewId == reviewId);
+            if (reviewToDelete == null)
+            {
+                Console.WriteLine("Review not found.");
+                return;
+            }
+            // Remove review from database
+            context.Reviews.Remove(reviewToDelete);
+            // Save changes
+            context.SaveChanges();
+            Console.WriteLine("Review deleted successfully.");
+        }
+       
+
         static void Main(string[] args)
         {
             bool exit = false;
@@ -553,6 +592,7 @@ namespace E_Commerce_SystemERD_Models
                 Console.WriteLine("4 - Place an Order");
                 Console.WriteLine("5 - Write a Product Review");
                 Console.WriteLine("6 - Update Product Price and Availability");
+                Console.WriteLine("7 - Delete a Review");
                 Console.WriteLine("0 - Exit");
                 Console.Write("Select option: ");
 
@@ -571,6 +611,7 @@ namespace E_Commerce_SystemERD_Models
                     case 4: PlaceOrder(); break;
                     case 5: WriteProductReview(); break;
                     case 6: UpdateProduct(); break;
+                    case 7: DeleteReview(); break;
                     case 0:
                         exit = true;
                         break;
