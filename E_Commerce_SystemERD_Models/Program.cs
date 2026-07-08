@@ -578,8 +578,38 @@ namespace E_Commerce_SystemERD_Models
             context.SaveChanges();
             Console.WriteLine("Review deleted successfully.");
         }
-       
+        // ─────────────────────────────────────────────────────────────────────
+        // 08 — View All Products [GET-ALL]
+        // Display all products with their name, price, stock quantity,
+        // and availability status.
+        // ─────────────────────────────────────────────────────────────────────
+        public static void ViewAllProducts()
+        {
+            Console.WriteLine("\n=== View All Products ===");
 
+            // Retrieve all products
+            var products = context.Products.ToList();
+            if (!products.Any())
+            {
+                Console.WriteLine("No products found.");
+                return;
+            }
+
+            Console.WriteLine("\nProducts List:");
+            Console.WriteLine("-------------------------------------------------------------");
+
+            foreach (var product in products)
+            {
+                Console.WriteLine(
+                    $"ID: {product.productId} | " +
+                    $"Name: {product.productName} | " +
+                    $"Price: {product.price} OMR | " +
+                    $"Stock: {product.stockQuantity} | " +
+                    $"Available: {product.isAvailable}");
+            }
+        }
+
+    
         static void Main(string[] args)
         {
             bool exit = false;
@@ -593,6 +623,7 @@ namespace E_Commerce_SystemERD_Models
                 Console.WriteLine("5 - Write a Product Review");
                 Console.WriteLine("6 - Update Product Price and Availability");
                 Console.WriteLine("7 - Delete a Review");
+                Console.WriteLine("8 - View All Products");
                 Console.WriteLine("0 - Exit");
                 Console.Write("Select option: ");
 
@@ -612,6 +643,7 @@ namespace E_Commerce_SystemERD_Models
                     case 5: WriteProductReview(); break;
                     case 6: UpdateProduct(); break;
                     case 7: DeleteReview(); break;
+                    case 8: ViewAllProducts(); break;
                     case 0:
                         exit = true;
                         break;
