@@ -210,33 +210,33 @@ namespace E_Commerce_SystemERD_Models
             Console.WriteLine("Product added successfully. Assigned Product ID: " + newProduct.productId);
             Console.ResetColor();
         }
-        public static void AddCategory()
-        {
-            Console.WriteLine("\n=== Add Category ===");
+        //public static void AddCategory()
+        //{
+        //    Console.WriteLine("\n=== Add Category ===");
 
-            Console.Write("Enter category name: ");
-            string categoryName = Console.ReadLine().Trim();
+        //    Console.Write("Enter category name: ");
+        //    string categoryName = Console.ReadLine().Trim();
 
-            if (string.IsNullOrWhiteSpace(categoryName))
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Category name cannot be empty.");
-                Console.ResetColor();
-                return;
-            }
+        //    if (string.IsNullOrWhiteSpace(categoryName))
+        //    {
+        //        Console.ForegroundColor = ConsoleColor.Red;
+        //        Console.WriteLine("Category name cannot be empty.");
+        //        Console.ResetColor();
+        //        return;
+        //    }
 
-            Category newCategory = new Category
-            {
-                categoryName = categoryName
-            };
+        //    Category newCategory = new Category
+        //    {
+        //        categoryName = categoryName
+        //    };
 
-            context.Categories.Add(newCategory);
-            context.SaveChanges();
+        //    context.Categories.Add(newCategory);
+        //    context.SaveChanges();
 
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("Category added successfully.");
-            Console.ResetColor();
-        }
+        //    Console.ForegroundColor = ConsoleColor.Green;
+        //    Console.WriteLine("Category added successfully.");
+        //    Console.ResetColor();
+        //}
         // ─────────────────────────────────────────────────────────────────────
         // 03 — Place an Order [ADD]
         // Create an order, add products, calculate total amount,
@@ -657,6 +657,43 @@ namespace E_Commerce_SystemERD_Models
                     $"Stock: {product.stockQuantity}");
             }
         }
+
+        public static void CancelOrder()
+        {
+            Console.WriteLine("\n=== Cancel an Order ===");
+
+            Console.Write("Enter Order ID: ");
+            int orderId = int.Parse(Console.ReadLine());
+            // Find order by ID
+            var order = context.Orders.FirstOrDefault(r=>r.orderId == orderId);
+            if (order == null)
+            {
+                Console.WriteLine("Order not found.");
+                return;
+            }
+            if(order.status != "Pending")
+            {
+                Console.WriteLine("Only pending orders can be cancelled.");
+                return;
+            }
+            // Load all order items for this order
+            var orderItems = context.OrderItems
+                .Where(o=> o.orderId == orderId)
+                .ToList();
+            // Restore stock quantity for each product in the order
+            foreach (var item in orderItems)
+            {
+                var product = context.Products.FirstOrDefault(p => p.productId == item.productId); 
+                if (product != null)
+                {
+                    product.stockQuantity += item.quantity;
+                }
+            }
+            // Update order status
+            order.status = "Cancelled";
+            context.SaveChanges();
+            Console.WriteLine("Order cancelled successfully and stock restored.");
+        }
         static void Main(string[] args)
         {
             bool exit = false;
@@ -664,14 +701,15 @@ namespace E_Commerce_SystemERD_Models
             {
                 Console.WriteLine("\n=== E-Commerce System ===");
                 Console.WriteLine("1 - Register User");
-                Console.WriteLine("2 - Add Category ");
-                Console.WriteLine("3 - Add a New Product to a Category");
-                Console.WriteLine("4 - Place an Order");
-                Console.WriteLine("5 - Write a Product Review");
-                Console.WriteLine("6 - Update Product Price and Availability");
+                //Console.WriteLine("2 - Add Category ");
+                Console.WriteLine("2 - Add a New Product to a Category");
+                Console.WriteLine("3 - Place an Order");
+                Console.WriteLine("4 - Write a Product Review");
+                Console.WriteLine("5 - Update Product Price and Availability");
+                Console.WriteLine("6 - Cancel an Order");
                 Console.WriteLine("7 - Delete a Review");
-                Console.WriteLine("8 - View All Products");
-                Console.WriteLine("9 - Filter Products by Category and Price Range");
+                Console.WriteLine("8 - View All Products ");
+                Console.WriteLine("9 - Filter Products by Category and Price Range ");
                 Console.WriteLine("0 - Exit");
                 Console.Write("Select option: ");
 
@@ -685,11 +723,12 @@ namespace E_Commerce_SystemERD_Models
                 switch (option)
                 {
                     case 1: RegisterUser();break;
-                    case 2: AddCategory();break;
-                    case 3: AddProduct();break;
-                    case 4: PlaceOrder(); break;
-                    case 5: WriteProductReview(); break;
-                    case 6: UpdateProduct(); break;
+                    //case 2: AddCategory();break;
+                    case 2: AddProduct();break;
+                    case 3: PlaceOrder(); break;
+                    case 4: WriteProductReview(); break;
+                    case 5: UpdateProduct(); break;
+                    case 6: CancelOrder(); break;
                     case 7: DeleteReview(); break;
                     case 8: ViewAllProducts(); break;
                     case 9: FilterProducts(); break;
