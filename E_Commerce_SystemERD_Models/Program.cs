@@ -829,6 +829,17 @@ namespace E_Commerce_SystemERD_Models
                     $"Average Rating: {item.AvgRating} | " +
                     $"Stock: {item.Stock}");
             }
+            // Part B: Lazy Loading demo
+            var product = context.Products.FirstOrDefault();
+            if (product == null)
+            {
+                Console.WriteLine("No products found.");
+                return;
+            }
+            Console.WriteLine($"\nLazy Loading Demo Product: {product.productName}");
+            // Second query fires here when Reviews is accessed
+            var reviews = product.Reviews.ToList();
+            Console.WriteLine($"Review Count: {reviews.Count}");
 
         }
 
@@ -850,6 +861,7 @@ namespace E_Commerce_SystemERD_Models
                 Console.WriteLine("9 - Filter Products by Category and Price Range ");
                 Console.WriteLine("10- Get Category with All Its Products");
                 Console.WriteLine("11- View Order History with Full Details");
+                Console.WriteLine("12- Product Summary Report ");
                 Console.WriteLine("0 - Exit");
                 Console.Write("Select option: ");
 
@@ -874,6 +886,7 @@ namespace E_Commerce_SystemERD_Models
                     case 9: FilterProducts(); break;
                     case 10: GetCategoryWithProducts(); break;
                     case 11: ViewOrderHistory(); break;
+                    case 12: ViewOrderHistory(); break;
                     case 0:
                         exit = true;
                         break;
