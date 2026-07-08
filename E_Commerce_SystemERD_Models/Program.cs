@@ -1,4 +1,5 @@
 ﻿using E_Commerce_SystemERD_Models.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace E_Commerce_SystemERD_Models
 {
@@ -702,7 +703,48 @@ namespace E_Commerce_SystemERD_Models
             context.SaveChanges();
             Console.WriteLine("Order cancelled successfully and stock restored.");
         }
-
+        // ─────────────────────────────────────────────────────────────────────
+        // 10 — Get Category with All Its Products [INCLUDE]
+        // Display a category and all products that belong to it using
+        // eager loading with Include().
+        // ─────────────────────────────────────────────────────────────────────
+        public static void GetCategoryWithProducts()
+        {
+            Console.WriteLine("\n=== Get Category with All Its Products ===");
+            Console.Write("Enter Category ID: ");
+            int categoryId;
+            while (!int.TryParse(Console.ReadLine(), out categoryId) || categoryId <= 0)
+            {
+                Console.Write("Enter a valid Category ID: ");
+            }
+            // Get category and its products in a single query
+            var category = context.Categories
+                .Include(c => c.Products)
+                .FirstOrDefault(c => c.categoryId == categoryId);
+            if (category == null)
+            {
+                Console.WriteLine("Category not found.");
+                return;
+            }
+            // Display category details
+            Console.WriteLine($"\nCategory Name: {category.categoryName}");
+            Console.WriteLine($"Description: {category.description}");
+            if (!category.Products.Any())
+            {
+                Console.WriteLine("No products found in this category.");
+                return;
+            }
+            // Display products
+            Console.WriteLine("\nProducts:");
+            foreach(var product in category.Products)
+            {
+            Console.WriteLine(
+               $"ID: {product.productId} | " +
+               $"Name: {product.productName} | " +
+               $"Price: {product.price} OMR | " +
+               $"Stock: {product.stockQuantity}");
+            }
+        }
         static void Main(string[] args)
         {
             bool exit = false;
@@ -719,6 +761,7 @@ namespace E_Commerce_SystemERD_Models
                 Console.WriteLine("7 - Delete a Review");
                 Console.WriteLine("8 - View All Products ");
                 Console.WriteLine("9 - Filter Products by Category and Price Range ");
+                Console.WriteLine("10 - Get Category with All Its Products");
                 Console.WriteLine("0 - Exit");
                 Console.Write("Select option: ");
 
@@ -741,6 +784,7 @@ namespace E_Commerce_SystemERD_Models
                     case 7: DeleteReview(); break;
                     case 8: ViewAllProducts(); break;
                     case 9: FilterProducts(); break;
+                    case 10: GetCategoryWithProducts(); break;
                     case 0:
                         exit = true;
                         break;
