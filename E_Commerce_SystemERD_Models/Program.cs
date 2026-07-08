@@ -801,6 +801,37 @@ namespace E_Commerce_SystemERD_Models
 
             }
         }
+        // ─────────────────────────────────────────────────────────────────────
+        // 12 — Product Summary Report [PROJECT] [LAZY]
+        // Generate a product summary report using projection, then demonstrate
+        // lazy loading by accessing a navigation property without Include.
+        // ─────────────────────────────────────────────────────────────────────
+        public static void ProductSummaryReport()
+        {
+            Console.WriteLine("\n=== Product Summary Report ===");
+            // Project product summary into an anonymous object
+            //Part A: Projection query
+            var report = context.Products
+                .Select(p => new
+                {
+                    ProductName = p.productName,
+                    CategoryName = p.Category.categoryName,
+                    ReviewCount = p.Reviews.Count(),
+                    AvgRating = p.Reviews.Average(r => r.rating),
+                    Stock = p.stockQuantity
+                }).ToList();
+            foreach (var item in report)
+            {
+                Console.WriteLine(
+                    $"Product: {item.ProductName} | " +
+                    $"Category: {item.CategoryName} | " +
+                    $"Reviews: {item.ReviewCount} | " +
+                    $"Average Rating: {item.AvgRating} | " +
+                    $"Stock: {item.Stock}");
+            }
+
+        }
+
         static void Main(string[] args)
         {
             bool exit = false;
