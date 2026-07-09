@@ -68,11 +68,10 @@ namespace E_Commerce_SystemERD_Models
                 return;
             }
 
-
-            Console.Write("Enter phone number: ");
+            Console.Write("Enter phone number:(optional — press Enter to skip):");
             string phoneNumber = Console.ReadLine().Trim();
 
-            Console.Write("Enter address: ");
+            Console.Write("Enter address: (optional — press Enter to skip): ");
             string address = Console.ReadLine().Trim();
 
 
@@ -84,8 +83,8 @@ namespace E_Commerce_SystemERD_Models
                 email = email,
                 passwordHash = password,
                 fullName = fullName,
-                phoneNumber = string.IsNullOrWhiteSpace(phoneNumber)?null:phoneNumber,//validation tenery operator
-                address =string.IsNullOrWhiteSpace(address) ? null:address,
+                phoneNumber = string.IsNullOrWhiteSpace(phoneNumber) ? null : phoneNumber,//validation tenery operator
+                address = string.IsNullOrWhiteSpace(address) ? null : address,
                 registrationDate = DateTime.Now,
                 isActive = true
             };
@@ -381,7 +380,7 @@ namespace E_Commerce_SystemERD_Models
                 Console.WriteLine("Product added to order.");
 
                 Console.Write("\nDo you want to add another product? (y/n): ");
-                string answer = Console.ReadLine().ToLower();
+                string answer = Console.ReadLine().Trim().ToLower();
 
                 if (answer != "y")
                 {
@@ -513,8 +512,7 @@ namespace E_Commerce_SystemERD_Models
             }
 
             // Find product
-            var selectedProduct = context.Products
-                .FirstOrDefault(p => p.productId == productId);
+            var selectedProduct = context.Products.FirstOrDefault(p => p.productId == productId);
 
             if (selectedProduct == null)
             {
@@ -531,7 +529,7 @@ namespace E_Commerce_SystemERD_Models
             }
 
             Console.Write("Is Product Available? (y/n): ");
-            string answer = Console.ReadLine().ToLower();
+            string answer = Console.ReadLine().Trim().ToLower();
 
             // Update product price and availability
             selectedProduct.price = newPrice;
@@ -577,7 +575,7 @@ namespace E_Commerce_SystemERD_Models
             context.Reviews.Remove(reviewToDelete);
             // Save changes
             context.SaveChanges();
-            Console.WriteLine("Review deleted successfully.");
+            Console.WriteLine($"Review {reviewId} deleted successfully." );
         }
         // ─────────────────────────────────────────────────────────────────────
         // 08 — View All Products [GET-ALL]
@@ -589,7 +587,7 @@ namespace E_Commerce_SystemERD_Models
             Console.WriteLine("\n=== View All Products ===");
 
             // Retrieve all products
-            var products = context.Products.ToList();
+            List<Product> products = context.Products.ToList();
             if (!products.Any())
             {
                 Console.WriteLine("No products found.");
@@ -634,7 +632,7 @@ namespace E_Commerce_SystemERD_Models
             decimal maxPrice = decimal.Parse(Console.ReadLine());
 
             // Filter and sort products
-            var products = context.Products
+            List<Product> products = context.Products
                 .Where(p =>
                            p.categoryId == categoryId &&
                            p.price >= minPrice &&
@@ -649,7 +647,7 @@ namespace E_Commerce_SystemERD_Models
             }
             Console.WriteLine("\nFiltered Products:");
 
-            foreach (var product in products)
+            foreach (Product product in products)
             {
                 Console.WriteLine(
                     $"ID: {product.productId} | " +
@@ -718,9 +716,13 @@ namespace E_Commerce_SystemERD_Models
                 Console.Write("Enter a valid Category ID: ");
             }
             // Get category and its products in a single query
-            var category = context.Categories
-                .Include(c => c.Products)
-                .FirstOrDefault(c => c.categoryId == categoryId);
+            //loading all needed data
+            Category category = context.Categories
+                              .Include(c => c.Products)
+                       //     .ThenInclude(p=> p.Reviews)
+                       //     .ThenInclude(r=>r.User)
+                       //     .ThenInclude(o=>o.Orders)
+                              .FirstOrDefault(c => c.categoryId == categoryId);
             if (category == null)
             {
                 Console.WriteLine("Category not found.");
@@ -729,9 +731,10 @@ namespace E_Commerce_SystemERD_Models
             // Display category details
             Console.WriteLine($"\nCategory Name: {category.categoryName}");
             Console.WriteLine($"Description: {category.description}");
+            Console.WriteLine($"\nProducts: {category.Products.Count}");
             if (!category.Products.Any())
             {
-                Console.WriteLine("No products found in this category.");
+                Console.WriteLine($"No products{categoryId} found in this category.");
                 return;
             }
             // Display products
@@ -761,7 +764,7 @@ namespace E_Commerce_SystemERD_Models
             }
 
             // Get user with orders, order items, and products in a single chained query
-            var user = context.Users
+            User user = context.Users
                 .Include(u => u.Orders)
                 .ThenInclude(o => o.OrderItems)
                 .ThenInclude(i => i.Product)
@@ -780,7 +783,7 @@ namespace E_Commerce_SystemERD_Models
             }
             // Display user order history
             Console.WriteLine($"\nOrder History for: {user.username}");
-            foreach (var order in user.Orders)
+            foreach (Order order in user.Orders)
             {
                 // Display order details
                 Console.WriteLine($"\nOrder ID: {order.orderId}");
@@ -791,7 +794,7 @@ namespace E_Commerce_SystemERD_Models
                 // Display order items
                 Console.WriteLine("Items:");
 
-                foreach (var item in order.OrderItems)
+                foreach (OrderItem item in order.OrderItems)
                 {
                     Console.WriteLine(
                         $"- Product: {item.Product.productName} | " +
@@ -817,7 +820,9 @@ namespace E_Commerce_SystemERD_Models
                     ProductName = p.productName,
                     CategoryName = p.Category.categoryName,
                     ReviewCount = p.Reviews.Count(),
-                    AvgRating = p.Reviews.Average(r => r.rating),
+                    // If there are no reviews
+                    // set average rating to 0 to avoid Average() error
+                    AvgRating = p.Reviews.Count() == 0 ? 0.0 : p.Reviews.Average(r => (double)r.rating),
                     Stock = p.stockQuantity
                 }).ToList();
             foreach (var item in report)
@@ -886,7 +891,7 @@ namespace E_Commerce_SystemERD_Models
                     case 9: FilterProducts(); break;
                     case 10: GetCategoryWithProducts(); break;
                     case 11: ViewOrderHistory(); break;
-                    case 12: ViewOrderHistory(); break;
+                    case 12: ProductSummaryReport(); break;
                     case 0:
                         exit = true;
                         break;
