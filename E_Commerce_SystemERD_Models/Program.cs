@@ -84,8 +84,8 @@ namespace E_Commerce_SystemERD_Models
                 email = email,
                 passwordHash = password,
                 fullName = fullName,
-                phoneNumber = phoneNumber,
-                address = address,
+                phoneNumber = string.IsNullOrWhiteSpace(phoneNumber)?null:phoneNumber,//validation tenery operator
+                address =string.IsNullOrWhiteSpace(address) ? null:address,
                 registrationDate = DateTime.Now,
                 isActive = true
             };
