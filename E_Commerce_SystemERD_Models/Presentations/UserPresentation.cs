@@ -6,5 +6,6 @@ namespace E_Commerce_SystemERD_Models.Presentations
 {
     internal class UserPresentation
     {
+
     }
 }
