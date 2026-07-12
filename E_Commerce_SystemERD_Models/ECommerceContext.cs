@@ -19,7 +19,7 @@ namespace E_Commerce_SystemERD_Models
         {
             options.UseSqlServer("Server=DESKTOP-U403BM4;Database=ECommerceDB;Trusted_Connection=True;TrustServerCertificate=True;")
                 // Enable EF Core Lazy Loading Proxies
-                .UseLazyLoadingProxies(); ;
+                .UseLazyLoadingProxies();
         }
 
     }
