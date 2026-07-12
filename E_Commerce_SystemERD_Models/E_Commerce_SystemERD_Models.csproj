@@ -25,6 +25,9 @@
   <ItemGroup>
     <Folder Include="ERD\" />
     <Folder Include="ECommerceDB\" />
+    <Folder Include="Presentations\" />
+    <Folder Include="Services\" />
+    <Folder Include="Repositories\" />
   </ItemGroup>
 
 </Project>
