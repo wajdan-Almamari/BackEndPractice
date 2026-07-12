@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="E_Commerce_SystemERD_Models/E_Commerce_SystemERD_Models.csproj" Id="e0d23a88-b012-47fe-96bb-81add7f324ca" />
   <Project Path="FlightManagementSystem/FlightManagementSystem.csproj" />
   <Project Path="UniversityManagementSystem/UniversityManagementSystem.csproj" Id="c19c6624-740c-4c6f-9cbd-d333cb6e059f" />
 </Solution>
