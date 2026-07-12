@@ -12,11 +12,11 @@ namespace E_Commerce_SystemERD_Models.Models
     {
         [ForeignKey(nameof(Order))]
         public int orderId { get; set; } // Foreign Key
-        public Order Order { get; set; } // Navigation Property
+        public virtual Order Order { get; set; } // Navigation Property
 
         [ForeignKey(nameof(Product))]
         public int productId { get; set; } // Foreign Key
-        public Product Product { get; set; } // Navigation Property
+        public virtual Product Product { get; set; } // Navigation Property
 
 
         [Required]
